@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.h-screen {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+.text-editor {
+  display: grid;
+  gap: 2rem;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    strong {
+      font-weight: 700;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    a {
+      color: #ED701F;
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: none;
+    margin-left: 2rem;
+
+  }
+
+  ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+    list-style-image: none;
+    margin-left: 2rem;
+
+  }
+
+  blockquote {
+    border-left: 2px solid #ED701F;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding-left: 1rem;
+    }
+  }
+
+  h1 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: satoshi;
+
+    // MD
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    // LG
+    @media (min-width: 1200px) {
+      line-height: 70px;
+      font-size: 61px;
+    }
+
+    // XL
+    @media (min-width: 1352px) {
+      font-size: 70px;
+      line-height: 80px;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 600;
+    font-family: satoshi;
+    color: #ED701F;
+
+    // MD
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    // LG
+    @media (min-width: 1200px) {
+      line-height: 22px;
+      font-size: 28px;
+    }
+
+    // XL
+    @media (min-width: 1352px) {
+      font-size: 25px;
+      line-height: 33px;
+    }
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9 !important;
+  }
+}
