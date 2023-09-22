@@ -165,7 +165,7 @@
 
 
 <!-- HAMBURGER MENU -->
-<section id="hamburger-menu" class="absolute top-0 left-0 bottom-0 right-0 h-[100dvh] w-full z-[9999] hidden overflow-hidden">
+<section id="hamburger-menu" class="fixed top-0 left-0 bottom-0 right-0 h-full w-full z-[9999] hidden overflow-hidden">
     <!-- NAVIGATIE -->
     <div class="absolute top-0 left-0 right-0 z-[999]">
         <div class="mx-[20px] lg:mx-[40px] h-[40px] md:h-[55px] flex items-end justify-between mt-[33px]">
