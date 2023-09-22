@@ -708,6 +708,12 @@ video {
 .h-\[100dvh\] {
   height: 100dvh;
 }
+.h-\[calc\(100dvh-33px\)\] {
+  height: calc(100dvh - 33px);
+}
+.h-\[calc\(70dvh-33px\)\] {
+  height: calc(70dvh - 33px);
+}
 .max-h-\[unset\] {
   max-height: unset;
 }
@@ -1084,6 +1090,10 @@ video {
     height: 100vh;
   }
 
+  .md\:h-\[calc\(100dvh-200px\)\] {
+    height: calc(100dvh - 200px);
+  }
+
   .md\:max-h-\[768px\] {
     max-height: 768px;
   }
@@ -1253,6 +1263,10 @@ video {
 
   .lg\:h-\[calc\(100vh-33px\)\] {
     height: calc(100vh - 33px);
+  }
+
+  .lg\:h-\[calc\(100dvh-33px\)\] {
+    height: calc(100dvh - 33px);
   }
 
   .lg\:max-h-\[unset\] {
