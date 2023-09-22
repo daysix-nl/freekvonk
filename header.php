@@ -242,9 +242,9 @@
         </div>
     </div>
     <!-- CONTENT -->
-    <div class="flex w-screen h-screen">
-        <div class="w-full lg:w-[60%] h-screen bg-black">
-            <div class="relative h-screen w-full">
+    <div class="flex w-screen h-[100dvh]">
+        <div class="w-full lg:w-[60%] h-[100dvh] bg-black">
+            <div class="relative h-[100dvh] w-full">
                 <div class="absolute top-[100px] left-[20px] lg:left-[40px] right-[20px] h-[calc(100vh-100px)] overflow-y-scroll">
                     <div class="pt-[20px] pb-[120px] flex flex-col space-y-[15px]">
                         <a href="/over-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(1)">Over Freek</a>
