@@ -11,7 +11,45 @@ body {
   height: calc(var(--vh, 1vh) * 100);
 }
 
-@import url("https://fonts.cdnfonts.com/css/satoshi");
+@font-face {
+  font-family: 'Tanker';
+  src: url('/wp-content/themes/freekvonk/fonts/Tanker-Regular.woff2') format('woff2'), url('/wp-content/themes/freekvonk/fonts/Tanker-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karlsen';
+  src: url('/wp-content/themes/freekvonk/fonts/Karlsen-Regular.woff2') format('woff2'), url('/wp-content/themes/freekvonk/fonts/Karlsen-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karlsen';
+  src: url('/wp-content/themes/freekvonk/fonts/Karlsen-Italic.woff2') format('woff2'), url('/wp-content/themes/freekvonk/fonts/Karlsen-Italic.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Karlsen';
+  src: url('/wp-content/themes/freekvonk/fonts/Karlsen-Bold.woff2') format('woff2'), url('/wp-content/themes/freekvonk/fonts/Karlsen-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karlsen';
+  src: url('/wp-content/themes/freekvonk/fonts/Karlsen-BoldItalic.woff2') format('woff2'), url('/wp-content/themes/freekvonk/fonts/Karlsen-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
 
 .text-editor {
   display: grid;
@@ -129,3 +167,12 @@ body {
     aspect-ratio: 16/9 !important;
   }
 }
+
+
+// iframe {
+//   width: auto !important;
+//   height: 110vh !important;
+//   aspect-ratio: 16/9 !important;
+//   object-fit: cover !important;
+//   object-position: center !important;
+// }

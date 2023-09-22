@@ -24,18 +24,12 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        "satoshi": ["satoshi"],
-        "nunito": ["nunito sans"],
+        "tanker": ["Tanker", "sans-serif"],
+        "karlsen": ["Karlsen", "sans-serif"],
       },
       colors: {
         white: "#FFFFFF",
-        black: "#332E2A",
-        orange: "#ED701F",
-        oranje: "#ED701F",
-        groen: "#4EBE5B",
-        grijs: "#F4F4F5",
-        donkergrijs: "#726A63",
-        lichtoranje: "#FDEFE3",
+        black: "#0A1F16",
         transparent: "transparent",
       },
       content: {
@@ -396,31 +390,31 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".container": {
-          maxWidth: "390px",
+          maxWidth: "354px",
           width: "auto",
           marginLeft: "auto",
           marginRight: "auto",
           paddingLeft: "20px",
           paddingRight: "20px",
           "@screen sm": {
-            maxWidth: "390px",
+            maxWidth: "354px",
             width: "auto",
           },
           "@screen md": {
-            maxWidth: "688px",
-            width: "688px",
+            maxWidth: "603px",
+            width: "603px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },
           "@screen lg": {
-            maxWidth: "1130px",
-            width: "1130px",
+            maxWidth: "1145px",
+            width: "1145px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },
           "@screen xl": {
-            maxWidth: "1272px",
-            width: "1272px",
+            maxWidth: "1145px",
+            width: "1145px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },

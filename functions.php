@@ -40,7 +40,7 @@ function add_theme_scripts() {
 */
 
 function load_custom_wp_admin_style(){
-    wp_enqueue_style( 'gutenberg', get_template_directory_uri() . '/gutenberg.css', array(), '1.1', 'all');
+    wp_enqueue_style( 'gutenberg',  'https://hostdashboard.nl/devdocs/css/gutenberg.css');
     wp_enqueue_style( 'swiper',  'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/script/swiper.js', array(), 1.1, true);
