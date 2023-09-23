@@ -245,15 +245,15 @@
     <div class="flex w-screen h-[100dvh]">
         <div class="w-full lg:w-[60%] h-[100dvh] bg-black">
             <div class="relative h-[100dvh] w-full">
-                <div class="absolute top-[100px] left-[20px] lg:left-[40px] right-[20px] h-[calc(100vh-100px)] overflow-y-scroll">
+                <div class="absolute top-[110px] md:top-[150px] lg:top-[110px] left-[20px] md:left-[80px] lg:left-[40px] right-[20px] h-[calc(100vh-100px)] overflow-y-scroll">
                     <div class="pt-[20px] pb-[120px] flex flex-col space-y-[15px]">
-                        <a href="/over-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(1)">Over Freek</a>
-                        <a href="/freek-vonk-live" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(2)">Freek Vonk Live</a>
-                        <a href="/studio-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(3)">Studio Freek</a>
-                        <a href="/shop" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(4)">Shop</a>
-                        <a href="/stichting-no-wildlife-crime" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(5)">Stichting No Wildlife Crime</a>
-                        <a href="/nieuws" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(6)">Nieuws</a>
-                        <a href="/weetjes-en-extras" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-70 lg:leading-63 xl:text-74 xl:leading-66 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(7)">Weetjes & extra's</a>
+                        <a href="/over-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(1)">Over Freek</a>
+                        <a href="/freek-vonk-live" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(2)">Freek Vonk Live</a>
+                        <a href="/studio-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(3)">Studio Freek</a>
+                        <a href="/shop" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(4)">Shop</a>
+                        <a href="/stichting-no-wildlife-crime" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(5)">Stichting No Wildlife Crime</a>
+                        <a href="/nieuws" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(6)">Nieuws</a>
+                        <a href="/weetjes-en-extras" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(7)">Weetjes & extra's</a>
                     </div>
                     
                 </div>
