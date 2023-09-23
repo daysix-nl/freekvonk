@@ -1,0 +1,13 @@
+.mySwiper-navigatie {
+  .swiper-slide {
+    opacity: 0 !important;
+    transition-duration: 0s !important;
+    visibility: hidden;
+    pointer-events: none !important;
+    &.swiper-slide-active {
+      opacity: 1 !important;
+      visibility: visible;
+      pointer-events: auto !important;
+    }
+  }
+}
