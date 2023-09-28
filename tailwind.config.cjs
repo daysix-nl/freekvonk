@@ -390,14 +390,14 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".container": {
-          maxWidth: "354px",
+          maxWidth: "390px",
           width: "auto",
           marginLeft: "auto",
           marginRight: "auto",
           paddingLeft: "20px",
           paddingRight: "20px",
           "@screen sm": {
-            maxWidth: "354px",
+            maxWidth: "390px",
             width: "auto",
           },
           "@screen md": {
