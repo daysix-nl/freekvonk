@@ -121,7 +121,7 @@
             </div>
             <!-- AFBEELDING -->
             <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[50vw] lg:w-[50vw] overflow-hidden order-1 lg:order-2">
-                <img src="wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="h-full w-full object-cover object-center">
+                <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="h-full w-full object-cover object-center">
             </div>
         </div>
     </section>
@@ -133,9 +133,9 @@
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white text-center">Prof. dr. Freek Vonk is vanaf september 2021 de nieuwe Chief scout van Scouting Nederland.</h3>
         </div>
         <div class="container grid grid-cols-3 gap-[11px] pb-[80px] relative z-[40]">
-            <img src="wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center">
-            <img src="wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
-            <img src="wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
+            <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center">
+            <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
+            <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
         </div>
          <img src="/wp-content/themes/freekvonk/img/local/patroon-4.png" alt="" class="z-[30] h-full w-full object-cover object-center absolute top-0 opacity-[0.01]">
     </section>
