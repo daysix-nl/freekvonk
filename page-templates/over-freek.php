@@ -45,7 +45,7 @@
                 <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
                     <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider">Prof. Dr. Freek vonk</h2>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black">Prof. dr. Freek Vonk (1983), hoogleraar aan de Vrije Universiteit Amsterdam en verbonden aan Naturalis Biodiversity Center</h3>
-                    <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                    <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
                 </div>
                 <img src="/wp-content/themes/freekvonk/img/local/patroon-1.png" alt="" class="z-[30] h-full w-full object-cover object-center absolute top-0">
             </div>
@@ -101,7 +101,15 @@
         </div>
     </section>
 
-
+    <section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="col-span-1">
+                <div class="aspect-square bg-black px-[40px] py-[70px] flex items-center">
+                    <h1 class="text-[20px] md:text-[40px] lg:text-[80px] text-white uppercase">Dit is een test</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
      <!-- AFBEELDING - CONTENT -->
