@@ -1,0 +1,37 @@
+a {
+    position: relative;
+}
+
+a.underline-effect::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #8CC63F;
+    transition: width .3s;
+    margin-top: 3px;
+    position: absolute;
+    left: unset;
+    right: unset;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+a.underline-effect:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #8CC63F;
+    transition: width .3s;
+    margin-top: 3px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    transform: scaleX(1);
+    transition: .25s linear;
+}
+
+.bent {
+    border: solid 5px #8CC63F;
+    border-color: transparent transparent #8CC63F transparent;
+    border-radius: 50%/100px 100px 0 0;
+}

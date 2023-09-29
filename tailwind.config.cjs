@@ -394,8 +394,8 @@ module.exports = {
           width: "auto",
           marginLeft: "auto",
           marginRight: "auto",
-          paddingLeft: "20px",
-          paddingRight: "20px",
+          paddingLeft: "0px",
+          paddingRight: "0px",
           "@screen sm": {
             maxWidth: "390px",
             width: "auto",

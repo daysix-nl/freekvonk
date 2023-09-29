@@ -10,30 +10,26 @@
     <!-- TITEL -->
     <section class="container hidden md:grid">
         <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker text-black"><?php the_title();?></h1>        
-        <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-full"></div>    
+        <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full]"></div>    
     </section>
     <section class="container">
         <!-- MOBIEL SUBMENU -->
         <div class="swiper mySwiper-navigatie md:hidden">
             <div class="swiper-wrapper">
-                <div class="swiper-slide flex justify-center items-center">Slide 2</div>
-                <div class="swiper-slide flex justify-center items-center">Slide 3</div>
-                <div class="swiper-slide flex justify-center items-center">Slide 4</div>
-                <div class="swiper-slide flex justify-center items-center">Slide 5</div>
-                <div class="swiper-slide flex justify-center items-center">Slide 6</div>
-                <div class="swiper-slide flex justify-center items-center">Slide 7</div>
-                <div class="swiper-slide flex justify-center items-center">Slide 8</div>
-                <div class="swiper-slide flex justify-center items-center">Slide 9</div>
+                <div class="swiper-slide flex justify-center items-center"><a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek op TV</a></div>
+                <div class="swiper-slide flex justify-center items-center"><a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek op TV</a></div>
+                <div class="swiper-slide flex justify-center items-center"><a href="#item-3" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Chief Scout</a></div>
+                <div class="swiper-slide flex justify-center items-center"><a href="#item-4" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Wild van Freek</a></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
         <!-- DESKTOP SUBMENU -->
         <div class="hidden md:flex md:space-x-[30px] lg:space-x-[30px] xl:space-x-[65px] mx-auto w-fit md:mt-[50px]">
-            <a href="#freek-op-tv" class=" md:text-25 md:leading-26 font-tanker text-black">Freek op TV</a>
-            <a href="#freek-op-tv" class=" md:text-25 md:leading-26 font-tanker text-black">Freek in de VU</a>
-            <a href="#freek-op-tv" class=" md:text-25 md:leading-26 font-tanker text-black">Chief Scout</a>
-            <a href="#freek-op-tv" class=" md:text-25 md:leading-26 font-tanker text-black">Wild van Freek</a>
+            <a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek op TV</a>
+            <a href="#item-2" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek in de VU</a>
+            <a href="#item-3" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Chief Scout</a>
+            <a href="#item-4" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Wild van Freek</a>
         </div>
     </section> 
     
@@ -46,7 +42,7 @@
             </div>
             <!-- CONTENT -->
             <div class="lg:aspect-square bg-[#EFE7DE] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative">
-                <div class="max-w-[352px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
+                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
                     <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider">Prof. Dr. Freek vonk</h2>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black">Prof. dr. Freek Vonk (1983), hoogleraar aan de Vrije Universiteit Amsterdam en verbonden aan Naturalis Biodiversity Center</h3>
                     <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
@@ -57,7 +53,7 @@
     </section>
 
     <!-- TITEL -->
-    <section>
+    <section id="item-1">
         <div class="container py-[80px]">
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider text-center">Freek op TV</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black text-center"> Freeks Wilde Wereld is al jaren lang een van de best bekeken kinder-televisieprogramma’s op Zapp/VPRO. </h3>
@@ -85,7 +81,7 @@
             </div>
             <!-- CONTENT -->
             <div class="lg:aspect-square bg-[#142C2B] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center">
-                <div class="max-w-[352px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[60px] lg:py-[unset]">
+                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[60px] lg:py-[unset]">
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">De Super Freek Show</h3>
                     <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white mt-[30px]">Freek maakt een ontdekkingstocht over het verst gelegen continent: Australië. Van alle slangen wereldwijd is maar 15 procent giftig, maar in Australië is dat meer dan de helft. Ook komt hij er giftige kikkers, kwallen, vissen en zeeslangen tegen. </p>
                 </div>
@@ -95,7 +91,7 @@
 
 
      <!-- TITEL EN TEKST -->
-    <section class="bg-[#EFE7DE]">
+    <section id="item-2" class="bg-[#EFE7DE]">
         <div class="container py-[80px]">
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider text-center">Freek in de VU</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black text-center">Prof. dr. Freek Vonk (1983), hoogleraar aan de Vrije Universiteit Amsterdam.</h3>
@@ -112,7 +108,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <!-- CONTENT -->
             <div class="lg:aspect-square bg-white h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative order-2 lg:order-1">
-                <div class="max-w-[352px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
+                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
                     <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider">Freek en Naturalis</h2>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black">Freek is tevens verbonden aan Naturalis Biodiversity Center in Leiden.</h3>
                     <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Waar hij het boegbeeld is richting het publiek. In 2012 krijgt Freek de prestigieuze Eurekaprijs van NWO (Nederlandse Organisatie voor Wetenschappelijk Onderzoek) en de KNAW (Koninklijke Nederlandse Akademie van Wetenschappen), omdat hij zijn wetenschappelijk onderzoek op een uitstekende manier naar een breed publiek kan uit dragen.<br><br>In 2016 begeleidt hij de tyrannosaurus “Trix” naar Naturalis voor de tentoonstelling “T. rex in Town”. In 2017 heeft Freek zijn eigen tentoonstelling Gif!. In 2019, tijdens de opening van het nieuwe Naturalis, kan je en tour volgen langs Freeks favorieten.</p>
@@ -127,7 +123,7 @@
     </section>
 
     <!-- TITEL EN PLAATJES-->
-    <section class="bg-[#523524] relative">
+    <section id="item-3" class="bg-[#523904] relative">
         <div class="max-w-[390px] md:max-w-[603px] lg:max-w-[912px] mx-auto pt-[80px] pb-[50px] relative z-[40]">
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-white uppercase mb-[15px] tracking-wider text-center">Chief Scout</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white text-center">Prof. dr. Freek Vonk is vanaf september 2021 de nieuwe Chief scout van Scouting Nederland.</h3>
