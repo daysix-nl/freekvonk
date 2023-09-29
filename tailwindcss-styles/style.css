@@ -744,8 +744,20 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[510px\] {
+  height: 510px;
+}
+.h-\[610px\] {
+  height: 610px;
+}
 .max-h-\[unset\] {
   max-height: unset;
+}
+.min-h-\[500px\] {
+  min-height: 500px;
+}
+.min-h-\[510px\] {
+  min-height: 510px;
 }
 .w-\[110px\] {
   width: 110px;
@@ -959,6 +971,14 @@ video {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.py-\[70px\] {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 .pb-2 {
   padding-bottom: 20px;
 }
@@ -1051,6 +1071,9 @@ video {
 }
 .text-55 {
   font-size: 55px;
+}
+.text-\[20px\] {
+  font-size: 20px;
 }
 .font-bold {
   font-weight: 700;
@@ -1232,6 +1255,10 @@ video {
     height: 100vh;
   }
 
+  .md\:h-\[830px\] {
+    height: 830px;
+  }
+
   .md\:max-h-\[768px\] {
     max-height: 768px;
   }
@@ -1258,6 +1285,10 @@ video {
 
   .md\:max-w-\[603px\] {
     max-width: 603px;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:space-x-\[30px\] > :not([hidden]) ~ :not([hidden]) {
@@ -1332,6 +1363,10 @@ video {
 
   .md\:text-80 {
     font-size: 80px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .md\:leading-100 {
@@ -1634,6 +1669,10 @@ video {
   }
 
   .lg\:text-80 {
+    font-size: 80px;
+  }
+
+  .lg\:text-\[80px\] {
     font-size: 80px;
   }
 

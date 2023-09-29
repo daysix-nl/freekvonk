@@ -12,7 +12,7 @@
         <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker text-black"><?php the_title();?></h1>        
         <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full]"></div>    
     </section>
-    <section class="container">
+    <section class="">
         <!-- MOBIEL SUBMENU -->
         <div class="swiper mySwiper-navigatie md:hidden">
             <div class="swiper-wrapper">
@@ -28,8 +28,8 @@
         <div class="hidden md:flex md:space-x-[30px] lg:space-x-[30px] xl:space-x-[65px] mx-auto w-fit md:mt-[50px]">
             <a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek op TV</a>
             <a href="#item-2" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek in de VU</a>
-            <a href="#item-3" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Chief Scout</a>
-            <a href="#item-4" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Wild van Freek</a>
+            <a href="#item-3" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek en Naturalis</a>
+            <a href="#item-4" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Chief Scout</a>
         </div>
     </section> 
     
@@ -45,7 +45,7 @@
                 <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
                     <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider">Prof. Dr. Freek vonk</h2>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black">Prof. dr. Freek Vonk (1983), hoogleraar aan de Vrije Universiteit Amsterdam en verbonden aan Naturalis Biodiversity Center</h3>
-                    <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
+                    <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
                 </div>
                 <img src="/wp-content/themes/freekvonk/img/local/patroon-1.png" alt="" class="z-[30] h-full w-full object-cover object-center absolute top-0">
             </div>
@@ -103,8 +103,9 @@
 
 
 
+
      <!-- AFBEELDING - CONTENT -->
-    <section>
+    <section id="item-3">
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <!-- CONTENT -->
             <div class="lg:aspect-square bg-white h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative order-2 lg:order-1">
@@ -123,7 +124,7 @@
     </section>
 
     <!-- TITEL EN PLAATJES-->
-    <section id="item-3" class="bg-[#523904] relative">
+    <section id="item-4" class="bg-[#523904] relative">
         <div class="max-w-[390px] md:max-w-[603px] lg:max-w-[912px] mx-auto pt-[80px] pb-[50px] relative z-[40]">
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-white uppercase mb-[15px] tracking-wider text-center">Chief Scout</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white text-center">Prof. dr. Freek Vonk is vanaf september 2021 de nieuwe Chief scout van Scouting Nederland.</h3>
