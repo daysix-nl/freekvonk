@@ -6,20 +6,26 @@
 
  get_header(); ?>
  
-<main class="pt-[150px]">
+<div class="fixed z-[998] right-[74px] top-[50px] md:hidden">
+    <h1 class="w-full text-center text-16 leading-26 font-tanker text-black"><?php the_title();?></h1>
+    <div class="h-[2px] w-[70px] bg-[#78B047] mx-auto rounded-[full]"></div>         
+</div>
+<main class="pt-[74px]">
     <!-- TITEL -->
-    <section class="container hidden md:grid">
+    <section class="container hidden md:grid pt-[80px]">
         <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker text-black"><?php the_title();?></h1>        
         <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full]"></div>    
     </section>
-    <section class="">
+
+    <!-- SUBMENU -->
+    <section class="pt-[40px] md:pt-[unset]">
         <!-- MOBIEL SUBMENU -->
-        <div class="swiper mySwiper-navigatie md:hidden">
+        <div class="swiper mySwiper-navigatie md:hidden mx-[15px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-center items-center"><a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek op TV</a></div>
-                <div class="swiper-slide flex justify-center items-center"><a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek op TV</a></div>
-                <div class="swiper-slide flex justify-center items-center"><a href="#item-3" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Chief Scout</a></div>
-                <div class="swiper-slide flex justify-center items-center"><a href="#item-4" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Wild van Freek</a></div>
+                <div class="swiper-slide flex justify-center items-center"><a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek in de VU</a></div>
+                <div class="swiper-slide flex justify-center items-center"><a href="#item-3" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek en Naturalis</a></div>
+                <div class="swiper-slide flex justify-center items-center"><a href="#item-4" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Chief Scout</a></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -97,16 +103,6 @@
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black text-center">Prof. dr. Freek Vonk (1983), hoogleraar aan de Vrije Universiteit Amsterdam.</h3>
             <div class="max-w-[390px] md:max-w-[603px] lg:max-w-[912px] mx-auto z-[40] pt-[30px]">
                 <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black md:text-center">Het College van Bestuur van de Vrije Universiteit Amsterdam benoemt bioloog Freek Vonk per 1 februari 2020 tot bijzonder hoogleraar ‘Evolutionary Biochemistry’. Deze leerstoel is mogelijk gemaakt door Naturalis Biodiversity Center en richt zich op de aanknopingspunten die natuurlijke gifstoffen bieden bij de ontwikkeling van nieuwe medicijnen en op een nieuwe generatie antistoffen voor slangengiffen. De bijzondere leerstoel wordt ingebed bij de afdeling Scheikunde & Farmaceutische Wetenschappen (S&F) van de Faculteit der Bètawetenschappen.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <div class="col-span-1">
-                <div class="aspect-square bg-black px-[40px] py-[70px] flex items-center">
-                    <h1 class="text-[20px] md:text-[40px] lg:text-[80px] text-white uppercase">Dit is een test</h1>
-                </div>
             </div>
         </div>
     </section>

@@ -11,22 +11,22 @@ try {
     },
     slidesPerView: "auto",
   });
-} catch (error) {}
-document.addEventListener("DOMContentLoaded", function () {
-  try {
-    var swipers = new Swiper(".mySwiper-navigatie", {
-      slideToClickedSlide: true,
-      effect: "fade",
-      slidesPerView: 1,
-      loop: true,
-      centeredSlides: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        clickable: true,
-      },
-    });
-  } catch (error) {
-    console.error(error);
-  }
-});
+} catch (error) { }
+
+try {
+  var swipers = new Swiper(".mySwiper-navigatie", {
+    slideToClickedSlide: true,
+    effect: "fade",
+    slidesPerView: 1,
+    // loop: true,
+    centeredSlides: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      clickable: true,
+    },
+  });
+} catch (error) {
+  console.error(error);
+}
+

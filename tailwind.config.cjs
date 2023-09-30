@@ -390,7 +390,7 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".container": {
-          maxWidth: "390px",
+          maxWidth: "420px",
           width: "auto",
           marginLeft: "auto",
           marginRight: "auto",

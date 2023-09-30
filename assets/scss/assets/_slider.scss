@@ -4,10 +4,24 @@
     transition-duration: 0s !important;
     visibility: hidden;
     pointer-events: none !important;
+
     &.swiper-slide-active {
       opacity: 1 !important;
       visibility: visible;
       pointer-events: auto !important;
     }
   }
+}
+
+
+
+
+.swiper-button-next:after {
+  content: url(/wp-content/themes/freekvonk/img/icon/next-nav.svg);
+  height: 61px;
+}
+
+.swiper-button-prev:after {
+  content: url(/wp-content/themes/freekvonk/img/icon/prev-nav.svg);
+  height: 61px;
 }
