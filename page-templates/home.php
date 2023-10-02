@@ -73,7 +73,7 @@ function activateBackground(backgroundNumber) {
 </script>
 
 
-<?php get_footer(); ?>
+<?php get_footer('nofooter'); ?>
 
 
 

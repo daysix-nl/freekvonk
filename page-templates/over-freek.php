@@ -20,7 +20,7 @@
     <!-- SUBMENU -->
     <section class="pt-[40px] md:pt-[unset]">
         <!-- MOBIEL SUBMENU -->
-        <div class="swiper mySwiper-navigatie md:hidden mx-[15px]">
+        <div class="swiper mySwiper-navigatie md:hidden">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-center items-center"><a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek op TV</a></div>
                 <div class="swiper-slide flex justify-center items-center"><a href="#item-1" class=" md:text-25 md:leading-26 font-tanker text-black underline-effect">Freek in de VU</a></div>
@@ -133,10 +133,13 @@
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-white uppercase mb-[15px] tracking-wider text-center">Chief Scout</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white text-center">Prof. dr. Freek Vonk is vanaf september 2021 de nieuwe Chief scout van Scouting Nederland.</h3>
         </div>
-        <div class="container grid grid-cols-3 gap-[11px] pb-[80px] relative z-[40]">
+        <div class="container grid grid-cols-3 gap-[11px] relative pb-[50px] z-[40]">
             <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center">
             <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
             <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
+        </div>
+         <div class="max-w-[390px] md:max-w-[603px] lg:max-w-[912px] mx-auto pb-[80px] z-[40]">
+            <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white text-center">Prof. dr. Freek Vonk is vanaf september 2021 de nieuwe Chief scout van Scouting Nederland. Scouting staat voor avontuur in de natuur, waarbij kinderen en jongeren hun leiderschapskwaliteiten ontwikkelen en zelfvertrouwen opdoen. Zo draagt Scouting actief bij aan de ontwikkeling van jeugd in Nederland. Freek Vonk kan als Chief scout als geen ander iedere Nederlander inspireren om op avontuur te gaan in de natuur en zijn of haar grenzen te verleggen. De Chief scout is het gezicht van Scouting, de belangrijkste ambassadeur die kinderen en jongeren, zowel scouts als niet-scouts, inspireert om hun grenzen te verleggen en uitdagende avonturen te beleven.</p>
         </div>
          <img src="/wp-content/themes/freekvonk/img/local/patroon-4.png" alt="" class="z-[30] h-full w-full object-cover object-center absolute top-0 opacity-[0.01]">
     </section>
