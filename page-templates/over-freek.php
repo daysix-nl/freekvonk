@@ -48,7 +48,7 @@
             </div>
             <!-- CONTENT -->
             <div class="lg:aspect-square bg-[#EFE7DE] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative">
-                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
+                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[50px] lg:py-[unset]">
                     <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider">Prof. Dr. Freek vonk</h2>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black">Prof. dr. Freek Vonk (1983), hoogleraar aan de Vrije Universiteit Amsterdam en verbonden aan Naturalis Biodiversity Center</h3>
                     <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
@@ -87,7 +87,7 @@
             </div>
             <!-- CONTENT -->
             <div class="lg:aspect-square bg-[#142C2B] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center">
-                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[60px] lg:py-[unset]">
+                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[60px] lg:py-[unset]">
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">De Super Freek Show</h3>
                     <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white mt-[30px]">Freek maakt een ontdekkingstocht over het verst gelegen continent: Australië. Van alle slangen wereldwijd is maar 15 procent giftig, maar in Australië is dat meer dan de helft. Ook komt hij er giftige kikkers, kwallen, vissen en zeeslangen tegen. </p>
                 </div>
@@ -113,7 +113,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <!-- CONTENT -->
             <div class="lg:aspect-square bg-white h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative order-2 lg:order-1">
-                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-scroll z-[40] py-[50px] lg:py-[unset]">
+                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[50px] lg:py-[unset]">
                     <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider">Freek en Naturalis</h2>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black">Freek is tevens verbonden aan Naturalis Biodiversity Center in Leiden.</h3>
                     <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-black mt-[30px]">Waar hij het boegbeeld is richting het publiek. In 2012 krijgt Freek de prestigieuze Eurekaprijs van NWO (Nederlandse Organisatie voor Wetenschappelijk Onderzoek) en de KNAW (Koninklijke Nederlandse Akademie van Wetenschappen), omdat hij zijn wetenschappelijk onderzoek op een uitstekende manier naar een breed publiek kan uit dragen.<br><br>In 2016 begeleidt hij de tyrannosaurus “Trix” naar Naturalis voor de tentoonstelling “T. rex in Town”. In 2017 heeft Freek zijn eigen tentoonstelling Gif!. In 2019, tijdens de opening van het nieuwe Naturalis, kan je en tour volgen langs Freeks favorieten.</p>

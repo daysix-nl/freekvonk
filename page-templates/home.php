@@ -4,7 +4,7 @@
  */
 
 
- get_header(); ?>
+ get_header('home'); ?>
 
 <main class="pt-[33px]">
     <section class="h-[calc(100dvh-33px)] flex items-center bg-[#0A1F161A]">

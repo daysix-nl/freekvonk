@@ -14,7 +14,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
-<header class="fixed z-[999] bg-white">
+<header class="fixed z-[999]">
     <!-- LIVE NOW BALK -->
     <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero">
         <div  id="scroll-text" class="flex w-full swiper-wrapper">
@@ -158,7 +158,6 @@
             </button>
         </div>
     </div>
-    <div class="bg-white h-[25px]"></div>
 
 </header>
 

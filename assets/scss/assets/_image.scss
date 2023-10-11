@@ -1,0 +1,25 @@
+a .hover-content {
+    bottom: -100%;
+}
+
+a:hover .hover-content {
+    bottom: 20px;
+}
+
+a .hover-bg {
+    opacity: 0;
+    display: none;
+}
+
+a:hover .hover-bg {
+    opacity: 1;
+    display: block;
+}
+
+a .hover-blur {
+    filter: blur(0);
+}
+
+a:hover .hover-blur {
+    filter: blur(8px);
+}
