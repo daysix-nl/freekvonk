@@ -58,12 +58,12 @@ try {
 
 try {
   var swipersVideo = new Swiper(".mySwiper-video", {
-    centeredSlides: true,
-    spaceBetween: 8,
     loop: true,
-    loopAdditionalSlides: 2, // you may tweak this as per your need
-    slidesPerGroupSkip: 2, // consider this if using slidesPerGroup
-    watchSlidesVisibility: true,
+    lazy: false,
+    freeMode: true,
+    slidesPerView: 1,
+    spaceBetween: 8,
+    history: { key: "slide" },
     breakpoints: {
       768: {
         spaceBetween: 8,
@@ -77,19 +77,97 @@ try {
         slidesPerView: 2,
       },
     },
-    lazy: {
-      loadPrevNext: true,
-      loadPrevNextAmount: 3, // load 3 slides ahead
-    },
-    on: {
-      init: function () {
-        duplicateSlides(this);
-      },
-      slideChangeTransitionEnd: function () {
-        resetPosition(this);
-      },
-    },
   });
 } catch (error) {
   console.error(error);
 }
+
+try {
+  const acc = document.getElementsByClassName("accordion");
+
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      const panel = this.nextElementSibling;
+      this.classList.toggle("active");
+      panel.style.height =
+        panel.style.height === panel.scrollHeight + "px"
+          ? "0"
+          : panel.scrollHeight + "px";
+
+      for (let j = 0; j < acc.length; j++) {
+        if (this !== acc[j]) {
+          acc[j].classList.remove("active");
+          acc[j].nextElementSibling.style.height = "0";
+        }
+      }
+    });
+  }
+} catch (error) {}
+
+try {
+  const forEach = (array, callback, scope) => {
+    for (let i = 0; i < array.length; i++) {
+      callback.call(scope, i, array[i]);
+    }
+  };
+
+  const buttonpost = document.querySelectorAll(".button-posts");
+
+  forEach(buttonpost, function (i, el) {
+    el.addEventListener("click", function () {
+      const buttonpostActive = document.querySelectorAll(".button-posts");
+      const block = document.querySelectorAll(".container.team-block");
+      // Als de button de class active heeft verwijder dan de class active en voeg een class toe
+      if (this.classList.contains("active")) {
+        this.classList.remove("active");
+        this.innerHTML = "Laad meer";
+
+        this.closest(".team-block").classList.add("list-b-none");
+      } else {
+        // Verwijder alle classes van de button
+        for (let i = 0; i < buttonpostActive.length; i++) {
+          buttonpostActive[i].classList.remove("active");
+        }
+        // Voeg class toe waar je op drukt
+        this.classList.add("active");
+
+        // Voeg toe alle classes an de blocks
+        for (let i = 0; i < block.length; i++) {
+          block[i].classList.add("list-b-none");
+        }
+        // verwijder class die dicht bij button zit
+        this.closest(".team-block.list-b-none").classList.remove("list-b-none");
+      }
+
+      const buttonpostActiveClass = document.querySelector(
+        ".button-posts.active"
+      );
+      // Bekijk welke tekst erin moet
+      if (buttonpostActiveClass) {
+        for (let i = 0; i < buttonpostActive.length; i++) {
+          buttonpostActive[i].innerHTML = "Laad meer";
+        }
+        buttonpostActiveClass.innerHTML = "Laad minder";
+      }
+    });
+  });
+} catch (error) {}
+
+try {
+  const links = document.querySelectorAll("a.lottiemenu");
+  const visibleClass = "visible";
+
+  links.forEach((link) => {
+    link.addEventListener("mouseenter", function () {
+      const player = this.querySelector("lottie-player");
+      player.classList.add(visibleClass);
+      player.play();
+    });
+
+    link.addEventListener("mouseleave", function () {
+      const player = this.querySelector("lottie-player");
+      player.classList.remove(visibleClass);
+      player.stop();
+    });
+  });
+} catch (error) {}

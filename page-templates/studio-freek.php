@@ -142,12 +142,12 @@
 
     <!-- TITEL -->
     <section id="item-3">
-        <div class="container pt-[80px]">
+        <div class="container pt-[80px] team-block list-b-none">
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider text-center">Cases</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black text-center">Lorem ipsum dolor sit amet, consetetur </h3>
             <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto mt-2 rounded-full"></div>   
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[10px] pt-[50px]">
-                <a href="" class="aspect-[16/11] relative overflow-hidden">
+                <a href="" class="aspect-[16/11] relative overflow-hidden post">
                     <img src="/wp-content/themes/freekvonk/img/local/afbeelding-2.png" alt="" class="h-full object-cover object-center hover-blur duration-200">
                     <div class="absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                         <div class="relative h-full w-full">
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="aspect-[16/11] relative overflow-hidden">
+                <a href="" class="aspect-[16/11] relative overflow-hidden post">
                     <img src="/wp-content/themes/freekvonk/img/local/afbeelding-2.png" alt="" class="h-full object-cover object-center hover-blur duration-200">
                     <div class="absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                         <div class="relative h-full w-full">
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="aspect-[16/11] relative overflow-hidden">
+                <a href="" class="aspect-[16/11] relative overflow-hidden post">
                     <img src="/wp-content/themes/freekvonk/img/local/afbeelding-2.png" alt="" class="h-full object-cover object-center hover-blur duration-200">
                     <div class="absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                         <div class="relative h-full w-full">
@@ -219,7 +219,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="aspect-[16/11] relative overflow-hidden">
+                <a href="" class="aspect-[16/11] relative overflow-hidden post">
                     <img src="/wp-content/themes/freekvonk/img/local/afbeelding-2.png" alt="" class="h-full object-cover object-center hover-blur duration-200">
                     <div class="absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                         <div class="relative h-full w-full">
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="aspect-[16/11] relative overflow-hidden">
+                <a href="" class="aspect-[16/11] relative overflow-hidden post">
                     <img src="/wp-content/themes/freekvonk/img/local/afbeelding-2.png" alt="" class="h-full object-cover object-center hover-blur duration-200">
                     <div class="absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                         <div class="relative h-full w-full">
@@ -267,7 +267,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full">
+                <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                     <img src="/wp-content/themes/freekvonk/img/local/afbeelding-3.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                     <div class="absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                         <div class="relative h-full w-full">
@@ -293,7 +293,7 @@
                 </a>    
             </div>
             <div class="flex justify-center pt-4">
-                <button class="w-[163px] h-[45px] lg:w-[240px] lg:h-[58.5px] bg-black hover:bg-[#8CC63F] duration-300 flex justify-center items-center text-19 leading-19 lg:text-25 lg:leading-25 font-tanker text-white">Laad meer</button>
+                <button class="w-[163px] h-[45px] lg:w-[240px] lg:h-[58.5px] bg-black hover:bg-[#8CC63F] duration-300 flex justify-center items-center text-19 leading-19 lg:text-25 lg:leading-25 font-tanker text-white button-posts">Laad meer</button>
             </div>    
         </div>
     </section>

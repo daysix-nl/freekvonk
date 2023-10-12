@@ -14,6 +14,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <title><?php bloginfo( 'name' ); ?> | <?php the_title(); ?></title>
@@ -254,7 +255,7 @@
             <div class="relative h-[100dvh] w-full">
                 <div class="absolute top-[110px] md:top-[150px] lg:top-[110px] left-[20px] md:left-[80px] lg:left-[40px] right-[20px] h-[calc(100vh-100px)] overflow-y-scroll">
                     <div class="pt-[20px] pb-[120px] flex flex-col space-y-[15px]">
-                        <a href="/over-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(1)">Over Freek</a>
+                        <a href="/over-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit lottiemenu" onmouseover="activateMenuBackground(1)"><span>Over Freek</span>      <lottie-player src="/wp-content/themes/freekvonk/img/lottie/snake2.json" style="width: 140px; height: 140px;" loop></lottie-player></a>
                         <a href="/freek-vonk-live" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(2)">Freek Vonk Live</a>
                         <a href="/studio-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(3)">Studio Freek</a>
                         <a href="/shop" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(4)">Shop</a>
