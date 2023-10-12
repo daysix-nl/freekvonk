@@ -25,3 +25,35 @@
   content: url(/wp-content/themes/freekvonk/img/icon/prev-nav.svg);
   height: 61px;
 }
+
+
+.mySwiper-d3 {
+  .swiper-slide {
+    opacity: 0.5;
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}
+
+// .mySwiper-video {
+//   .swiper-slide {
+//     opacity: 0.5;
+//   }
+
+
+
+//   .swiper-slide-active {
+//     opacity: 1;
+//   }
+
+
+//   @media (min-width: 1280px) {
+
+//     .swiper-slide-active,
+//     .swiper-slide-next {
+//       opacity: 1;
+//     }
+//   }
+// }
