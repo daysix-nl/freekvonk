@@ -1,0 +1,17 @@
+.gradient-radial {
+    background: rgb(239, 231, 222);
+    background: radial-gradient(circle, rgba(239, 231, 222, 0.5130646008403361) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+// .gradient-radial {
+//     background-image: url("/wp-content/themes/freekvonk/img/local/radial.png");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     width: 100%;
+// }
+
+
+.gradient-test {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(26, 32, 24, 1) 50%, rgba(26, 32, 24, 1) 60%, rgba(7, 19, 3, 1) 100%);
+}

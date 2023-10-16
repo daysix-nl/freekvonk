@@ -11,7 +11,7 @@ try {
     },
     slidesPerView: "auto",
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swipers = new Swiper(".mySwiper-navigatie", {
@@ -70,12 +70,48 @@ try {
       },
       1280: {
         spaceBetween: 15,
-        slidesPerView: 2,
+        slidesPerView: 4,
       },
       1440: {
         spaceBetween: 15,
-        slidesPerView: 2,
+        slidesPerView: 4,
       },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      clickable: true,
+    },
+  });
+} catch (error) {
+  console.error(error);
+}
+
+try {
+  var swipersVideo = new Swiper(".mySwiper-foto", {
+    loop: true,
+    lazy: false,
+    freeMode: true,
+    slidesPerView: 1,
+    spaceBetween: 8,
+    history: { key: "slide" },
+    breakpoints: {
+      768: {
+        spaceBetween: 8,
+      },
+      1280: {
+        spaceBetween: 15,
+        slidesPerView: 4,
+      },
+      1440: {
+        spaceBetween: 15,
+        slidesPerView: 4,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      clickable: true,
     },
   });
 } catch (error) {
@@ -102,7 +138,7 @@ try {
       }
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   const forEach = (array, callback, scope) => {
@@ -151,7 +187,7 @@ try {
       }
     });
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   const links = document.querySelectorAll("a.lottiemenu");
@@ -170,4 +206,4 @@ try {
       player.stop();
     });
   });
-} catch (error) {}
+} catch (error) { }
