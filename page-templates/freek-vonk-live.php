@@ -68,7 +68,7 @@
         <section>
             <div class="w-full relative">
                 <!-- SLIDER -->
-                <section class="pb-8 overflow-x-hidden relative">
+                <section class="pb-8 overflow-x-hidden relative ">
                     <div class="container overflow-visible">
                         <div class="swiper mySwiper-d3 overflow-visible">
                             <div class="swiper-wrapper">
@@ -123,15 +123,16 @@
         </section>
 
         <div class="gradient-test">
-        <section>
             <div class="container">
                 <h2 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">Video's</h2>
                 <div class="h-[5px] w-[150px] bg-[#78B047] mt-2 rounded-full"></div>   
             </div>
-                <div class="swiper mySwiper-video lg:mx-[-33%] overflow-visible pt-3">
+        <section class="relative">
+ 
+                <div class="swiper mySwiper-video  overflow-visible pt-3">
                     <div class="swiper-wrapper overflow-visible">
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto">
+                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -147,7 +148,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto">
+                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -163,7 +164,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto">
+                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -179,7 +180,22 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto">
+                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
+                            <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
+                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
+                                    <div class="relative h-full w-full">
+                                        <div class="absolute left-[25px] hover-content duration-200">
+                                            <h4 class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-white uppercase tracking-wider pb-1">Subtitel</h4>
+                                            <div class="flex space-x-3">
+                                                <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">HIER EEN TITEL VAN DEZE Video </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>    
+                        </div>
+                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -195,15 +211,10 @@
                             </a>    
                         </div>
 
-
-        
-                        
                     </div>
-                
                 </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next-video"></div>
+            <div class="swiper-button-prev-video"></div>
         </section>
 
 

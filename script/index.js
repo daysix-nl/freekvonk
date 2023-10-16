@@ -11,7 +11,7 @@ try {
     },
     slidesPerView: "auto",
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   var swipers = new Swiper(".mySwiper-navigatie", {
@@ -49,7 +49,6 @@ try {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-      clickable: true,
     },
   });
 } catch (error) {
@@ -61,26 +60,24 @@ try {
     loop: true,
     lazy: false,
     freeMode: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 8,
-    history: { key: "slide" },
     breakpoints: {
       768: {
         spaceBetween: 8,
       },
       1280: {
         spaceBetween: 15,
-        slidesPerView: 4,
+        slidesPerView: "auto",
       },
       1440: {
         spaceBetween: 15,
-        slidesPerView: 4,
+        slidesPerView: "auto",
       },
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-      clickable: true,
+      nextEl: ".swiper-button-next-video",
+      prevEl: ".swiper-button-prev-video",
     },
   });
 } catch (error) {
@@ -88,13 +85,41 @@ try {
 }
 
 try {
-  var swipersVideo = new Swiper(".mySwiper-foto", {
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const sliderWipes = document.querySelectorAll(
+      ".mySwiper-video .swiper-slide"
+    );
+    const viewportWidth = window.innerWidth;
+    const margin = viewportWidth / 2 - 1200;
+    let options = {
+      root: null,
+      rootMargin: `0px ${margin}px 0px ${margin}px`,
+      threshold: 0,
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("watched");
+        } else {
+          entry.target.classList.remove("watched");
+        }
+      });
+    }, options);
+
+    sliderWipes.forEach((sliderWipe) => {
+      observer.observe(sliderWipe);
+    });
+  });
+} catch (error) {}
+
+try {
+  var swipersFoto = new Swiper(".mySwiper-foto", {
     loop: true,
     lazy: false,
     freeMode: true,
     slidesPerView: 1,
     spaceBetween: 8,
-    history: { key: "slide" },
     breakpoints: {
       768: {
         spaceBetween: 8,
@@ -111,7 +136,6 @@ try {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-      clickable: true,
     },
   });
 } catch (error) {
@@ -138,7 +162,7 @@ try {
       }
     });
   }
-} catch (error) { }
+} catch (error) {}
 
 try {
   const forEach = (array, callback, scope) => {
@@ -187,7 +211,7 @@ try {
       }
     });
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   const links = document.querySelectorAll("a.lottiemenu");
@@ -206,4 +230,4 @@ try {
       player.stop();
     });
   });
-} catch (error) { }
+} catch (error) {}

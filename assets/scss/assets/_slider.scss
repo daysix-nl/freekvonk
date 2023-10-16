@@ -27,15 +27,86 @@
 }
 
 
-.mySwiper-d3 {
-  .swiper-slide {
-    opacity: 0.5;
+
+
+.swiper-section {
+  .mySwiper-d3 {
+    .swiper-slide {
+      opacity: 0.5;
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+    }
+
+
   }
 
-  .swiper-slide-active {
-    opacity: 1;
+  .swiper-button-next {
+    display: block;
+    right: 30px;
+
+    &:after {
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.097" height="35.559" viewBox="0 0 20.097 35.559"><path id="Path_1128" data-name="Path 1128" d="M0,0,10.583,1.033l2.7.263,6.64.648" transform="translate(3.693 2.318) rotate(45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_192" data-name="Line 192" y1="1.945" x2="19.921" transform="translate(17.779 19.154) rotate(135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/></svg>');
+      justify-content: flex-end;
+      height: auto;
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  .swiper-button-prev {
+    display: block;
+    left: 30px;
+
+    &:after {
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.097" height="35.561" viewBox="0 0 20.097 35.561"><line id="Line_190" data-name="Line 190" x2="19.921" y2="1.945" transform="translate(16.403 33.242) rotate(-135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_191" data-name="Line 191" y1="1.945" x2="19.921" transform="translate(2.317 16.404) rotate(-45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/></svg>');
+      justify-content: flex-start;
+      height: auto;
+      width: 100%;
+      display: flex;
+    }
   }
 }
+
+.swiper-button-next-video {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  right: 30px;
+  z-index: 100;
+
+  &:after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.097" height="35.559" viewBox="0 0 20.097 35.559"><path id="Path_1128" data-name="Path 1128" d="M0,0,10.583,1.033l2.7.263,6.64.648" transform="translate(3.693 2.318) rotate(45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_192" data-name="Line 192" y1="1.945" x2="19.921" transform="translate(17.779 19.154) rotate(135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/></svg>');
+    justify-content: flex-end;
+    height: auto;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.swiper-button-prev-video {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 30px;
+
+  &:after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.097" height="35.561" viewBox="0 0 20.097 35.561"><line id="Line_190" data-name="Line 190" x2="19.921" y2="1.945" transform="translate(16.403 33.242) rotate(-135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_191" data-name="Line 191" y1="1.945" x2="19.921" transform="translate(2.317 16.404) rotate(-45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/></svg>');
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.watched {
+  opacity: 1 !important;
+}
+
 
 // .mySwiper-video {
 //   .swiper-slide {
