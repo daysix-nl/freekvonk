@@ -87,57 +87,28 @@ try {
 }
 
 try {
-  document.addEventListener("DOMContentLoaded", (event) => {
-    const sliderWipes = document.querySelectorAll(
-      ".mySwiper-video .swiper-slide"
-    );
-    const viewportWidth = window.innerWidth;
-    const margin = viewportWidth / 2 - 1200;
-    let options = {
-      root: null,
-      rootMargin: `0px ${margin}px 0px ${margin}px`,
-      threshold: 0,
-    };
-
-    let observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("watched");
-        } else {
-          entry.target.classList.remove("watched");
-        }
-      });
-    }, options);
-
-    sliderWipes.forEach((sliderWipe) => {
-      observer.observe(sliderWipe);
-    });
-  });
-} catch (error) {}
-
-try {
   var swipersFoto = new Swiper(".mySwiper-foto", {
     loop: true,
     lazy: false,
-    freeMode: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 8,
+    initialSlide: 2,
     breakpoints: {
       768: {
         spaceBetween: 8,
       },
       1280: {
         spaceBetween: 15,
-        slidesPerView: 4,
+        slidesPerView: "auto",
       },
       1440: {
         spaceBetween: 15,
-        slidesPerView: 4,
+        slidesPerView: "auto",
       },
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next-foto",
+      prevEl: ".swiper-button-prev-foto",
     },
   });
 } catch (error) {

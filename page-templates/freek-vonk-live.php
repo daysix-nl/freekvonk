@@ -112,8 +112,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next hidden lg:flex"></div>
+                    <div class="swiper-button-prev hidden lg:flex"></div>
                 </section>
                 <!-- ACHTERGROND -->
                 <div class="absolute gradient-radial top-0 bottom-0 left-[-60px] right-[-60px] h-auto w-[calc(100%+120px)]"></div>
@@ -129,10 +129,12 @@
             </div>
         <section class="relative">
  
-                <div class="swiper mySwiper-video  overflow-visible pt-3">
+                <div class="swiper mySwiper-video overflow-visible pt-3">
+                 <!-- <div class="absolute top-0 h-full left-0 w-[100px] md:w-[150px] bg-red-50 z-50 bg-left-gradient"></div>
+                 <div class="absolute top-0 h-full right-0 w-[100px] md:w-[150px] bg-red-50 z-50 bg-right-gradient"></div> -->
                     <div class="swiper-wrapper overflow-visible">
 
-                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px]">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -148,7 +150,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px]">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -164,7 +166,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px]">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -180,7 +182,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px]">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -195,7 +197,7 @@
                                 </div>
                             </a>    
                         </div>
-                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px]">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -213,47 +215,62 @@
 
                     </div>
                 </div>
-            <div class="swiper-button-next-video"></div>
-            <div class="swiper-button-prev-video"></div>
+            <div class="swiper-button-next-video hidden lg:flex"></div>
+            <div class="swiper-button-prev-video hidden lg:flex"></div>
         </section>
 
 
         <section>
-            <div class="container pt-[30px] md:pt-[50px] lg:pt-[80px]">
+            <div class="container pt-[30px] md:pt-[50px] lg:pt-[80px] pb-3">
                 <h2 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">Foto's</h2>
                 <div class="h-[5px] w-[150px] bg-[#78B047] mt-2 rounded-full"></div>   
             </div>
-                <div class="swiper mySwiper-foto lg:mx-[-20%] overflow-visible pt-3">
+                <div class="swiper mySwiper-foto overflow-visible  relative">
+                 <!-- <div class="absolute top-0 h-full left-0 w-[100px] md:w-[150px] bg-red-50 z-50 bg-left-gradient"></div>
+                 <div class="absolute top-0 h-full right-0 w-[100px] md:w-[150px] bg-red-50 z-50 bg-right-gradient"></div> -->
                     <div class="swiper-wrapper overflow-visible items-end">
 
-                        <div class="swiper-slide bg-black">
-                            <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full">
-                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center">
+                        <div class="swiper-slide bg-black  w-auto">
+                            <a href="" class=" relative overflow-hidden h-full w-full">
+                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full image-format w-full object-cover object-center">
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black">
-                            <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full">
-                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center">
+                        <div class="swiper-slide bg-black w-auto ">
+                            <a href="" class=" relative overflow-hidden h-full w-full">
+                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full image-format  w-full object-cover object-center">
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black">
-                            <a href="" class="aspect-[11/16] relative overflow-hidden h-full w-full">
-                                <img src="/wp-content/themes/freekvonk/img/local/afbeelding-slider.jpeg" alt="" class="h-full w-full object-cover object-center">
+                        <div class="swiper-slide bg-black  w-auto">
+                            <a href="" class="a relative overflow-hidden h-full w-full">
+                                <img src="/wp-content/themes/freekvonk/img/local/afbeelding-slider.jpeg" alt="" class="h-full image-format  w-full object-cover object-center">
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black">
-                            <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full">
-                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center">
+                        <div class="swiper-slide bg-black  w-auto">
+                            <a href="" class=" relative overflow-hidden h-full w-full">
+                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full image-format  object-cover object-center">
                             </a>    
                         </div>   
+
+                        <div class="swiper-slide bg-black  w-auto">
+                            <a href="" class=" relative overflow-hidden h-full w-full">
+                                <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full image-format  object-cover object-center">
+                            </a>    
+                        </div>
+
+                        <div class="swiper-slide bg-black  w-auto">
+                            <a href="" class="a relative overflow-hidden h-full w-full">
+                                <img src="/wp-content/themes/freekvonk/img/local/afbeelding-slider.jpeg" alt="" class="h-full w-full image-format  object-cover object-center">
+                            </a>    
+                        </div>
                     </div>  
+                        <div class="swiper-button-next-foto hidden lg:flex"></div>
+            <div class="swiper-button-prev-foto hidden lg:flex"></div>
                 </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        
         </section>
 
         </div>
