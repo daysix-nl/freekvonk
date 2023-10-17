@@ -60,6 +60,8 @@ try {
     loop: true,
     lazy: false,
     freeMode: true,
+    centeredSlides: false,
+    initialSlide: 2,
     slidesPerView: "auto",
     spaceBetween: 8,
     breakpoints: {

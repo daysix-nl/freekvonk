@@ -132,7 +132,7 @@
                 <div class="swiper mySwiper-video  overflow-visible pt-3">
                     <div class="swiper-wrapper overflow-visible">
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -148,7 +148,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -164,7 +164,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -180,7 +180,7 @@
                             </a>    
                         </div>
 
-                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
@@ -195,7 +195,7 @@
                                 </div>
                             </a>    
                         </div>
-                        <div class="swiper-slide bg-black  aspect-video h-auto w-[400px] opacity-60">
+                        <div class="swiper-slide bg-black  md:aspect-video h-[265px] md:h-auto w-[174px] md:w-[411px] lg:w-[566px] opacity-60">
                             <a href="" class="aspect-[16/11] relative overflow-hidden h-full w-full post">
                                 <img src="/wp-content/themes/freekvonk/img/local/_DSC1637.png" alt="" class="h-full w-full object-cover object-center hover-blur duration-200">
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
