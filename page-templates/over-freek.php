@@ -78,21 +78,80 @@
 
 
     <!-- AFBEELDING - CONTENT SLIDER -->
-    <section>
-        <div class="grid grid-cols-1 lg:grid-cols-2">
-            <!-- AFBEELDING -->
-            <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[50vw] lg:w-[50vw]  relative">
-                <img src="/wp-content/themes/freekvonk/img/local/super-freek-show.jpeg" alt="" class="h-full w-full object-cover object-center">
-                <img src="/wp-content/themes/freekvonk/img/local/logo-super-freek-show.png" alt="" class="z-[30] absolute top-[30px] lg:top-[50px] right-[30px] lg:right-[-50px] h-[145px]">
-            </div>
-            <!-- CONTENT -->
-            <div class="lg:aspect-square bg-[#142C2B] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center">
-                <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[60px] lg:py-[unset]">
-                    <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">De Super Freek Show</h3>
-                    <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white mt-[30px]">Freek maakt een ontdekkingstocht over het verst gelegen continent: Australië. Van alle slangen wereldwijd is maar 15 procent giftig, maar in Australië is dat meer dan de helft. Ook komt hij er giftige kikkers, kwallen, vissen en zeeslangen tegen. </p>
+    <section class="relative w-screen overflow-hidden mySwiper-over-freek-section ">
+        <div class="swiper mySwiper-over-freek">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <!-- AFBEELDING -->
+                        <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[50vw] lg:w-[50vw]  relative">
+                            <img src="/wp-content/themes/freekvonk/img/local/super-freek-show.jpeg" alt="" class="h-full w-full object-cover object-center">
+                            <img src="/wp-content/themes/freekvonk/img/local/logo-super-freek-show.png" alt="" class="z-[30] absolute top-[30px] lg:top-[50px] right-[30px] lg:right-[50px] h-[145px]">
+                        </div>
+                        <!-- CONTENT -->
+                        <div class="lg:aspect-square bg-[#142C2B] min-h-[460px] md:min-h-[430px] lg:min-h-[unset] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center">
+                            <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[60px] lg:py-[unset]">
+                                <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">De Super Freek Show</h3>
+                                <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white mt-[30px]">Freek maakt een ontdekkingstocht over het verst gelegen continent: Australië. Van alle slangen wereldwijd is maar 15 procent giftig, maar in Australië is dat meer dan de helft. Ook komt hij er giftige kikkers, kwallen, vissen en zeeslangen tegen. </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <!-- AFBEELDING -->
+                        <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[50vw] lg:w-[50vw]  relative">
+                            <img src="/wp-content/themes/freekvonk/img/local/super-freek-show.jpeg" alt="" class="h-full w-full object-cover object-center">
+                            <img src="/wp-content/themes/freekvonk/img/local/logo-super-freek-show.png" alt="" class="z-[30] absolute top-[30px] lg:top-[50px] right-[30px] lg:right-[50px] h-[145px]">
+                        </div>
+                        <!-- CONTENT -->
+                        <div class="lg:aspect-square bg-[#142C2B] min-h-[460px] md:min-h-[430px] lg:min-h-[unset] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center">
+                            <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[60px] lg:py-[unset]">
+                                <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">De Super Freek Show</h3>
+                                <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white mt-[30px]">Freek maakt een ontdekkingstocht over het verst gelegen continent: Australië. Van alle slangen wereldwijd is maar 15 procent giftig, maar in Australië is dat meer dan de helft. Ook komt hij er giftige kikkers, kwallen, vissen en zeeslangen tegen. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <!-- AFBEELDING -->
+                        <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[50vw] lg:w-[50vw]  relative">
+                            <img src="/wp-content/themes/freekvonk/img/local/super-freek-show.jpeg" alt="" class="h-full w-full object-cover object-center">
+                            <img src="/wp-content/themes/freekvonk/img/local/logo-super-freek-show.png" alt="" class="z-[30] absolute top-[30px] lg:top-[50px] right-[30px] lg:right-[50px] h-[145px]">
+                        </div>
+                        <!-- CONTENT -->
+                        <div class="lg:aspect-square bg-[#142C2B] min-h-[460px] md:min-h-[430px] lg:min-h-[unset] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center">
+                            <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[60px] lg:py-[unset]">
+                                <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">De Super Freek Show</h3>
+                                <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white mt-[30px]">Freek maakt een ontdekkingstocht over het verst gelegen continent: Australië. Van alle slangen wereldwijd is maar 15 procent giftig, maar in Australië is dat meer dan de helft. Ook komt hij er giftige kikkers, kwallen, vissen en zeeslangen tegen. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <!-- AFBEELDING -->
+                        <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[50vw] lg:w-[50vw]  relative">
+                            <img src="/wp-content/themes/freekvonk/img/local/super-freek-show.jpeg" alt="" class="h-full w-full object-cover object-center">
+                            <img src="/wp-content/themes/freekvonk/img/local/logo-super-freek-show.png" alt="" class="z-[30] absolute top-[30px] lg:top-[50px] right-[30px] lg:right-[50px] h-[145px]">
+                        </div>
+                        <!-- CONTENT -->
+                        <div class="lg:aspect-square bg-[#142C2B] min-h-[460px] md:min-h-[430px] lg:min-h-[unset] h-full w-full lg:h-[50vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center">
+                            <div class="max-w-[390px] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[calc(50vw-60px)] lg:overflow-y-auto z-[40] py-[60px] lg:py-[unset]">
+                                <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">De Super Freek Show</h3>
+                                <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white mt-[30px]">Freek maakt een ontdekkingstocht over het verst gelegen continent: Australië. Van alle slangen wereldwijd is maar 15 procent giftig, maar in Australië is dat meer dan de helft. Ook komt hij er giftige kikkers, kwallen, vissen en zeeslangen tegen. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
+        <div class="swiper-button-next-over-freek"></div>
+        <div class="swiper-button-prev-over-freek"></div>
+         <div class="swiper-pagination"></div>
     </section>
 
 
@@ -133,11 +192,23 @@
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-white uppercase mb-[15px] tracking-wider text-center">Chief Scout</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white text-center">Prof. dr. Freek Vonk is vanaf september 2021 de nieuwe Chief scout van Scouting Nederland.</h3>
         </div>
-        <div class="container grid grid-cols-3 gap-[11px] relative pb-[50px] z-[40]">
+
+        <!-- image Desktop -->
+        <div class="container grid-cols-3 gap-[11px] relative pb-[50px] z-[40] hidden md:grid">
             <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center">
             <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
             <img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center">
         </div>
+
+        <!-- Image Slider -->
+        <div class="mySwiper-over-freek-image swiper md:hidden relative z-[40] pb-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-fit"><img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center w-full max-w-[235px]"></div>
+                <div class="swiper-slide w-fit"><img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center w-full max-w-[235px]"></div>
+                <div class="swiper-slide w-fit"><img src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="" class="aspect-square lg:aspect-[4/3] object-cover object-center w-full max-w-[235px]"></div>
+            </div>
+        </div>
+
          <div class="max-w-[390px] md:max-w-[603px] lg:max-w-[912px] mx-auto pb-[80px] z-[40]">
             <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen text-white text-center">Prof. dr. Freek Vonk is vanaf september 2021 de nieuwe Chief scout van Scouting Nederland. Scouting staat voor avontuur in de natuur, waarbij kinderen en jongeren hun leiderschapskwaliteiten ontwikkelen en zelfvertrouwen opdoen. Zo draagt Scouting actief bij aan de ontwikkeling van jeugd in Nederland. Freek Vonk kan als Chief scout als geen ander iedere Nederlander inspireren om op avontuur te gaan in de natuur en zijn of haar grenzen te verleggen. De Chief scout is het gezicht van Scouting, de belangrijkste ambassadeur die kinderen en jongeren, zowel scouts als niet-scouts, inspireert om hun grenzen te verleggen en uitdagende avonturen te beleven.</p>
         </div>

@@ -116,6 +116,30 @@ try {
 }
 
 try {
+  var swipersOverFreek = new Swiper(".mySwiper-over-freek", {
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next-over-freek",
+      prevEl: ".swiper-button-prev-over-freek",
+    },
+  });
+} catch (error) {}
+
+try {
+  var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    lazy: false,
+    initialSlide: 1,
+    spaceBetween: 8,
+  });
+} catch (error) {}
+
+try {
   const acc = document.getElementsByClassName("accordion");
 
   for (let i = 0; i < acc.length; i++) {
