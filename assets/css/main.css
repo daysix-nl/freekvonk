@@ -433,4 +433,56 @@ a:hover .hover-blur {
 .mySwiper-foto .swiper-wrapper,
 .mySwiper-video .swiper-wrapper {
   padding-left: 30px;
+}
+.mySwiper-over-freek-section .swiper-pagination {
+  bottom: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  right: unset;
+}
+@media (min-width: 1280px) {
+  .mySwiper-over-freek-section .swiper-pagination {
+    left: calc(50% + 136px);
+  }
+}
+.mySwiper-over-freek-section .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  opacity: 1;
+  width: 7px;
+  height: 7px;
+}
+.mySwiper-over-freek-section
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.mySwiper-over-freek-section .swiper-button-next-over-freek,
+.mySwiper-over-freek-section .swiper-button-prev-over-freek {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  bottom: 40px;
+}
+.mySwiper-over-freek-section .swiper-button-next-over-freek:after,
+.mySwiper-over-freek-section .swiper-button-prev-over-freek:after {
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+.mySwiper-over-freek-section .swiper-button-next-over-freek {
+  right: 40px;
+  left: unset;
+}
+.mySwiper-over-freek-section .swiper-button-next-over-freek:after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="39.603" height="35.557" viewBox="0 0 39.603 35.557"><g id="Pijl_wit" data-name="Pijl wit" transform="translate(1.5 2.317)"><line id="Line_35" data-name="Line 35" x2="33.419" transform="translate(0 15.461)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="19.921" y2="1.945" transform="translate(21.699) rotate(45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.945" x2="19.921" transform="translate(35.785 16.836) rotate(135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/></g></svg>');
+}
+.mySwiper-over-freek-section .swiper-button-prev-over-freek {
+  left: 40px;
+  right: unset;
+}
+.mySwiper-over-freek-section .swiper-button-prev-over-freek:after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="39.603" height="35.557" viewBox="0 0 39.603 35.557"><g id="Pijl_wit" data-name="Pijl wit" transform="translate(38.103 33.24) rotate(180)"><line id="Line_35" data-name="Line 35" x2="33.419" transform="translate(0 15.461)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="19.921" y2="1.945" transform="translate(21.699) rotate(45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.945" x2="19.921" transform="translate(35.785 16.836) rotate(135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/></g></svg>');
 } /*# sourceMappingURL=main.css.map */
