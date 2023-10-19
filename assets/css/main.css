@@ -360,6 +360,14 @@ a:hover .hover-blur {
   visibility: visible;
   pointer-events: auto !important;
 }
+.mySwiper-navigatie-section .swiper-button-next:after {
+  content: url(/wp-content/themes/freekvonk/img/icon/next-nav.svg);
+  height: 61px;
+}
+.mySwiper-navigatie-section .swiper-button-prev:after {
+  content: url(/wp-content/themes/freekvonk/img/icon/prev-nav.svg);
+  height: 61px;
+}
 .swiper-section .mySwiper-d3 .swiper-slide {
   opacity: 0.5;
 }
@@ -372,7 +380,7 @@ a:hover .hover-blur {
   .swiper-button-next {
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     display: block;
     right: 30px;
     z-index: 100;
@@ -393,7 +401,7 @@ a:hover .hover-blur {
     position: absolute;
     z-index: 100;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     left: 30px;
   }
   .swiper-button-prev-video:after,
@@ -457,6 +465,26 @@ a:hover .hover-blur {
   .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fff;
+}
+.mySwiper-over-freek-section.black-slider .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #2b2828;
+  opacity: 1;
+  width: 7px;
+  height: 7px;
+}
+.mySwiper-over-freek-section.black-slider
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #2b2828;
+}
+.mySwiper-over-freek-section.black-slider .swiper-button-next-over-freek:after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30.702" height="27.867" viewBox="0 0 30.702 27.867"><g id="Group_768" data-name="Group 768" transform="translate(1.5 2.317)"><line id="Line_35" data-name="Line 35" x2="25.108" transform="translate(0 11.616)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="14.967" y2="1.461" transform="translate(16.302 0) rotate(45)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.461" x2="14.967" transform="translate(26.885 12.649) rotate(135)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/></g></svg>');
+}
+@media (max-width: 1279px) {
+  .mySwiper-over-freek-section.black-slider
+    .swiper-button-prev-over-freek:after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30.703" height="27.867" viewBox="0 0 30.703 27.867"><g id="Group_1098" data-name="Group 1098" transform="translate(29.203 25.55) rotate(180)"><line id="Line_35" data-name="Line 35" x2="25.108" transform="translate(0 11.616)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="14.967" y2="1.461" transform="translate(16.302 0) rotate(45)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.461" x2="14.967" transform="translate(26.885 12.649) rotate(135)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/></g></svg>');
+  }
 }
 .mySwiper-over-freek-section .swiper-button-next-over-freek,
 .mySwiper-over-freek-section .swiper-button-prev-over-freek {

@@ -4,6 +4,7 @@ a .hover-content {
 
 a:hover .hover-content {
     bottom: 20px;
+    z-index: 10;
 }
 
 a .hover-bg {

@@ -228,3 +228,23 @@ try {
     });
   });
 } catch (error) {}
+
+try {
+  document.getElementById("loadMoreBtn").addEventListener("click", function () {
+    const items = document.querySelectorAll(".item:not(.visible)");
+
+    items.forEach((item) => {
+      item.classList.add("visible");
+      item.style.display = "block";
+    });
+
+    const newVisibleItems = document.querySelectorAll(".item.visible").length;
+
+    if (items.length - newVisibleItems <= 0) {
+      this.innerText = "Geen meer om te laden";
+      this.style.display = "none";
+    } else {
+      this.innerText = "Laad meer";
+    }
+  });
+} catch (error) {}
