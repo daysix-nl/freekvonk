@@ -6,6 +6,7 @@ module.exports = {
     "./page-templates/*.{html,js,php}",
     "./blocks/*/*.{html,js,php}",
     "./componenten/*.{html,js,php}",
+    "./wc-templates/*.{html,js,php}",
   ],
   theme: {
     container: {

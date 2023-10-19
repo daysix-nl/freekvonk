@@ -1,0 +1,19 @@
+.product-item .product-add {
+    bottom: -100% !important;
+    transition-duration: 0.3s;
+}
+
+.product-item:hover .product-add {
+    bottom: 8px !important;
+    transition-duration: 0.3s;
+}
+
+.product-item .add-popup {
+    bottom: -100% !important;
+    transition-duration: 0.3s;
+}
+
+.product-item:hover .add-popup.active {
+    bottom: 8px !important;
+    transition-duration: 0.3s;
+}

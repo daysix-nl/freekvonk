@@ -76,3 +76,68 @@ a.underline-effect:hover::after {
         transition: height .2s ease-out;
     }
 }
+
+.add-popup {
+    .quantity {
+        display: none !important;
+    }
+
+    .label {
+        display: none !important;
+    }
+
+    .reset_variations {
+        display: none !important;
+    }
+
+    .button {
+        width: 100% !important;
+        background: #8CC63F !important;
+        z-index: 1 !important;
+        font-family: Tanker, sans-serif !important;
+        font-size: 25px !important;
+        line-height: 25px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .variations ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        padding-bottom: 8px !important;
+        padding-top: 7px !important;
+
+        li {
+            border: 1px solid #0A1F16 !important;
+            padding: 12px !important;
+            font-size: 11px !important;
+            line-height: 11px !important;
+            font-family: Karlsen, sans-serif !important;
+            color: #2B2828 !important;
+            margin-right: 8px !important;
+            cursor: pointer !important;
+
+
+
+            &:last-of-type {
+                margin-right: 0 !important;
+            }
+
+            &:focus {
+                background: #8CC63F !important;
+                color: #fff !important;
+                border: 1px solid #8CC63F !important;
+            }
+
+        }
+    }
+
+
+}

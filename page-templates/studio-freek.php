@@ -11,7 +11,7 @@
     <h1 class="w-full text-center text-16 leading-26 font-tanker text-black"><?php the_title();?></h1>
     <div class="h-[2px] w-[70px] bg-[#78B047] mx-auto rounded-[full]"></div>         
 </div>
-<main class="pt-[74px]">
+<main class="">
     <!-- TITEL -->
     <section class="container hidden md:grid pt-[80px]">
         <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker text-black"><?php the_title();?></h1>        

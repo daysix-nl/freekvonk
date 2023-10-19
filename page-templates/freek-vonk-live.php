@@ -13,7 +13,7 @@
     <!-- ACHTERGROND -->
     <div class="relative overflow-hidden z-[2]">
 
-        <div class="pt-[74px]">
+        <div class="">
             <!-- TITEL -->
             <section class="container hidden md:grid pt-[80px]">
                 <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker text-white"><?php the_title();?></h1>        

@@ -6,13 +6,8 @@
 
  get_header(); ?>
  
- 
-<main class="pt-[33px]">
-   
-</main>
 
-
-
+<?php the_content();?>
 
 <?php get_footer(); ?>
 
