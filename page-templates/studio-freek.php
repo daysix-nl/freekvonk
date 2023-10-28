@@ -64,7 +64,7 @@
 
     <!-- Team -->
     <section id="item-2" class="bg-[#EFE7DE] relative">
-        <div class="container py-[80px]">
+        <div class="container py-[80px] overflow-hidden relative z-40">
             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-black uppercase mb-[15px] tracking-wider text-center">Team Studio Freek</h2>
             <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-black text-center max-w-[1043px] mx-auto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</h3>
             <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full] mt-2"></div>  
@@ -135,6 +135,88 @@
                 </div>
               
             </div>
+               <div class="mySwiper-freekteam">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide grid gap-1 grid-cols-1 lg:grid-col-2">
+                            <div>
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/freekking.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Prof. dr. <br>Freek Vonk</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Eindbaas</p>
+                            </div>
+                  
+                             <div >
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/jochem-768x768.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Jochem Manus <br>van der Jagt</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Algemeen Directeur</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide grid gap-1 grid-cols-1 lg:grid-col-2">
+                            <div>
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/freekking.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Prof. dr. <br>Freek Vonk</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Eindbaas</p>
+                            </div>
+                        
+                             <div >
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/jochem-768x768.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Jochem Manus <br>van der Jagt</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Algemeen Directeur</p>
+                            </div>
+                        </div>
+                                                <div class="swiper-slide grid gap-1 grid-cols-1 lg:grid-col-2">
+                            <div>
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/freekking.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Prof. dr. <br>Freek Vonk</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Eindbaas</p>
+                            </div>
+                      
+                             <div >
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/jochem-768x768.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Jochem Manus <br>van der Jagt</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Algemeen Directeur</p>
+                            </div>
+                        </div>
+                                                <div class="swiper-slide grid gap-1 grid-cols-1 lg:grid-col-2">
+                            <div>
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/freekking.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Prof. dr. <br>Freek Vonk</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Eindbaas</p>
+                            </div>
+                    
+                             <div >
+                                <div class="aspect-[15/16] overflow-hidden">
+                                    <img src="https://studiofreek.nl/wp-content/uploads/2016/08/jochem-768x768.jpg" alt="" class="object-cover object-center h-full">
+                                </div>
+                                <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker text-black pt-2 text-center lg:text-left">Jochem Manus <br>van der Jagt</h4>
+                                <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                                <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-black uppercase tracking-wider text-center lg:text-left">Algemeen Directeur</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
         </div>
         <img src="/wp-content/themes/freekvonk/img/local/patroon-6.png" alt="" class="z-[30] h-full w-full object-cover object-center absolute top-0">
     </section>

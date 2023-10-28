@@ -328,3 +328,23 @@ try {
 } catch (error) {
   console.error(error);
 }
+
+try {
+  var swiperfreekteam = new Swiper(".mySwiper-freekteam", {
+    slidesPerView: 1,
+    grabCursor: true,
+    spaceBetween: 10,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1080: {
+        slidesPerView: 4,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+} catch (error) {}
