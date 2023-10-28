@@ -1,6 +1,22 @@
-.team-block.list-b-none .post:nth-of-type(n+5) {
-    display: none;
+.team-block.list-b-none .post {
+
+
+    @media only screen and (max-width: 768px) {
+        &:nth-of-type(n+4) {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        &:nth-of-type(n+7) {
+            display: none !important;
+        }
+    }
+
 }
+
+
+
 
 .item {
     display: none;

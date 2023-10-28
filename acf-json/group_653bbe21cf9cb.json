@@ -55,7 +55,8 @@
                 "id": ""
             },
             "choices": {
-                "bg-transparent": "Transparant",
+                "bg-transwit": "Transparant (witte tekst)",
+                "bg-transzwart": "Transparant (zwarte tekst)",
                 "bg-wit": "Wit",
                 "bg-zwart": "Zwart",
                 "bg-beige": "Beige",
@@ -96,5 +97,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698419621
+    "modified": 1698493076
 }

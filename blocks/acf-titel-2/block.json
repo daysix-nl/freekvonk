@@ -1,0 +1,27 @@
+{
+  "name": "acf-titel-2",
+  "title": "Titel 2",
+  "description": "",
+  "category": "bibliotheek",
+  "icon": "heading",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-titel-2.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/freekvonk/img/preview-images/leeg.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}
