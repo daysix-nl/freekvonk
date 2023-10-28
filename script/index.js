@@ -332,13 +332,14 @@ try {
 try {
   var swiperfreekteam = new Swiper(".mySwiper-freekteam", {
     slidesPerView: 1,
+    breakpointsBase: "window",
     grabCursor: true,
     spaceBetween: 10,
     breakpoints: {
       768: {
         slidesPerView: 2,
       },
-      1080: {
+      1200: {
         slidesPerView: 4,
       },
     },
