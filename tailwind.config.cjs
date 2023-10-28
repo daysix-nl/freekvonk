@@ -7,6 +7,9 @@ module.exports = {
     "./blocks/*/*.{html,js,php}",
     "./componenten/*.{html,js,php}",
     "./wc-templates/*.{html,js,php}",
+    "./woocommerce/*.{html,js,php}",
+    "./woocommerce/checkout/*.{html,js,php}",
+    "./woocommerce/global/*.{html,js,php}",
   ],
   theme: {
     container: {
@@ -32,6 +35,18 @@ module.exports = {
         white: "#FFFFFF",
         black: "#0A1F16",
         transparent: "transparent",
+        wit: "#FFFFFF",
+        zwart: "#0A1F16",
+        beige: "#EFE7DE",
+        lichtgroen: "#8CC63F",
+        groen: "#438645",
+        donkergroen: "#0A1F16",
+        diepgroen: "#142C2B",
+        bruin: "#523524",
+        lichtoranje: "#C69C6D",
+        lichtgrijs: "#FAFAFA",
+        grijs: "#F2F2F2",
+        donkergrijs: "#2B2828",
       },
       content: {
         empty: '""',

@@ -35,13 +35,16 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-		<div class="col2-set" id="customer_details">
-			<div class="col-1">
+		<div class="">
+			<div class="bg-white px-3 py-[50px] no-title">
+				<h1 class="text-22 leading-22 lg:text-32 lg:leading-22 font-semibold mb-2">Vul je gegevens in</h1>
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 			</div>
 
-			<div class="col-2">
+			<div class="bg-white px-3 py-3 mt-2">
+				<div class="paybox">
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+				</div>
 			</div>
 		</div>
 
@@ -51,11 +54,11 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 	
-	<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+	
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-	<div id="order_review" class="woocommerce-checkout-review-order">
+	<div id="order_review" class="woocommerce-checkout-review-order mt-2">
 		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 	</div>
 

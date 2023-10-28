@@ -42,7 +42,7 @@ function add_theme_scripts() {
 function load_custom_wp_admin_style(){
     wp_enqueue_style( 'gutenberg',  'https://hostdashboard.nl/devdocs/css/gutenberg.css');
     // wp_enqueue_style( 'swiper',  'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
-    // wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
+    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
     // wp_enqueue_script( 'swiper', get_template_directory_uri() . '/script/swiper.js', array(), 1.1, true);
     wp_enqueue_script( 'script', get_template_directory_uri() . '/script/index.js', array(), 1.1, true);
  
@@ -711,12 +711,99 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 /*
 |--------------------------------------------------------------------------
-| SELECT PRODUCT VARIATIONS
+| AFTER ADD TO CART PAGE
 |--------------------------------------------------------------------------
 |
 | 
 | 
 |
 */
+
+// function redirect_after_add_to_cart() {
+//     if (isset($_REQUEST['add-to-cart'])) {
+        
+//         wp_redirect(get_permalink(wc_get_page_id('shop')));
+//         exit;
+//     }
+// }
+// add_action('template_redirect', 'redirect_after_add_to_cart');
+
+function redirect_after_add_to_cart() {
+    if (isset($_REQUEST['add-to-cart'])) {
+        // Controleer de referer (de pagina van waaraf het product is toegevoegd)
+        if (wp_get_referer() == get_permalink(wc_get_page_id('product'))) {
+          
+        } else {
+            // Het product is vanaf de winkelpagina toegevoegd
+            wp_redirect(get_permalink(wc_get_page_id('shop')));
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'redirect_after_add_to_cart');
+
+
+/*
+|--------------------------------------------------------------------------
+| RECENT BEKEKEN
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+
+function track_viewed_products() {
+    if (is_product()) {
+        global $post;
+
+        // Haal de recent bekeken producten op
+        $recently_viewed = get_transient('wcj_viewed_products');
+
+        // Haal het ID van het huidige product op
+        $current_product_id = $post->ID;
+
+        if (empty($recently_viewed)) {
+            $recently_viewed = array();
+        }
+
+        // Voeg het huidige product toe aan de lijst van recent bekeken producten
+        if (!in_array($current_product_id, $recently_viewed)) {
+            $recently_viewed[] = $current_product_id;
+
+            // Beperk de lijst tot bijvoorbeeld de laatste 10 bekeken producten
+            if (count($recently_viewed) > 10) {
+                array_shift($recently_viewed);
+            }
+
+            // Bijwerk de transient
+            set_transient('wcj_viewed_products', $recently_viewed, 12 * WEEK_IN_SECONDS); // 12 weken (aan te passen)
+        }
+    }
+}
+add_action('template_redirect', 'track_viewed_products');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| WOOCOMMERCE TEKSTEN
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+function custom_add_to_cart_message($message, $product_id) {
+    // Hier kun je de aangepaste tekst voor het bericht instellen
+    $message = 'Je hebt succesvol een product aan je winkelwagen toegevoegd!';
+    return $message;
+}
+
+add_filter('wc_add_to_cart_message', 'custom_add_to_cart_message', 10, 2);
+
+
 
 

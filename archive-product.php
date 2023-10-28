@@ -18,121 +18,136 @@
 
 defined( 'ABSPATH' ) || exit;
 
+
 get_header( 'shop' ); ?>
 
 <main>
+
+<?php do_action('woocommerce_before_shop_loop'); ?>
 
 <!-- SHOP CONTAINER -->
 <div class="max-w-[354px] md:max-w-[725px] lg:max-w-[1168px] xl:max-w-[1326px] mx-auto pb-[85px] xl:pb-[105px]">
 
     <!-- SHOP HEADER -->
-    <div class="w-full h-[205px] md:h-[384px] xl:h-[438px] bg-black mb-[20px] lg:mb-[60px] overflow-hidden">
+    <div class="w-full aspect-[16/5] bg-black mb-[20px] lg:mb-[60px] overflow-hidden">
         <img src="/wp-content/themes/freekvonk/img/local/banner-kamili.png" alt="" class="min-w-full min-h-full object-cover object-right">
     </div>
 
     <div class="flex justify-between">
         <!-- SIDEBAR -->
-        <div class="hidden lg:block lg:w-[222px] bg-black h-[40px]"></div>
-
-        <!-- PRODUCTEN -->
-        <div class="w-full max-w-[354px] md:max-w-[725px] lg:max-w-[898px] xl:max-w-[1028px] grid grid-cols-2 md:grid-cols-3 gap-x-[7px] gap-y-[30px] lg:gap-x-[15px] ld:gap-y-[40px] items-start">
-           
-            <?php
-                // De standaard WordPress-loop starten
-                if ( have_posts() ) :
-                    while ( have_posts() ) : the_post();
-
-                        // Informatie over het product ophalen
-                        $product = wc_get_product( get_the_ID() ); ?>
-
-         
-
-                        <!-- PRODUCT -->
-                        <div class="product-item h-fit">
-                            <div class="w-full aspect-[16/13] bg-[#F9F9F9] flex justify-center overflow-hidden relative">
-                                <a href="#">
-                                    <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
-                                </a>
-                                <button class="product-add add-fast-button hidden absolute left-[8px] right-[8px] bottom-[8px] h-[45px] bg-[#8CC63F] lg:flex justify-center items-center z-[1]">
-                                    <p class="font-tanker text-25 leading-25 text-white">Snel toevoegen</p>
-                                </button>
-                                <div class="add-popup absolute left-[8px] right-[8px] bottom-[8px] bg-[#fff] z-[2]">
-                                    <div class="relative w-full h-full overflow-hidden p-[8px]">
-                                        <?php
-                                        global $product;
-
-                                         if (!empty($variations)) {
-                                            // echo '<form class="variation-form" method="post" enctype="multipart/form-data">';
-
-                                            // foreach ($variations as $variation) {
-                                            //     $variation_id = $variation['variation_id'];
-                                            //     $attributes = $variation['attributes'];
-                                            //     $price_html = $variation['price_html'];
-
-                                            //     echo '<label>';
-                                            //     echo '<input type="radio" name="variation_id" value="' . esc_attr($variation_id) . '">';
-                                            //     // Hier kun je andere attributen weergeven, zoals kleur, maat, etc.
-                                            //     echo esc_html(implode(' / ', $attributes));
-                                            //     echo ' - ' . $price_html;
-                                            //     echo '</label>';
-                                            // }
-
-                                            // echo '<input type="hidden" name="add-to-cart" value="' . esc_attr($product->get_id()) . '">';
-                                            // echo '<input type="submit" class="single_add_to_cart_button button" value="Plaats in winkelwagen">';
-                                            // echo '</form>';
-                                        }
-                                         else {
-                                            // Als het product geen variaties heeft, toon dan de normale "Toevoegen aan winkelmand" knop
-                                            echo '<form class="cart" method="post" enctype="multipart/form-data">';
-                                            echo woocommerce_template_single_add_to_cart();
-                                            echo '</form>';   
-                                        }
-                                        ?>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h2 class="font-karlsen text-16 leading-16 md:text-20 md:leading-20 lg:text-24 lg:leading-24 text-[#2B2828] pt-[15px] pb-[10px] font-normal"><?php the_title();?></h2>
-                                <div class="font-karlsen text-12 leading-12 md:text-16 md:leading-16 lg:text-16 lg:leading-16 text-[#2B2828] opacity-[0.5] pb-[10px]"><?php the_excerpt();?></div>
-                                <p class="font-karlsen text-16 leading-16 md:text-18 md:leading-18 lg:text-18 lg:leading-18 text-[#2B2828] font-semibold"><?php echo  $product->get_price_html();?></p>
-                            </a>
-                        </div>
-
-                        
-
-
-                        <?php
-
-                    endwhile;
-                else :
-                    echo 'Geen producten gevonden';
-                endif;
-                ?>
-
-
-          
+        <div class="hidden lg:block lg:w-[222px] filter">
+            <?php echo do_shortcode('[fe_widget]'); ?>
         </div>
 
+        <!-- PRODUCTEN -->
+        <div class="w-full max-w-[354px] md:max-w-[725px] lg:max-w-[898px] xl:max-w-[1028px] grid grid-cols-2 md:grid-cols-3 gap-x-[7px] gap-y-[30px] lg:gap-x-[15px] ld:gap-y-[40px] items-start h-fit">
+           <?php
+// Aangepaste query om alle producten op te halen
+$args = array(
+    'post_type' => 'product', // Het posttype van producten
+    'posts_per_page' => -1,   // Toon alle producten
+);
+
+$products_query = new WP_Query($args);
+
+if ($products_query->have_posts()) :
+    while ($products_query->have_posts()) : $products_query->the_post();
+
+        // Informatie over het product ophalen
+        $product = wc_get_product(get_the_ID());
+        ?>
+
+        <!-- PRODUCT -->
+        <div class="product-item h-fit relative">
+            <div class="w-full aspect-[16/13] bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center overflow-hidden lg:relative">
+                <a href="<?php the_permalink(); ?>">
+                    <img src="<?php echo get_the_post_thumbnail_url($product->get_id()); ?>" alt="" class="h-ful w-auto mix-blend-multiply">
+                    <!-- NIEUW -->
+                    <?php 
+                    global $product;
+                    // Haal de publicatiedatum van het product op
+                    $publish_date = $product->get_date_created();
+                    $current_date = new WC_DateTime();
+                    $days_difference = $current_date->diff($publish_date)->days;
+                    if ($days_difference > 30) {
+                       
+                    } else { ?>
+                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                        <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">Nieuw</p>
+                    </div>
+                        <?php
+                    }
+                    ?>
+                    <!-- SALE -->
+                    <?php
+                    if ( $product->is_on_sale() ) { ?>
+                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#C69C6D] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                        <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">
+                            <?php
+                                global $product;
+                                if ( $product->is_on_sale() ) {
+                                    $regular_price = $product->get_regular_price();
+                                    $sale_price = $product->get_sale_price();
+                                    
+                                    $discount_percentage = 100 - ( ( $sale_price / $regular_price ) * 100 );
+                                    
+                                    echo '' . round( $discount_percentage, 0 ) . '%';
+                                } else {
+                                }
+                                ?>
+                        </p>
+                    </div>
+                        <?php
+                    } else {
+                    }
+                    ?>
+                </a>
+                <?php
+                        global $product;
+
+                        if ($product->is_type('variable')) { ?>
+                            <div class="product-add absolute left-[0px] bottom-[0px] right-[0px] lg:left-[8px] lg:right-[8px] lg:bottom-[8px] bg-[#fff] z-[2] hidden lg:block">
+                                <div class="relative w-full h-full overflow-hidden p-[8px]">
+                                    <?php
+                                    global $product;
+                                    if ($product->is_type('variable')) {
+                                        woocommerce_template_single_add_to_cart();
+                                    } else {
+                                        echo '<form class="cart" method="post" enctype="multipart/form-data">';
+                                        echo woocommerce_template_single_add_to_cart();
+                                        echo '</form>';
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        <?php } else { ?>
+                            <a href="/shop/?add-to-cart=<?php echo $product->get_id(); ?>" class="product-add add-fast-button hidden absolute left-[8px] right-[8px] bottom-[8px] h-[45px] bg-[#8CC63F] lg:flex justify-center items-center z-[1]">
+                                <p class="font-tanker text-25 leading-25 text-white">Snel toevoegen</p>
+                            </a>
+                        <?php } ?>
+                    </div>
+                    <a href="<?php the_permalink(); ?>">
+                        <h2 class="font-karlsen text-16 leading-16 md:text-20 md:leading-20 lg:text-24 lg:leading-24 text-[#2B2828] pt-[20px] pb-[10px] font-normal"><?php the_title(); ?></h2>
+                        <div class="font-karlsen text-12 leading-12 md:text-16 md:leading-16 lg:text-16 lg:leading-16 text-[#2B2828] opacity-[0.5] mb-[10px] line-clamp-1 pr-2"><?php the_excerpt(); ?></div>
+                        <p class="font-karlsen text-16 leading-16 md:text-18 md:leading-18 lg:text-18 lg:leading-18  font-semibold"><?php echo $product->get_price_html(); ?></p>
+                    </a>
+                </div>
+
+            <?php
+            endwhile;
+
+            // Herstel de oorspronkelijke query
+            wp_reset_postdata();
+        else :
+            echo 'Geen producten gevonden';
+        endif;
+        ?>
+        </div>
     </div>
 </div>
 </main>
 
 
-<script>
-    // Haal een lijst van alle elementen met de class "add-fast-button" op
-    const addButtonList = document.querySelectorAll(".add-fast-button");
 
-    // Loop door de lijst van knoppen en voeg de klikgebeurtenis toe aan elk van hen
-    addButtonList.forEach(function(addButton) {
-        addButton.addEventListener("click", function() {
-            // Vind de bijbehorende "add-popup" div voor deze knop
-            const addPopup = this.parentElement.querySelector(".add-popup");
-            // Voeg de class "active" toe aan de gevonden "add-popup" div
-            addPopup.classList.add("active");
-        });
-    });
-</script>
 <?php
-
 get_footer( 'shop' ); ?>
-

@@ -61,9 +61,18 @@ main {
   font-style: italic;
 }
 
+:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+main {
+  overflow-x: hidden !important;
+}
+
+
 .text-editor {
   display: grid;
-  gap: 2rem;
+  gap: 16px;
 
   p,
   h1,
@@ -81,7 +90,7 @@ main {
     }
 
     a {
-      color: #ED701F;
+      color: #7AB131;
       text-decoration: underline;
     }
   }
@@ -103,7 +112,7 @@ main {
   }
 
   blockquote {
-    border-left: 2px solid #ED701F;
+    border-left: 2px solid #7AB131;
 
     p,
     h1,
@@ -189,4 +198,31 @@ main {
 
 html {
   scroll-padding-top: 40px;
+}
+
+.text-color {
+  color: #0A1F16;
+}
+
+.bg-transparent,
+.bg-zwart,
+.bg-donkergroen,
+.bg-diepgroen,
+.bg-lichtgroen,
+.bg-groen,
+.bg-bruin,
+.bg-donkergrijs {
+  .text-color {
+    color: #fff !important;
+  }
+}
+
+.bg-wit,
+.bg-beige,
+.bg-lichtoranje,
+.bg-lichtgrijs,
+.bg-grijs {
+  .text-color {
+    color: #0A1F16 !important;
+  }
 }

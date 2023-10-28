@@ -17,13 +17,15 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
     <title><?php bloginfo( 'name' ); ?> | <?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
 <header class="fixed z-[999] bg-white">
     <!-- LIVE NOW BALK -->
-    <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero">
+    <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero z-[9999]">
         <div  id="scroll-text" class="flex w-full swiper-wrapper">
             <!-- LIVE NOW REPEATER / SLIDER -->
             <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
@@ -128,7 +130,7 @@
                     </g>
                 </svg>
             </a>
-            <a href="#" class="hidden lg:block">
+            <button id="sidecart" class="hidden lg:block h-[18px] md:h-[17.68px] relative">
                 <svg class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 16.2163916 19.1606747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Group" transform="translate(-1299.0418, -62.8223)" fill="#0A1F16">
@@ -138,7 +140,10 @@
                         </g>
                     </g>
                 </svg>
-            </a>
+                <?php  if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
+                <div class="absolute bottom-[-3px] right-[-3px] bg-[#8CC63F] h-[10.23px] w-[10.23px] rounded-full flex justify-center items-center text-8 text-white"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                <?php } ?>
+            </button>
             <button id="hamburger" class="pointer">
                 <svg class="h-[18px] md:h-[12.5px]" width="auto" height="100%" viewBox="0 0 21.611 12.496" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
@@ -227,7 +232,7 @@
                         </g>
                     </svg>
                 </a>
-                <a href="#" class="">
+                <button id="sidecart" class="h-[18px] md:h-[17.68px] relative">
                     <svg class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 16.2163916 19.1606747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Group" transform="translate(-1299.0418, -62.8223)" fill="#fff">
@@ -237,7 +242,10 @@
                             </g>
                         </g>
                     </svg>
-                </a>
+                     <?php  if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
+                <div class="absolute bottom-[-3px] right-[-3px] bg-[#8CC63F] h-[10.23px] w-[10.23px] rounded-full flex justify-center items-center text-8 text-white"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                <?php } ?>
+                </button>
                 <button id="hamburger-close" class="pl-[4px] pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 15.983 15.983">
                     <g id="Group_283" data-name="Group 283" transform="translate(2.121 2.121)">
@@ -262,7 +270,6 @@
                         <a href="/shop" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(4)">Shop</a>
                         <a href="/stichting-no-wildlife-crime" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(5)">Stichting No Wildlife Crime</a>
                         <a href="/nieuws" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(6)">Nieuws</a>
-                        <a href="/weetjes-en-extras" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(7)">Weetjes & extra's</a>
                     </div>
                     
                 </div>
@@ -303,10 +310,6 @@
                 <img src="https://www.freekvonk.nl/wp-content/uploads/2020/05/DSC7394.jpg" alt="" class="w-full h-full object-cover object-center">
             </div>
             <div class="bg-[#f3f3f3] absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="menubackground-6" style="opacity: 0;">
-                <!-- AFBEELDING -->
-                <img src="https://www.freekvonk.nl/wp-content/uploads/2020/05/DSC1609-1-2.jpg" alt="" class="w-full h-full object-cover object-center">
-            </div>
-            <div class="bg-[#f3f3f3] absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="menubackground-7" style="opacity: 0;">
                 <!-- AFBEELDING -->
                 <img src="https://www.freekvonk.nl/wp-content/uploads/2020/05/DSC1609-1-2.jpg" alt="" class="w-full h-full object-cover object-center">
             </div>

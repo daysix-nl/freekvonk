@@ -11,7 +11,7 @@ try {
     },
     slidesPerView: "auto",
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swipers = new Swiper(".mySwiper-navigatie", {
@@ -127,7 +127,7 @@ try {
       prevEl: ".swiper-button-prev-over-freek",
     },
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
@@ -137,7 +137,7 @@ try {
     initialSlide: 1,
     spaceBetween: 8,
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   const acc = document.getElementsByClassName("accordion");
@@ -159,7 +159,7 @@ try {
       }
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   const forEach = (array, callback, scope) => {
@@ -208,7 +208,7 @@ try {
       }
     });
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   const links = document.querySelectorAll("a.lottiemenu");
@@ -227,7 +227,7 @@ try {
       player.stop();
     });
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   document.getElementById("loadMoreBtn").addEventListener("click", function () {
@@ -247,4 +247,7 @@ try {
       this.innerText = "Laad meer";
     }
   });
-} catch (error) {}
+} catch (error) { }
+
+
+

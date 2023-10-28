@@ -128,7 +128,7 @@
                     </g>
                 </svg>
             </a>
-            <a href="#" class="hidden lg:block">
+            <button id="sidecart" class="hidden lg:block h-[18px] md:h-[17.68px] relative">
                 <svg class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 16.2163916 19.1606747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Group" transform="translate(-1299.0418, -62.8223)" fill="#fff">
@@ -138,7 +138,10 @@
                         </g>
                     </g>
                 </svg>
-            </a>
+                <?php  if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
+                <div class="absolute bottom-[-3px] right-[-3px] bg-[#8CC63F] h-[10.23px] w-[10.23px] rounded-full flex justify-center items-center text-8 text-white"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                <?php } ?>
+            </button>
             <button id="hamburger" class="pointer">
                 <svg class="h-[18px] md:h-[12.5px]" width="auto" height="100%" viewBox="0 0 21.611 12.496" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
@@ -227,7 +230,7 @@
                         </g>
                     </svg>
                 </a>
-                <a href="#" class="">
+                 <button id="sidecart" class="h-[18px] md:h-[17.68px] relative">
                     <svg class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 16.2163916 19.1606747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Group" transform="translate(-1299.0418, -62.8223)" fill="#fff">
@@ -237,7 +240,10 @@
                             </g>
                         </g>
                     </svg>
-                </a>
+                     <?php  if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
+                <div class="absolute bottom-[-3px] right-[-3px] bg-[#8CC63F] h-[10.23px] w-[10.23px] rounded-full flex justify-center items-center text-8 text-white"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                <?php } ?>
+                </button>
                 <button id="hamburger-close" class="pl-[4px] pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 15.983 15.983">
                     <g id="Group_283" data-name="Group 283" transform="translate(2.121 2.121)">

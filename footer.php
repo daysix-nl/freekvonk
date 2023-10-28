@@ -7,6 +7,9 @@
  ?>
 
 
+
+
+
 <footer>
 <section class="bg-[#8CC63F]">
     <div class="mx-[auto] lg:mx-[40px] max-w-[390px] md:max-w-[600px] lg:max-w-[unset] pt-[45px] md:pt-[60px] xl:pt-[65px]">
@@ -180,6 +183,20 @@
 </section>
 
 </footer>
+
+<?php include get_template_directory() . '/componenten/side-cart.php'; ?>
+
+<script>
+var messageElement = document.querySelector('.woocommerce-notices-wrapper');
+
+if (messageElement) {
+    // Wacht 7000 milliseconden (7 seconden) en voeg de "hidden" class toe om het element te verbergen
+    setTimeout(function() {
+        messageElement.classList.add('non-notice');
+    }, 5000);
+}
+</script>
+
 
 
 <?php wp_footer(); ?>
