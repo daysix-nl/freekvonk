@@ -236,27 +236,8 @@
 
 </div>
 
-<script>
-  // Haal een verwijzing naar het "sidecart" element op
-  var sideCartButton = document.getElementById("sidecart");
+<div class="sidecart-overlay"></div>
 
-  // Haal een verwijzing naar het "sidecart-close" element op
-  var sideCartCloseButton = document.getElementById("sidecart-close");
 
-  // Haal een verwijzing naar het "sidecart-menu" element op
-  var sideCartMenu = document.getElementById("sidecart-menu");
-
-  // Voeg een klikgebeurtenisluisteraar toe aan het "sidecart" element
-  sideCartButton.addEventListener("click", function() {
-    // Toggle de class "hidden" op het "sidecart-menu" element
-    sideCartMenu.classList.toggle("sidecart-hidden");
-  });
-
-  // Voeg een klikgebeurtenisluisteraar toe aan het "sidecart-close" element
-  sideCartCloseButton.addEventListener("click", function() {
-    // Toggle de class "hidden" op het "sidecart-menu" element
-    sideCartMenu.classList.toggle("sidecart-hidden");
-  });
-</script>
 
 

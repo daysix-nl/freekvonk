@@ -14,7 +14,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -130,7 +130,7 @@
                     </g>
                 </svg>
             </a>
-            <button id="sidecart" class="hidden lg:block h-[18px] md:h-[17.68px] relative">
+            <button class="hidden lg:block h-[18px] md:h-[17.68px] relative sidecar">
                 <svg class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 16.2163916 19.1606747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Group" transform="translate(-1299.0418, -62.8223)" fill="#0A1F16">
@@ -232,7 +232,7 @@
                         </g>
                     </svg>
                 </a>
-                <button id="sidecart" class="h-[18px] md:h-[17.68px] relative">
+                <button class="h-[18px] md:h-[17.68px] relative sidecar">
                     <svg class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 16.2163916 19.1606747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Group" transform="translate(-1299.0418, -62.8223)" fill="#fff">
@@ -263,13 +263,13 @@
             <div class="relative h-[100dvh] w-full">
                 <div class="absolute top-[110px] md:top-[150px] lg:top-[110px] left-[20px] md:left-[80px] lg:left-[40px] right-[20px] h-[calc(100vh-100px)] overflow-y-scroll">
                     <div class="pt-[20px] pb-[120px] flex flex-col space-y-[15px]">
-                        <a href="/over-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit lottiemenu" onmouseover="activateMenuBackground(1)"><span>Over Freek</span>
+                        <a href="/over-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit lottiemenu menu-hover" onmouseover="activateMenuBackground(1)"><span>Over Freek</span>
                         <!-- <lottie-player src="/wp-content/themes/freekvonk/img/lottie/snake2.json" style="width: 140px; height: 140px;" loop></lottie-player>--> </a> 
-                        <a href="/freek-vonk-live" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(2)">Freek Vonk Live</a>
-                        <a href="/studio-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(3)">Studio Freek</a>
-                        <a href="/shop" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(4)">Shop</a>
-                        <a href="/stichting-no-wildlife-crime" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(5)">Stichting No Wildlife Crime</a>
-                        <a href="/nieuws" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit" onmouseover="activateMenuBackground(6)">Nieuws</a>
+                        <a href="/freek-vonk-live" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit menu-hover" onmouseover="activateMenuBackground(2)">Freek Vonk Live</a>
+                        <a href="/studio-freek" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit menu-hover" onmouseover="activateMenuBackground(3)">Studio Freek</a>
+                        <a href="/shop" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit menu-hover" onmouseover="activateMenuBackground(4)">Shop</a>
+                        <a href="/stichting-no-wildlife-crime" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit menu-hover" onmouseover="activateMenuBackground(5)">Stichting No Wildlife Crime</a>
+                        <a href="/nieuws" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit menu-hover" onmouseover="activateMenuBackground(6)">Nieuws</a>
                     </div>
                     
                 </div>

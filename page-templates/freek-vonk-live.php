@@ -125,7 +125,9 @@
         <div class="gradient-test">
             <div class="container">
                 <h2 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">Video's</h2>
-                <div class="h-[5px] w-[150px] bg-[#78B047] mt-2 rounded-full"></div>   
+                <div class="w-full max-w-[150px]">
+                    <div class="w-full lottie-subtitle" ></div>
+                </div>
             </div>
         <section class="relative">
  
@@ -223,7 +225,9 @@
         <section>
             <div class="container pt-[30px] md:pt-[50px] lg:pt-[80px] pb-3">
                 <h2 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">Foto's</h2>
-                <div class="h-[5px] w-[150px] bg-[#78B047] mt-2 rounded-full"></div>   
+                <div class="w-full max-w-[150px]">
+                    <div class="w-full lottie-subtitle" ></div>
+                </div>   
             </div>
                 <div class="swiper mySwiper-foto overflow-visible  relative">
                  <!-- <div class="absolute top-0 h-full left-0 w-[100px] md:w-[150px] bg-red-50 z-50 bg-left-gradient"></div>
@@ -280,7 +284,9 @@
          <section class="">
             <div class="container pt-[30px] md:pt-[50px] lg:pt-[80px]">
                 <h2 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white">Shows</h2>
-                <div class="h-[5px] w-[150px] bg-[#78B047] mt-2 rounded-full"></div>   
+                <div class="w-full max-w-[150px]">
+                    <div class="w-full lottie-subtitle" ></div>
+                </div>   
             </div>
             <div class="container grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[10px] pt-[50px]">
                 <a href="" class="aspect-[16/11] relative overflow-hidden post">

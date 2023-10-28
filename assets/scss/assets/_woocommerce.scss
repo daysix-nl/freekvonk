@@ -371,7 +371,6 @@ ins {
         dt {
             display: none !important;
         }
-
     }
 }
 
@@ -926,7 +925,9 @@ li.wpc-term-item label span.wpc-term-swatch,
 
 .wpc-filters-range-wrapper input[type=number] {
     width: 40px !important;
-    text-align: right !important;
+    justify-content: center;
+    text-align: center !important;
+    display: flex;
     color: #2B2828 !important;
 }
 

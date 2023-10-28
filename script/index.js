@@ -11,7 +11,7 @@ try {
     },
     slidesPerView: "auto",
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   var swipers = new Swiper(".mySwiper-navigatie", {
@@ -127,7 +127,7 @@ try {
       prevEl: ".swiper-button-prev-over-freek",
     },
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
@@ -137,7 +137,7 @@ try {
     initialSlide: 1,
     spaceBetween: 8,
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   const acc = document.getElementsByClassName("accordion");
@@ -159,7 +159,7 @@ try {
       }
     });
   }
-} catch (error) { }
+} catch (error) {}
 
 try {
   const forEach = (array, callback, scope) => {
@@ -208,27 +208,44 @@ try {
       }
     });
   });
-} catch (error) { }
+} catch (error) {}
+try {
+  // Get reference to the Lottie animation element
+  const elementLottie = document.querySelectorAll(".lottie-title");
+
+  elementLottie.forEach((elementLottie) => {
+    // Initialize the Lottie animation
+    const animation = lottie.loadAnimation({
+      container: elementLottie, // The DOM element that will contain the animation
+      renderer: "svg",
+      loop: true, // Don't loop the animation
+      autoplay: true, // Don't start the animation immediately
+      path: "/wp-content/themes/freekvonk/img/lottie/snake6(breed).json", // The path to the animation json
+    });
+
+    // Make sure the animation's progress is at 0
+    animation.goToAndStop(0, true);
+  });
+} catch (error) {}
 
 try {
-  const links = document.querySelectorAll("a.lottiemenu");
-  const visibleClass = "visible";
+  // Get references to all Lottie animation elements
+  const elementsLottie = document.querySelectorAll(".lottie-subtitle");
 
-  links.forEach((link) => {
-    link.addEventListener("mouseenter", function () {
-      const player = this.querySelector("lottie-player");
-      player.classList.add(visibleClass);
-      player.play();
+  // Loop through all elements and initialize the Lottie animation for each one
+  elementsLottie.forEach((elementLottie) => {
+    const animation = lottie.loadAnimation({
+      container: elementLottie, // The DOM element that will contain the animation
+      renderer: "svg",
+      loop: true, // Don't loop the animation
+      autoplay: true, // Don't start the animation immediately
+      path: "/wp-content/themes/freekvonk/img/lottie/snake6(smal).json", // The path to the animation json
     });
 
-    link.addEventListener("mouseleave", function () {
-      const player = this.querySelector("lottie-player");
-      player.classList.remove(visibleClass);
-      player.stop();
-    });
+    // Make sure the animation's progress is at 0
+    animation.goToAndStop(0, true);
   });
-} catch (error) { }
-
+} catch (error) {}
 try {
   document.getElementById("loadMoreBtn").addEventListener("click", function () {
     const items = document.querySelectorAll(".item:not(.visible)");
@@ -247,7 +264,67 @@ try {
       this.innerText = "Laad meer";
     }
   });
-} catch (error) { }
+} catch (error) {}
 
+try {
+  const filterButtons = document.querySelector(".filter-button-shop");
+  const filterModal = document.querySelector(".filter-shop-modal");
+  const filterClose = document.querySelector(".filter-close");
+  const filterModalOverlay = document.querySelector(".filter-overlay");
 
+  filterButtons.addEventListener("click", () => {
+    filterModal.classList.toggle("active");
+    filterModalOverlay.classList.toggle("active");
+  });
 
+  filterClose.addEventListener("click", () => {
+    filterModal.classList.toggle("active");
+    filterModalOverlay.classList.toggle("active");
+  });
+
+  filterModalOverlay.addEventListener("click", () => {
+    filterModal.classList.toggle("active");
+    filterModalOverlay.classList.toggle("active");
+  });
+} catch (error) {}
+
+try {
+  var swiperShop = new Swiper(".mySwiper-shop", {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next-shop",
+      prevEl: ".swiper-button-prev-shop",
+    },
+  });
+} catch (error) {
+  console.error(error);
+}
+
+try {
+  const overlayShopCart = document.querySelector(".sidecart-overlay");
+  const sidecart = document.querySelector("#sidecart-menu");
+  const sidecartClose = document.querySelector("#sidecart-close");
+  const sidecartButton = document.querySelectorAll(".sidecar");
+  const closeHandler = document.querySelector("#hamburger-menu");
+
+  for (let i = 0; i < sidecartButton.length; i++) {
+    sidecartButton[i].addEventListener("click", () => {
+      closeHandler.classList.add("hidden");
+      overlayShopCart.classList.toggle("sidecart-overlay-active");
+      sidecart.classList.toggle("sidecart-hidden");
+    });
+  }
+
+  overlayShopCart.addEventListener("click", () => {
+    overlayShopCart.classList.toggle("sidecart-overlay-active");
+    sidecart.classList.toggle("sidecart-hidden");
+  });
+
+  sidecartClose.addEventListener("click", () => {
+    overlayShopCart.classList.toggle("sidecart-overlay-active");
+    sidecart.classList.toggle("sidecart-hidden");
+  });
+} catch (error) {
+  console.error(error);
+}

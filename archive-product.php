@@ -33,6 +33,15 @@ get_header( 'shop' ); ?>
         <img src="/wp-content/themes/freekvonk/img/local/banner-kamili.png" alt="" class="min-w-full min-h-full object-cover object-right">
     </div>
 
+    <button class="filter-button-shop">
+        Filter
+    </button>
+    <div class="filter-shop-modal">
+        <button class="filter-close p-10">Close</button>
+    </div>
+    <div class="filter-overlay"></div>
+
+
     <div class="flex justify-between">
         <!-- SIDEBAR -->
         <div class="hidden lg:block lg:w-[222px] filter">
@@ -60,7 +69,7 @@ if ($products_query->have_posts()) :
         <!-- PRODUCT -->
         <div class="product-item h-fit relative">
             <div class="w-full aspect-[16/13] bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center overflow-hidden lg:relative">
-                <a href="<?php the_permalink(); ?>">
+                <a class="w-full flex justify-center" href="<?php the_permalink(); ?>">
                     <img src="<?php echo get_the_post_thumbnail_url($product->get_id()); ?>" alt="" class="h-ful w-auto mix-blend-multiply">
                     <!-- NIEUW -->
                     <?php 
@@ -72,7 +81,7 @@ if ($products_query->have_posts()) :
                     if ($days_difference > 30) {
                        
                     } else { ?>
-                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">
                         <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">Nieuw</p>
                     </div>
                         <?php
@@ -81,7 +90,7 @@ if ($products_query->have_posts()) :
                     <!-- SALE -->
                     <?php
                     if ( $product->is_on_sale() ) { ?>
-                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#C69C6D] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#C69C6D] top-0 right-0 flex items-center justify-center">
                         <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">
                             <?php
                                 global $product;

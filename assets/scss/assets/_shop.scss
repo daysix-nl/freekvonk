@@ -1,0 +1,88 @@
+.filter-shop-modal {
+    visibility: hidden;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    width: 380px;
+    max-width: 380px;
+    height: 100vh;
+    height: 100dvh;
+    overflow: auto;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: 300ms ease-in-out;
+
+    &.active {
+        visibility: visible;
+        transform: translateX(0%);
+        transition: 300ms ease-in-out;
+    }
+
+    .filter-close {
+        background-color: transparent;
+    }
+}
+
+.filter-overlay {
+    background-color: black;
+    opacity: 0.4;
+    width: 100vw;
+    height: 100vh;
+    transition: 300ms ease-in-out;
+    display: none;
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+
+    &.active {
+        display: block;
+        transition: 300ms ease-in-out;
+    }
+}
+
+.swiper-button-next-shop,
+.swiper-button-prev-shop {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next-shop {
+    right: 10px;
+
+    &::after {
+        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.173" height="15.255"><g data-name="Pijl rechts mobiel"><g data-name="Group 472" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="2"><path data-name="Line 36" d="m2.086 1.545 5 6.083"/><path data-name="Line 37" d="m7.086 7.628-5 6.083"/></g></g></svg>');
+        display: block;
+
+
+    }
+}
+
+.swiper-button-prev-shop {
+    left: 10px;
+
+    &::after {
+        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.173" height="15.255"><g data-name="Pijl rechts mobiel"><g data-name="Group 472" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="2"><path data-name="Line 36" d="m7.087 13.71-5-6.083"/><path data-name="Line 37" d="m2.087 7.627 5-6.083"/></g></g></svg>');
+        display: block;
+
+
+    }
+}
+
+.wpc-filters-ul-list {
+    input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+    }
+}

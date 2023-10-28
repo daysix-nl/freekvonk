@@ -1,8 +1,12 @@
 <!-- HEADER 1 -->
 <section class="<?php the_field('achtergrond');?>">
-    <div class="container hidden md:grid pt-[80px]">
-        <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
-        <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full]"></div>    
+    <div class="container hidden md:grid pt-[80px]  justify-center">
+        <div class="w-fit">
+            <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
+            <div class="w-full max-w-[300px]">
+                <div class="w-full lottie-title"></div>
+            </div>
+        </div>
     </div>
     <?php if (get_field('submenu')): ?>   
     <div class="pt-[0px] md:pt-[unset]">

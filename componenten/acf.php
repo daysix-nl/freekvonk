@@ -1,5 +1,5 @@
 <div class="border-[1px] border-[#2B2828] flex justify-center items-center"></div>
-<div class="border-t-[1px] border-b-[1px] border-[#2B2828] h-3 w-3 font-karlsen text-16 flex justify-center items-center text-center"></div>
+<div class="border-t-[1px] border-b-[1px] border-[#2B2828] h-3 w-3 font-karlsen text-16 flex justify-center items-center text-center rounded-none"></div>
 <div class="text-[#8CC63F]"></div>
 
 

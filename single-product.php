@@ -42,30 +42,54 @@ if ( post_password_required() ) {
                 <?php
                 global $product;
                 if ($product->get_gallery_image_ids()) { ?>
-                <div class="hidden lg:grid grid-cols-2 gap-[15px]">
-                    <!-- PRODUCT AFBEELDING -->
-                    <div class="aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] overflow-hidden">
-                        <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
-                    </div>
-                    <!-- PRODUCT GALERIJ -->
-                    <?php
-                        global $product;
-                        if ( $product->get_gallery_image_ids() ) {
-                            // Toon de galerijafbeeldingen
-                            $gallery_image_ids = $product->get_gallery_image_ids(); 
-                            foreach ( $gallery_image_ids as $image_id ) { 
-                            $image_url = wp_get_attachment_url($image_id); ?>
-                            <div class="aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] overflow-hidden">
-                                <img src="<?php echo esc_url($image_url);?>" alt="" class="h-ful w-auto mix-blend-multiply">
-                            </div>
+                    <div class="hidden lg:grid grid-cols-2 gap-[15px]">
+                        <!-- PRODUCT AFBEELDING -->
+                        <div class="aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] overflow-hidden">
+                            <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
+                        </div>
+                        <!-- PRODUCT GALERIJ -->
                         <?php
+                            global $product;
+                            if ( $product->get_gallery_image_ids() ) {
+                                $gallery_image_ids = $product->get_gallery_image_ids(); 
+                                foreach ( $gallery_image_ids as $image_id ) { 
+                                    $image_url = wp_get_attachment_url($image_id); ?>
+                                    <div class="aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] overflow-hidden">
+                                        <img src="<?php echo esc_url($image_url);?>" alt="" class="h-ful w-auto mix-blend-multiply">
+                                    </div>
+                                <?php
+                                }
                             }
-                        }
                         ?>
-                </div>
-            <?php
+                    </div>
+
+                    <div class="lg:hidden w-full pb-3">
+                          <div class="swiper mySwiper-shop relative">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2]">
+                                        <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
+                                    </div>
+                                    <?php
+                                        global $product;
+                                        if ( $product->get_gallery_image_ids() ) {
+                                            $gallery_image_ids = $product->get_gallery_image_ids(); 
+                                            foreach ( $gallery_image_ids as $image_id ) { 
+                                                $image_url = wp_get_attachment_url($image_id); ?>
+                                                <div class="swiper-slide aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2]">
+                                                    <img src="<?php echo esc_url($image_url);?>" alt="" class="h-ful w-auto mix-blend-multiply">
+                                                </div>
+                                            <?php
+                                            }
+                                        }
+                                    ?>
+                                </div>
+                                <div class="swiper-button-next-shop"></div>
+                                <div class="swiper-button-prev-shop"></div>
+                            </div>
+                    </div>
+                <?php
                 } else { ?>
-                <div class="hidden lg:grid grid-cols-1">
+                <div class="grid grid-cols-1">
                     <!-- PRODUCT AFBEELDING -->
                     <div class="aspect-[16/12] w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] overflow-hidden flex justify-center">
                         <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
@@ -196,7 +220,7 @@ if ( post_password_required() ) {
                         <!-- PRODUCT -->
                         <div class="product-item h-fit relative">
                             <div class="w-full aspect-[16/13] bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center overflow-hidden lg:relative">
-                                <a href="<?php the_permalink();?>">
+                                <a class="w-full flex justify-center" href="<?php the_permalink();?>">
                                     <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
                                      <!-- NIEUW -->
                                     <?php 
@@ -208,7 +232,7 @@ if ( post_password_required() ) {
                                     if ($days_difference > 30) {
                                     
                                     } else { ?>
-                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">
                                         <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">Nieuw</p>
                                     </div>
                                         <?php
@@ -217,7 +241,7 @@ if ( post_password_required() ) {
                                     <!-- SALE -->
                                     <?php
                                     if ( $product->is_on_sale() ) { ?>
-                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#C69C6D] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#C69C6D] top-0 right-0 flex items-center justify-center">
                                         <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">
                                             <?php
                                                 global $product;
@@ -319,7 +343,7 @@ if ( post_password_required() ) {
                         <!-- PRODUCT -->
                         <div class="product-item h-fit">
                             <div class="w-full aspect-[16/13] bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center overflow-hidden lg:relative">
-                                <a href="<?php the_permalink();?>">
+                                <a class="w-full flex justify-center" href="<?php the_permalink();?>">
                                     <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
                                      <!-- NIEUW -->
                                     <?php 
@@ -331,7 +355,7 @@ if ( post_password_required() ) {
                                     if ($days_difference > 30) {
                                     
                                     } else { ?>
-                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">
                                         <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">Nieuw</p>
                                     </div>
                                         <?php
@@ -340,7 +364,7 @@ if ( post_password_required() ) {
                                     <!-- SALE -->
                                     <?php
                                     if ( $product->is_on_sale() ) { ?>
-                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#C69C6D] top-0 right-[-20px] xl:right-[-30px] flex items-center justify-center">
+                                    <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#C69C6D] top-0 right-0 flex items-center justify-center">
                                         <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">
                                             <?php
                                                 global $product;
@@ -357,7 +381,6 @@ if ( post_password_required() ) {
                                         </p>
                                     </div>
                                         <?php
-                                    } else {
                                     }
                                     ?>
                                 </a>
