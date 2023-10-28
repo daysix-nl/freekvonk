@@ -690,6 +690,9 @@ video {
 .z-\[999\] {
   z-index: 999;
 }
+.z-40 {
+  z-index: 40;
+}
 .order-1 {
   order: 1;
 }
@@ -1172,6 +1175,9 @@ video {
 }
 .gap-\[15px\] {
   gap: 15px;
+}
+.gap-1 {
+  gap: 10px;
 }
 .gap-x-1 {
   -moz-column-gap: 10px;

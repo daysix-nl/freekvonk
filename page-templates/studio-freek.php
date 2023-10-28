@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Studio Freek
+ * Template name: XXX
  */
 
 

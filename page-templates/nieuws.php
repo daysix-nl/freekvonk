@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Nieuws 
+ * Template name: XXX
  */
 
 

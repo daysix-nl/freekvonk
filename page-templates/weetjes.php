@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Weetjes & Extra's
+ * Template name: XXX
  */
 
 

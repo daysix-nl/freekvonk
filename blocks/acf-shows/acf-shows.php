@@ -1,9 +1,9 @@
-<!-- CASES -->
+<!-- SHOWS -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> team-block list-b-none">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[10px]">
         <?php
             $loop = new WP_Query( array(
-                'post_type' => 'case',
+                'post_type' => 'show',
                 'posts_per_page' => -1,
                 'orderby' => 'date',
                 'order' => 'DESC'

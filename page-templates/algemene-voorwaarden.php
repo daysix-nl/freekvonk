@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Algemene voorwaarden
+ * Template name: XXX
  */
 
 

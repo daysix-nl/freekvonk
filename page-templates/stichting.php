@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Stichting No Wildlife Crime
+ * Template name: XXX
  */
 
 
