@@ -1,5 +1,10 @@
+<?php
+if (isset($block['data']['preview_image_help'])): ?>
+    <img src="#" style="width:100%; height:auto;">
+    <?php
+else: ?>
 <!-- CASES -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> team-block list-b-none">
+<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> case-section team-block list-b-none">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[10px]">
         <?php
             $loop = new WP_Query( array(
@@ -20,7 +25,7 @@
             $image_alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
             ?>
             <a href="<?php the_permalink();?>" class="aspect-[16/11] relative overflow-hidden post">
-                <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center hover-blur duration-200">
+                <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center hover-blur duration-200 bg-[#2B2828]">
                 <div class="hidden lg:block absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                     <div class="relative h-full w-full">
                             <div class="absolute left-[25px] hover-content duration-200">
@@ -65,4 +70,5 @@
         </div>
     <?php endif; ?>  
 </section>
+<?php endif; ?>
 

@@ -1,9 +1,9 @@
 {
-    "key": "group_653bbe21cf9cb",
-    "title": "Blok settings",
+    "key": "group_653f681fe0deb",
+    "title": "Blok settings - zonder padding",
     "fields": [
         {
-            "key": "field_653bbe22fc8e9",
+            "key": "field_653f681fe2e1e",
             "label": "Blok settings",
             "name": "",
             "aria-label": "",
@@ -21,7 +21,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_653bd379fb3b8",
+            "key": "field_653f681fe2e23",
             "label": "ID",
             "name": "section_id",
             "aria-label": "",
@@ -41,7 +41,7 @@
             "append": ""
         },
         {
-            "key": "field_653bbe41fc8ea",
+            "key": "field_653f681fe2e27",
             "label": "Achtergrond",
             "name": "achtergrond",
             "aria-label": "",
@@ -77,78 +77,20 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
-        },
-        {
-            "key": "field_653f66cccd90e",
-            "label": "Witruimte bovenkant",
-            "name": "padding_top",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "padding-top-xs": "Extra small",
-                "padding-top-s": "Small",
-                "padding-top-m": "Medium",
-                "padding-top-l": "Large",
-                "padding-top-xl": "Extra large",
-                "pt-0": "None"
-            },
-            "default_value": "pt-0",
-            "return_format": "value",
-            "multiple": 0,
-            "allow_null": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_653f66f4cd90f",
-            "label": "Witruimte onderkant",
-            "name": "padding_bottom",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "padding-bottom-xs": "Extra small",
-                "padding-bottom-s": "Small",
-                "padding-bottom-m": "Medium",
-                "padding-bottom-l": "Large",
-                "padding-bottom-xl": "Extra large",
-                "pb-0": "None"
-            },
-            "default_value": "pb-0",
-            "return_format": "value",
-            "multiple": 0,
-            "allow_null": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": ""
         }
     ],
     "location": [
         [
             {
                 "param": "block",
-                "operator": "!=",
+                "operator": "==",
                 "value": "acf\/acf-header-1"
-            },
+            }
+        ],
+        [
             {
                 "param": "block",
-                "operator": "!=",
+                "operator": "==",
                 "value": "acf\/acf-header-2"
             }
         ]
@@ -162,5 +104,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698655754
+    "modified": 1698655744
 }

@@ -1,4 +1,9 @@
 <?php
+if (isset($block['data']['preview_image_help'])): ?>
+    <img src="#" style="width:100%; height:auto;">
+    <?php
+else: ?>
+<?php
 $image = get_field('afbeelding');
 $image_url = isset($image['url']) ? esc_url($image['url']) : '';
 $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
@@ -15,10 +20,10 @@ $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
 ?>
 
 <!-- CONTENT 1 -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?>">
+<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
     <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[50vw] lg:w-[50vw] overflow-hidden relative order-1 <?php the_field('uitlijning');?>">
-            <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center">
+            <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center bg-[#2B2828]">
             <?php if (get_field('logo')): ?>  
             <div class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
                 <img src="<?php echo $image3_url; ?>" alt="<?php echo $image3_alt; ?>" class="h-[55%]">
@@ -43,3 +48,4 @@ $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
         </div>
     </div>
 </section>
+<?php endif; ?>

@@ -33,7 +33,7 @@ get_header( 'shop' ); ?>
         <img src="/wp-content/themes/freekvonk/img/local/banner-kamili.png" alt="" class="min-w-full min-h-full object-cover object-right">
     </div>
 
-    <button class="filter-button-shop">
+    <button class="filter-button-shop lg:hidden">
         Filter
     </button>
     <div class="filter-shop-modal">

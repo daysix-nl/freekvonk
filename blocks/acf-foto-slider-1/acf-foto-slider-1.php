@@ -1,6 +1,10 @@
-
+<?php
+if (isset($block['data']['preview_image_help'])): ?>
+    <img src="#" style="width:100%; height:auto;">
+    <?php
+else: ?>
 <!-- FOTO SLIDER 1 -->
-<section class="<?php the_field('achtergrond');?> relative overflow-hidden z-[2]">
+<section class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> relative overflow-hidden z-[2]">
 <div class="swiper mySwiper-foto overflow-visible relative">
       <div class="swiper-wrapper overflow-visible items-end">
          <?php
@@ -13,7 +17,7 @@
                ?>
                <div class="swiper-slide w-auto">
                      <div class="relative overflow-hidden h-full w-full">
-                        <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full image-format w-full object-cover object-center">
+                        <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full image-format w-full object-cover object-center bg-[#2B2828]">
                      </div>    
                </div>
             <?php
@@ -26,3 +30,4 @@
       <div class="swiper-button-prev-foto hidden lg:flex"></div>
    </div>  
 </section>
+<?php endif; ?>

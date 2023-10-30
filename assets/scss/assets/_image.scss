@@ -24,3 +24,33 @@ a .hover-blur {
 a:hover .hover-blur {
     filter: blur(8px);
 }
+
+
+
+
+button .hover-blur {
+    filter: blur(0);
+}
+
+button:hover .hover-blur {
+    filter: blur(8px);
+}
+
+button .hover-content {
+    bottom: -100%;
+}
+
+button:hover .hover-content {
+    bottom: 20px;
+    z-index: 10;
+}
+
+button .hover-bg {
+    opacity: 0;
+    display: none;
+}
+
+button:hover .hover-bg {
+    opacity: 1;
+    display: block;
+}

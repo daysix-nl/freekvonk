@@ -1,9 +1,9 @@
 {
-  "name": "acf-titel-2",
-  "title": "Titel 2",
+  "name": "acf-partners",
+  "title": "Partners",
   "description": "",
   "category": "bibliotheek",
-  "icon": "heading",
+  "icon": "superhero-alt",
   "keywords": [
     "block"
   ],
@@ -13,7 +13,7 @@
   },
   "acf": {
     "mode": "preview",
-    "renderTemplate": "acf-titel-2.php"
+    "renderTemplate": "acf-partners.php"
   },
   "example": {
     "attributes": {

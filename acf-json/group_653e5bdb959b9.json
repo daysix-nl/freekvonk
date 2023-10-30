@@ -1,0 +1,156 @@
+{
+    "key": "group_653e5bdb959b9",
+    "title": "Content slider",
+    "fields": [
+        {
+            "key": "field_653e5bdb97800",
+            "label": "",
+            "name": "slider",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Nieuwe item",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_653e5bdb98324",
+                    "label": "Afbeelding",
+                    "name": "afbeelding",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "preview",
+                    "parent_repeater": "field_653e5bdb97800"
+                },
+                {
+                    "key": "field_653e5bdb9832b",
+                    "label": "Titel",
+                    "name": "titel",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    "maxlength": "",
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_653e5bdb97800"
+                },
+                {
+                    "key": "field_653e5bdb9832e",
+                    "label": "Tekst",
+                    "name": "tekst",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0,
+                    "parent_repeater": "field_653e5bdb97800"
+                },
+                {
+                    "key": "field_653e5bdb98336",
+                    "label": "Achtergrond",
+                    "name": "achtergrond",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "bg-transwit": "Transparant (witte tekst)",
+                        "bg-transzwart": "Transparant (zwarte tekst)",
+                        "bg-wit": "Wit",
+                        "bg-zwart": "Zwart",
+                        "bg-beige": "Beige",
+                        "bg-lichtgroen": "Licht groen",
+                        "bg-groen": "Groen",
+                        "bg-donkergroen": "Donker groen",
+                        "bg-diepgroen": "Diep groen",
+                        "bg-bruin": "Bruin",
+                        "bg-lichtoranje": "Licht oranje",
+                        "bg-lichtgrijs": "Licht grijs",
+                        "bg-grijs": "Grijs",
+                        "bg-donkergrijs": "Donker grijs"
+                    },
+                    "default_value": "bg-donkergrijs",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_653e5bdb97800"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-content-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698585794
+}

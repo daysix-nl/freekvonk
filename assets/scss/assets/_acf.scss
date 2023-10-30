@@ -2,3 +2,20 @@
 //     display: flex;
 //     gap: 50px;
 // }
+
+.wp-admin {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-block-start: 0px !important;
+        margin-block-end: 15px !important;
+    }
+
+    .swiper-slide {
+        margin-right: 8px !important;
+    }
+}

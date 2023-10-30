@@ -66,7 +66,7 @@ if ( post_password_required() ) {
                     <div class="lg:hidden w-full pb-3">
                           <div class="swiper mySwiper-shop relative">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2]">
+                                    <div class="swiper-slide aspect-[16/12] w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center">
                                         <img src="<?php the_post_thumbnail_url($product->get_id());?>" alt="" class="h-ful w-auto mix-blend-multiply">
                                     </div>
                                     <?php
@@ -75,7 +75,7 @@ if ( post_password_required() ) {
                                             $gallery_image_ids = $product->get_gallery_image_ids(); 
                                             foreach ( $gallery_image_ids as $image_id ) { 
                                                 $image_url = wp_get_attachment_url($image_id); ?>
-                                                <div class="swiper-slide aspect-square w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2]">
+                                                <div class="swiper-slide aspect-[16/12] w-full bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center">
                                                     <img src="<?php echo esc_url($image_url);?>" alt="" class="h-ful w-auto mix-blend-multiply">
                                                 </div>
                                             <?php

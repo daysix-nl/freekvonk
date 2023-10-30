@@ -1,4 +1,9 @@
 <?php
+if (isset($block['data']['preview_image_help'])): ?>
+    <img src="#" style="width:100%; height:auto;">
+    <?php
+else: ?>
+<?php
 $image = get_field('default_afbeelding');
 $image_url = isset($image['url']) ? esc_url($image['url']) : '';
 $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
@@ -72,7 +77,7 @@ $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
 
 
 <section class="h-[calc(100dvh-33px)] flex items-center bg-[#0A1F161A]">
-    <div class="grid grid-cols-1 lg:grid-cols-3 h-[calc(70dvh-33px)] md:h-[calc(100dvh-200px)] lg:h-[calc(100dvh-33px)] w-full pt-[62px] lg:pt-[unset]">
+    <div class="grid grid-cols-1 lg:grid-cols-3 h-[calc(70dvh-33px)] md:h-[calc(100dvh-200px)] lg:h-[calc(100dvh-33px)] w-full pt-[62px] lg:pt-[unset] min-h-[550px]">
         <a href="<?php echo $link1_url; ?>" id="home-item-1" class="col-span-1 w-full h-full hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(1)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link1_target; ?>"><?php echo $link1_text; ?></h2>
         </a>
@@ -189,3 +194,4 @@ function activateBackground(backgroundNumber) {
     document.getElementById(`background-${backgroundNumber}`).style.opacity = 1; // Daarna de gewenste achtergrond activeren
 }
 </script>
+<?php endif; ?>

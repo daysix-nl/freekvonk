@@ -1,9 +1,9 @@
 {
-  "name": "acf-titel-2",
-  "title": "Titel 2",
+  "name": "acf-team",
+  "title": "Team",
   "description": "",
   "category": "bibliotheek",
-  "icon": "heading",
+  "icon": "groups",
   "keywords": [
     "block"
   ],
@@ -13,7 +13,7 @@
   },
   "acf": {
     "mode": "preview",
-    "renderTemplate": "acf-titel-2.php"
+    "renderTemplate": "acf-team.php"
   },
   "example": {
     "attributes": {

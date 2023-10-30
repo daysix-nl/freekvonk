@@ -1,9 +1,9 @@
 {
-  "name": "acf-titel-2",
-  "title": "Titel 2",
+  "name": "acf-foto-slider-3",
+  "title": "Foto slider 3",
   "description": "",
   "category": "bibliotheek",
-  "icon": "heading",
+  "icon": "slides",
   "keywords": [
     "block"
   ],
@@ -13,13 +13,13 @@
   },
   "acf": {
     "mode": "preview",
-    "renderTemplate": "acf-titel-2.php"
+    "renderTemplate": "acf-foto-slider-3.php"
   },
   "example": {
     "attributes": {
       "mode": "preview",
       "data": {
-        "preview_image_help": "/wp-content/themes/freekvonk/img/local/leeg.png",
+        "preview_image_help": "/wp-content/themes/freekvonk/img/preview-images/leeg.jpeg",
         "is_preview": true
       }
     }

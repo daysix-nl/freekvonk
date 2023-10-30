@@ -24,9 +24,9 @@
 */
 function add_theme_scripts() {
     // wp_enqueue_style( 'swiper',  'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
-    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
+    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.2', 'all');
     // wp_enqueue_script( 'swiper', get_template_directory_uri() . '/script/swiper.js', array(), 1.1, true);
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/script/index.js', array(), 1.1, true);
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/script/index.js', array(), '1.2', true);
   }
   add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 /*
@@ -42,9 +42,9 @@ function add_theme_scripts() {
 function load_custom_wp_admin_style(){
     wp_enqueue_style( 'gutenberg',  'https://hostdashboard.nl/devdocs/css/gutenberg.css');
     // wp_enqueue_style( 'swiper',  'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
-    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
+    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.2', 'all');
     // wp_enqueue_script( 'swiper', get_template_directory_uri() . '/script/swiper.js', array(), 1.1, true);
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/script/index.js', array(), 1.1, true);
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/script/index.js', array(), '1.2', true);
  
 }
 add_action('admin_enqueue_scripts', 'load_custom_wp_admin_style');
@@ -544,6 +544,9 @@ function add_custom_admin_bar_styles() {
             #dashboard_site_health { display: none !important; }
             #rg_forms_dashboard { display: none !important; }
             #menu-posts { display: none !important; }
+            #wc_admin_dashboard_setup { display: none !important; }
+            #rank_math_dashboard_widget { display: none !important; }
+            #toplevel_page_getwooplugins { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
 

@@ -21,7 +21,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
-<header class="fixed z-[999] bg-[transparent]">
+<header class="fixed z-[999] bg-[#000]">
     <!-- LIVE NOW BALK -->
     <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero">
         <div  id="scroll-text" class="flex w-full swiper-wrapper">

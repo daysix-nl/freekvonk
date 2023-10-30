@@ -1,5 +1,10 @@
+<?php
+if (isset($block['data']['preview_image_help'])): ?>
+    <img src="#" style="width:100%; height:auto;">
+    <?php
+else: ?>
 <!-- HEADER 1 -->
-<section class="<?php the_field('achtergrond');?>">
+<section class="<?php the_field('achtergrond');?> pb-[30px] md:pb-[50px] lg:pb-[80px]">
     <div class="container hidden md:grid pt-[80px]  justify-center">
         <div class="w-fit">
             <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
@@ -44,3 +49,4 @@
         </div>
     <?php endif; ?>
 </section>
+<?php endif; ?>

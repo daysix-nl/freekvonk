@@ -1,11 +1,16 @@
 <?php
+if (isset($block['data']['preview_image_help'])): ?>
+    <img src="#" style="width:100%; height:auto;">
+    <?php
+else: ?>
+<?php
 $image = get_field('afbeelding');
 $image_url = isset($image['url']) ? esc_url($image['url']) : '';
 $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
 ?>
 
 <!-- HEADER 2 -->
-<section class="<?php the_field('achtergrond');?> relative overflow-hidden z-[2]">
+<section class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> relative overflow-hidden z-[2]">
         <div class="container hidden md:grid pt-[80px]">
             <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
             <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full]"></div>    
@@ -74,10 +79,11 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
         </section>
         <div class="absolute top-0 left-0 right-0 bottom-0 z-[-1]">
             <div class="relative h-full">
-                <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-right-top">
+                <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-right-top bg-[#2B2828]">
                 <div class="h-[80px] bg-gradient-to-b from-[#000] to-transparent w-full absolute top-[0px] left-0 right-0"></div>
                 <div class="h-[180px] bg-gradient-to-b from-transparent to-[#000] w-full absolute left-0 right-0 bottom-[30px] md:bottom-[50px] lg:bottom-[80px]"></div>
                 <div class="h-[30px] md:h-[50px] lg:h-[80px] bg-gradient-to-b bg-[#000] absolute left-0 right-0 bottom-0"></div>
             </div>
         </div>
 </section>
+<?php endif; ?>
