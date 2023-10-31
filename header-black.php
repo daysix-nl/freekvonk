@@ -17,7 +17,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <title><?php bloginfo( 'name' ); ?> | <?php the_title(); ?></title>
+    <title><?php bloginfo( 'name' ); ?> | <?php if (is_shop()) { ?><?php woocommerce_page_title(); ?><?php } else { the_title(); } ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
@@ -101,6 +101,20 @@
             </svg>
         </a>
         <div class="flex items-center space-x-[20px]">
+                <div class="md:hidden">
+                    <h1 class="w-full text-center text-16 leading-26 font-tanker text-white">
+                        <?php
+                        if (is_shop()) {
+                            ?>
+                                <?php woocommerce_page_title(); ?>
+                            <?php
+                        } else {
+                            the_title();
+                        }
+                        ?>
+                    </h1>
+                    <div class="h-[2px] w-[70px] bg-[#78B047] mx-auto rounded-[full]"></div> 
+                </div>
             <a href="#" class="hidden lg:block">
                 <svg width="80.2723982px" height="33px" viewBox="0 0 80.2723982 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

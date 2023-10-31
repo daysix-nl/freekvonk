@@ -24,13 +24,13 @@ else: ?>
                             $link_text = isset($link['title']) ? esc_html($link['title']) : '';
                             $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
                             ?>
-                            <div class="swiper-slide <?php the_sub_field('achtergrond');?> w-full max-w-[390px] md:max-w-[481px] lg:max-w-[996px]  xl:max-w-[1145px]">
+                            <div class="swiper-slide <?php the_sub_field('achtergrond');?> w-full lg:max-w-[1145px]">
                                 <div class="flex flex-col lg:flex-row">
-                                    <div class="h-[499px] md:h-[674px] lg:h-[533px] xl:h-[640px] w-[390px] md:w-[481px] lg:w-[376px] xl:w-[452px] flex items-center justify-center relative overflow-hidden">
+                                    <div class="h-[499px] md:h-[674px] lg:h-[640px] w-full lg:w-[452px] flex items-center justify-center relative overflow-hidden">
                                         <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-center z-[1] overflow-hidden bg-[#2B2828]">
                                     </div>
-                                    <div class="flex items-center justify-center w-[390px] md:w-[481px] lg:w-[630px] xl:w-[693px]">
-                                        <div class="max-w-[350px] md:max-w-[426px] lg:max-w-[510px] xl:max-w-[570px] py-[50px] md:py-[45px] lg:py-[unset]">
+                                    <div class="flex items-center justify-center w-full lg:w-[693px]">
+                                        <div class="max-w-full px-2 lg:px-[unset] lg:max-w-[510px] xl:max-w-[570px] py-[50px] md:py-[45px] lg:py-[unset]">
                                             <?php if (get_sub_field('subtitel')): ?>   
                                             <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen font-normal text-color uppercase mb-[15px] tracking-wider"><?php the_sub_field('subtitel');?></h2>
                                             <?php endif; ?>

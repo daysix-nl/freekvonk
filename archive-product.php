@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' ); ?>
 
-<main>
+<main class="pt-[115px]">
 
 <?php do_action('woocommerce_before_shop_loop'); ?>
 

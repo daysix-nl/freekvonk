@@ -1123,6 +1123,9 @@ video {
 .max-w-\[523px\] {
   max-width: 523px;
 }
+.max-w-full {
+  max-width: 100%;
+}
 .scale-105 {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1493,6 +1496,10 @@ video {
 .px-1\.5 {
   padding-left: 15px;
   padding-right: 15px;
+}
+.px-2 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .px-3 {
   padding-left: 30px;
@@ -1987,6 +1994,10 @@ video {
     width: 411px;
   }
 
+  .md\:w-\[480px\] {
+    width: 480px;
+  }
+
   .md\:w-\[481px\] {
     width: 481px;
   }
@@ -2342,6 +2353,10 @@ video {
     height: 58.5px;
   }
 
+  .lg\:h-\[640px\] {
+    height: 640px;
+  }
+
   .lg\:h-\[80px\] {
     height: 80px;
   }
@@ -2378,6 +2393,14 @@ video {
     width: 376px;
   }
 
+  .lg\:w-\[448px\] {
+    width: 448px;
+  }
+
+  .lg\:w-\[452px\] {
+    width: 452px;
+  }
+
   .lg\:w-\[462px\] {
     width: 462px;
   }
@@ -2410,8 +2433,16 @@ video {
     width: 630px;
   }
 
+  .lg\:w-\[693px\] {
+    width: 693px;
+  }
+
   .lg\:w-\[95px\] {
     width: 95px;
+  }
+
+  .lg\:max-w-\[1145px\] {
+    max-width: 1145px;
   }
 
   .lg\:max-w-\[1168px\] {
@@ -2527,6 +2558,11 @@ video {
 
   .lg\:overflow-y-auto {
     overflow-y: auto;
+  }
+
+  .lg\:px-\[unset\] {
+    padding-left: unset;
+    padding-right: unset;
   }
 
   .lg\:py-\[unset\] {
