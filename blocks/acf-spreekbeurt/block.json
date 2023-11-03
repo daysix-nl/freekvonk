@@ -1,0 +1,27 @@
+{
+  "name": "acf-spreekbeurt",
+  "title": "Spreekbeurt",
+  "description": "",
+  "category": "bibliotheek",
+  "icon": "download",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-spreekbeurt.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/freekvonk/img/preview-images/leeg.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

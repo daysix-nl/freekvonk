@@ -1,0 +1,139 @@
+{
+    "key": "group_6541f5ceb2719",
+    "title": "Blok settings - gradient",
+    "fields": [
+        {
+            "key": "field_6541f5ceb4542",
+            "label": "Blok settings",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_6541f5ceb4545",
+            "label": "ID",
+            "name": "section_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "#",
+            "append": ""
+        },
+        {
+            "key": "field_6541f5ceb4548",
+            "label": "Start kleur",
+            "name": "from",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "from-transparent": "Transparant",
+                "from-wit": "Wit",
+                "from-zwart": "Zwart",
+                "from-beige": "Beige",
+                "from-lichtgroen": "Licht groen",
+                "from-groen": "Groen",
+                "from-mosgroen": "Mos groen",
+                "from-donkergroen": "Donker groen",
+                "from-diepgroen": "Diep groen",
+                "from-bruin": "Bruin",
+                "from-lichtoranje": "Licht oranje",
+                "from-lichtgrijs": "Licht grijs",
+                "from-grijs": "Grijs",
+                "from-donkergrijs": "Donker grijs"
+            },
+            "default_value": "from-zwart",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6541f632547bf",
+            "label": "Eind kleur",
+            "name": "to",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "to-transparent": "Transparant",
+                "to-wit": "Wit",
+                "to-zwart": "Zwart",
+                "to-beige": "Beige",
+                "to-lichtgroen": "Licht groen",
+                "to-groen": "Groen",
+                "to-mosgroen": "Mos groen",
+                "to-donkergroen": "Donker groen",
+                "to-diepgroen": "Diep groen",
+                "to-bruin": "Bruin",
+                "to-lichtoranje": "Licht oranje",
+                "to-lichtgrijs": "Licht grijs",
+                "to-grijs": "Grijs",
+                "to-donkergrijs": "Donker grijs"
+            },
+            "default_value": "to-wit",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-achtergrond-gradient"
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698821773
+}

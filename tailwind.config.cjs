@@ -40,6 +40,7 @@ module.exports = {
         beige: "#EFE7DE",
         lichtgroen: "#8CC63F",
         groen: "#438645",
+        mosgroen: "#183E0A",
         donkergroen: "#0A1F16",
         diepgroen: "#142C2B",
         bruin: "#523524",

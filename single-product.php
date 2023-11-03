@@ -27,10 +27,12 @@ if ( post_password_required() ) {
     <!-- TITEL -->
     <section class="hidden md:grid pt-[80px]">
         <p class="w-full text-center md:text-80 md:leading-100 font-tanker text-black">Shop</p>        
-        <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full]"></div>    
+        <div class="w-full max-w-[300px] mx-auto">
+            <div class="w-full lottie-title text-center"></div>
+        </div>
     </section>
      <!-- SUBMENU -->
-    <section class="pt-[0px] md:pt-[50px]">
+    <section class="pt-[0px] md:pt-[30px]">
         <!-- MOBIEL SUBMENU -->
         <a href="/shop" class="tet-16 font-karlsen text-[#2B2828]">Terug</a>
     </section> 
@@ -167,14 +169,22 @@ if ( post_password_required() ) {
                     </div>
                 </div>
             </div>
-            <div class="accordion-item"> 
-                <button class="accordion text-16 leading-32 font-karlsen font-normal text-black py-[25px] flex">Verzending & Retouren</button>
-                <div class="panel">
-                    <div class="px-1.5 flex flex-col pb-4">
-                        <p class="text-16 leading-30 font-karlsen text-black w-fit">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <?php
+            if( have_rows('informatie') ):
+                while( have_rows('informatie') ) : the_row(); ?>
+                <div class="accordion-item"> 
+                    <button class="accordion text-16 leading-32 font-karlsen font-normal text-black py-[25px] flex"><?php the_sub_field('titel');?></button>
+                    <div class="panel">
+                        <div class="px-1.5 flex flex-col pb-4">
+                            <div class="text-16 leading-30 font-karlsen text-black w-fit text-editor"><?php the_sub_field('tekst');?></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
         </div>
     </div>
 
@@ -229,7 +239,7 @@ if ( post_password_required() ) {
                                     $publish_date = $product->get_date_created();
                                     $current_date = new WC_DateTime();
                                     $days_difference = $current_date->diff($publish_date)->days;
-                                    if ($days_difference > 30) {
+                                    if ($days_difference > 2) {
                                     
                                     } else { ?>
                                     <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">
@@ -352,7 +362,7 @@ if ( post_password_required() ) {
                                     $publish_date = $product->get_date_created();
                                     $current_date = new WC_DateTime();
                                     $days_difference = $current_date->diff($publish_date)->days;
-                                    if ($days_difference > 30) {
+                                    if ($days_difference > 2) {
                                     
                                     } else { ?>
                                     <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">

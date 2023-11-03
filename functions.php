@@ -93,8 +93,8 @@ add_filter('block_categories_all', function ($categories) {
 
     array_unshift($categories,   
       [
-        'slug'  => 'pagina',
-        'title' => 'Item templates',
+        'slug'  => 'achtergrond',
+        'title' => 'Achtergronden',
         'icon'  => null
     ],        
     [
@@ -547,6 +547,8 @@ function add_custom_admin_bar_styles() {
             #wc_admin_dashboard_setup { display: none !important; }
             #rank_math_dashboard_widget { display: none !important; }
             #toplevel_page_getwooplugins { display: none !important; }
+            #wp-admin-bar-weglot { display: none !important; }
+            #toplevel_page_weglot-settings { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
 
@@ -810,3 +812,30 @@ add_filter('wc_add_to_cart_message', 'custom_add_to_cart_message', 10, 2);
 
 
 
+register_sidebar( array(
+  'name' => __( 'Filter sidebar', 'rmccollin' ),
+  'id' => 'filter-sidebar',
+  'description' => __( 'A widget area located to the left filter sidebar.', 'rmccollin' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div></div>',
+  'before_title' => '<p class="large fbody regular fcd">',
+  'after_title' => '</p>',
+) );
+ 
+// Disables the block editor from managing widgets in the Gutenberg plugin.
+add_filter( 'gutenberg_use_widgets_block_editor', '__return_false', 100 );
+ 
+// Disables the block editor from managing widgets. renamed from wp_use_widgets_block_editor
+add_filter( 'use_widgets_block_editor', '__return_false' );
+
+
+
+
+/* Start code to add in the functions.php */
+add_filter( 'wpc_mobile_width', 'my_custom_wpc_mobile_width' );
+function my_custom_wpc_mobile_width( $width ) {
+    // Screen width in px when Filters widget should become mobile
+    $width = 1200; 
+    return $width;
+}
+/* End code to add in the functions.php  */

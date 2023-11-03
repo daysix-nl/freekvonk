@@ -21,6 +21,7 @@
             margin-left: auto;
             transition: .3s;
             display: block;
+            transform: rotate(180deg);
             transform-origin: center;
         }
 
@@ -29,7 +30,7 @@
             transition: 0s;
 
             &::after {
-                transform: rotate(180deg);
+                transform: rotate(0deg);
                 transform-origin: center;
             }
         }
@@ -979,5 +980,68 @@ html .wpc-filters-range-inputs .ui-button.ui-state-disabled:hover {
 
 
 .woocommerce-checkout.woocommerce-order-received .freek-checkout {
+    display: none !important;
+}
+
+// .wpc-filters-open-button-container.wpc-open-button-984 {
+//     display: none !important;
+// }
+
+body .wpc-filters-open-button-container a.wpc-filters-open-widget,
+body .wpc-filters-open-button-container a.wpc-open-close-filters-button {
+    display: inline-block;
+    text-align: left;
+    border: 0px solid #2c2d33 !important;
+    border-radius: 2px;
+    line-height: 1.5;
+    padding: 0px 0px !important;
+    background-color: transparent;
+    color: #2B2828 !important;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-weight: 400;
+    transition: none;
+    position: relative;
+    font-family: Karlsen, sans-serif !important;
+    font-size: 16px !important;
+}
+
+.wpc-filters-apply-button {
+    width: 100% !important;
+    background: #8CC63F !important;
+    z-index: 1 !important;
+    font-family: Tanker, sans-serif !important;
+    font-size: 19px !important;
+    line-height: 25px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 0px !important;
+    font-weight: 400 !important;
+    color: #fff !important;
+    border: 1px solid #8CC63F !important;
+}
+
+.wpc-filters-close-button {
+    width: 100% !important;
+    background: #fff !important;
+    z-index: 1 !important;
+    font-family: Karlsen, sans-serif !important;
+    font-size: 16px !important;
+    line-height: 25px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 0px !important;
+    font-weight: 400 !important;
+    color: #0A1F16 !important;
+    border: 1px solid #0A1F16 !important;
+}
+
+.woocommerce-form-coupon-toggle {
     display: none !important;
 }

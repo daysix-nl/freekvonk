@@ -33,19 +33,26 @@ get_header( 'shop' ); ?>
         <img src="/wp-content/themes/freekvonk/img/local/banner-kamili.png" alt="" class="min-w-full min-h-full object-cover object-right">
     </div>
 
-    <button class="filter-button-shop lg:hidden">
+    <div class="flex justify-end">
+        <?php echo do_shortcode('[fe_open_button]'); ?>
+    </div>
+
+    <!-- <button class="filter-button-shop lg:hidden">
         Filter
     </button>
     <div class="filter-shop-modal">
         <button class="filter-close p-10">Close</button>
     </div>
-    <div class="filter-overlay"></div>
+    <div class="filter-overlay"></div> -->
 
 
     <div class="flex justify-between">
         <!-- SIDEBAR -->
         <div class="hidden lg:block lg:w-[222px] filter">
             <?php echo do_shortcode('[fe_widget]'); ?>
+             <!-- <?php if ( is_active_sidebar( 'filter-sidebar' ) ) { ?>
+                <?php dynamic_sidebar( 'filter-sidebar' ); ?>
+            <?php } ?> -->
         </div>
 
         <!-- PRODUCTEN -->
@@ -78,7 +85,7 @@ if ($products_query->have_posts()) :
                     $publish_date = $product->get_date_created();
                     $current_date = new WC_DateTime();
                     $days_difference = $current_date->diff($publish_date)->days;
-                    if ($days_difference > 30) {
+                    if ($days_difference > 2) {
                        
                     } else { ?>
                     <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">

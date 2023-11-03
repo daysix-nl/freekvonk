@@ -1,0 +1,27 @@
+{
+  "name": "acf-achtergrond-gradient",
+  "title": "Gradient",
+  "description": "",
+  "category": "achtergrond",
+  "icon": "art",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-achtergrond-gradient.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/freekvonk/img/local/leeg.png",
+        "is_preview": true
+      }
+    }
+  }
+}

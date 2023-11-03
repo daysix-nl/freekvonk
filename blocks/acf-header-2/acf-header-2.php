@@ -13,7 +13,9 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
 <section class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> relative overflow-hidden z-[2]">
         <div class="container hidden md:grid pt-[80px]">
             <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
-            <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full]"></div>    
+            <div class="w-full max-w-[300px] mx-auto">
+                <div class="w-full lottie-title text-center"></div>
+            </div>
         </div>
         <?php if (get_field('submenu')): ?>   
         <div class="pt-[0px] md:pt-[unset]">
@@ -32,7 +34,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-            <div class="hidden md:flex md:space-x-[30px] lg:space-x-[30px] xl:space-x-[65px] mx-auto w-fit md:mt-[50px]">
+            <div class="hidden md:flex md:space-x-[30px] lg:space-x-[30px] xl:space-x-[65px] mx-auto w-fit md:mt-[30px]">
                 <?php
                 if( have_rows('submenu') ):
                     while( have_rows('submenu') ) : the_row(); ?>

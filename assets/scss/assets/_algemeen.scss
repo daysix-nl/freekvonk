@@ -164,7 +164,7 @@ main {
     font-size: 22px;
     line-height: 30px;
     font-weight: 600;
-    font-family: satoshi;
+    font-family: Karlsen, sans-serif !important;
 
     // MD
     @media (min-width: 768px) {
@@ -245,6 +245,7 @@ html {
 .bg-diepgroen,
 .bg-lichtgroen,
 .bg-groen,
+.bg-mosgroen,
 .bg-lichtoranje,
 .bg-bruin,
 .bg-donkergrijs,

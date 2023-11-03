@@ -10,7 +10,7 @@
 
 
 
-<footer>
+<footer class="overflow-hidden">
 <section class="bg-[#8CC63F]">
     <div class="mx-[auto] lg:mx-[40px] max-w-[390px] md:max-w-[600px] lg:max-w-[unset] pt-[45px] md:pt-[60px] xl:pt-[65px]">
         <a href="/" class="">

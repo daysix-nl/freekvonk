@@ -19,21 +19,21 @@
 
 
 
-.item {
-    display: none;
-}
+// .item {
+//     display: none;
+// }
 
-@media (min-width: 1280px) {
-    .item:nth-child(-n+9) {
-        display: block;
-    }
-}
+// @media (min-width: 1280px) {
+//     .item:nth-child(-n+9) {
+//         display: block;
+//     }
+// }
 
-@media (max-width: 1280px) {
-    .item:nth-child(-n+3) {
-        display: block;
-    }
-}
+// @media (max-width: 1280px) {
+//     .item:nth-child(-n+3) {
+//         display: block;
+//     }
+// }
 
 .team-section .team-block.list-b-none .post {
 
@@ -52,6 +52,54 @@
 
     @media only screen and (min-width: 1200px) {
         &:nth-of-type(n+100) {
+            display: none !important;
+        }
+    }
+
+}
+
+.verhalen-section.team-block.list-b-none .post {
+
+
+    @media only screen and (max-width: 768px) {
+        &:nth-of-type(n+4) {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        &:nth-of-type(n+4) {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        &:nth-of-type(n+10) {
+            display: none !important;
+        }
+    }
+
+}
+
+.search-producten-section.team-block.list-b-none .post {
+    &:nth-of-type(n+5) {
+        display: none !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+        &:nth-of-type(n+5) {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        &:nth-of-type(n+3) {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        &:nth-of-type(n+4) {
             display: none !important;
         }
     }

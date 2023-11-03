@@ -5,7 +5,7 @@ if (isset($block['data']['preview_image_help'])): ?>
 else: ?>
 <!-- PARTNERS -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
-    <div class="container grid grid-cols-2 md:grid-cols-4 gap-3">
+    <div class="container grid grid-cols-2 md:grid-cols-4 gap-x-3">
         <?php
         if( have_rows('partners') ):
             while( have_rows('partners') ) : the_row(); ?>

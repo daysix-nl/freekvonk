@@ -62,6 +62,7 @@
                 "bg-beige": "Beige",
                 "bg-lichtgroen": "Licht groen",
                 "bg-groen": "Groen",
+                "bg-mosgroen": "Mos groen",
                 "bg-donkergroen": "Donker groen",
                 "bg-diepgroen": "Diep groen",
                 "bg-bruin": "Bruin",
@@ -150,6 +151,16 @@
                 "param": "block",
                 "operator": "!=",
                 "value": "acf\/acf-header-2"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/acf-achtergrond-gradient"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/acf-achtergrond-effen"
             }
         ]
     ],
@@ -162,5 +173,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698655754
+    "modified": 1698821539
 }

@@ -1,0 +1,27 @@
+{
+  "name": "acf-content-3",
+  "title": "Content 3",
+  "description": "",
+  "category": "bibliotheek",
+  "icon": "editor-aligncenter",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-content-3.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/freekvonk/img/preview-images/leeg.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}
