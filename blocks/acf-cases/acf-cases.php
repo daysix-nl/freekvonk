@@ -15,7 +15,7 @@ else: ?>
             )
             );
             $post_count = $loop->post_count; // Aantal berichten in de queryloop
-            $show_load_more_button = $post_count > 6;
+            $show_load_more_button = $post_count > 4;
         ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post();  $post_id = get_the_ID(); ?>
             <?php
