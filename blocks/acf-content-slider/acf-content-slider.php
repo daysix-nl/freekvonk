@@ -18,7 +18,7 @@ else: ?>
                     ?>
                     <div class="swiper-slide">
                         <div class="grid grid-cols-1 lg:grid-cols-2">
-                            <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[47.5vw] lg:w-[50vw]  relative">
+                            <div class="lg:aspect-square h-[242px] md:h-[450px] lg:h-[47.5vw] lg:w-[50vw]  relative">
                                 <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center bg-[#2B2828]">
                             </div>
                             <div class="lg:aspect-square min-h-[460px] md:min-h-[430px] lg:min-h-[unset] h-full w-full lg:h-[47.5vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center <?php the_sub_field('achtergrond');?>">

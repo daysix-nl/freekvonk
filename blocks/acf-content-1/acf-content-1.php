@@ -22,7 +22,7 @@ $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
 <!-- CONTENT 1 -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
     <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="h-[250px] md:h-[350px] lg:h-[47.5vw] lg:w-[50vw] overflow-hidden relative order-1 <?php the_field('uitlijning');?>">
+        <div class="h-[242px] md:h-[450px] lg:h-[47.5vw] lg:w-[50vw] overflow-hidden relative order-1 <?php the_field('uitlijning');?>">
             <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center bg-[#2B2828]">
             <?php if (get_field('logo')): ?>  
             <div class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
