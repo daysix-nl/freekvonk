@@ -103,16 +103,7 @@
         <div class="flex items-center space-x-[20px]">
             <div class="md:hidden h-[18px] flex items-center relative">
                 <h1 class="w-full text-center text-16 leading-18 pb-[2px] font-tanker text-white">
-                        <?php
-                        if (is_shop()) {
-                            ?>
-                                Shop
-                            <?php
-                        } else {
-                            the_title();
-                        }
-                        ?>
-                         
+
                     </h1>
                     <div class="absolute bottom-[-5px] h-[5px] w-full overflow-hidden">
                     <svg class="h-[5px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.854" height="5.471" viewBox="0 0 65.854 5.471">
@@ -201,6 +192,10 @@
     <div class="bg-[transparent] h-[20px]"></div>
 
 </header>
+
+<div class="container">
+    <h1 class="w-full text-center text-16 leading-18 pb-[2px] font-tanker text-white"><?php the_title();?></h1>
+</div>
 
 
 <?php include get_template_directory() . '/componenten/hamburger-menu.php'; ?>

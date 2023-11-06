@@ -171,7 +171,7 @@
                     </g>
                 </svg>
                 <?php  if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
-                <div class="absolute bottom-[-3px] right-[-3px] bg-[#8CC63F] h-[10.23px] w-[10.23px] rounded-full flex justify-center items-center text-8 text-white"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                <div class="absolute bottom-[-3px] right-[-3px] bg-[#8CC63F] h-[14px] w-[14px] rounded-full flex justify-center items-center text-9 text-white"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
                 <?php } ?>
             </button>
             <button id="hamburger" class="pointer">

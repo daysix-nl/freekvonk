@@ -7,7 +7,7 @@
 
 
 
- get_header('black'); ?>
+ get_header('black-notitle'); ?>
  <main class="bg-[#000]">
 <?php the_content();?>
 </main>

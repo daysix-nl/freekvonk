@@ -10,21 +10,23 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title><?php bloginfo( 'name' ); ?> | <?php the_title(); ?></title>
-    <link
+<link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <title><?php bloginfo( 'name' ); ?> | <?php if (is_shop()) { ?><?php woocommerce_page_title(); ?><?php } else { the_title(); } ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
-<header class="fixed z-[999]">
+<header class="fixed z-[999] bg-white">
     <!-- LIVE NOW BALK -->
-    <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero">
-        <div  id="scroll-text" class="flex w-full swiper-wrapper">
+    <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero z-[9999]">
+        <div id="scroll-text" class="flex w-full swiper-wrapper">
             <!-- LIVE NOW REPEATER / SLIDER -->
             <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
                 <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Nieuwe campagne online!</p>
@@ -101,6 +103,28 @@
             </svg>
         </a>
         <div class="flex items-center space-x-[20px]">
+            <div class="md:hidden h-[18px] flex items-center relative">
+                <h1 class="w-full text-center text-16 leading-18 pb-[2px] font-tanker text-black">
+                       
+                         
+                    </h1>
+                    <div class="absolute bottom-[-5px] h-[5px] w-full overflow-hidden">
+                    <svg class="h-[5px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.854" height="5.471" viewBox="0 0 65.854 5.471">
+                            <defs>
+                                <clipPath id="clip-path">
+                                <rect id="Rectangle_14" data-name="Rectangle 14" width="65.854" height="5.471" fill="#8cc63f"/>
+                                </clipPath>
+                            </defs>
+                            <g id="Group_503" data-name="Group 503" transform="translate(0 0)">
+                                <g id="Group_13" data-name="Group 13" transform="translate(0 0)" clip-path="url(#clip-path)">
+                                <path id="Path_14" data-name="Path 14" d="M65.366,1.459c-.643.087-1.286.126-1.933.169s-1.283.115-1.925.184q-1.93.208-3.865.374a77.276,77.276,0,0,1-7.73.321,42.652,42.652,0,0,1-7.489-.729A33.545,33.545,0,0,1,38.709.837,12.872,12.872,0,0,0,34.845,0c-2,.005-3.591,1.174-5.11,2.314a13.662,13.662,0,0,1-2.2,1.44,3.429,3.429,0,0,1-2.143.34,6.339,6.339,0,0,1-2.363-1.241,12,12,0,0,0-2.456-1.528,4.787,4.787,0,0,0-3.034-.171,18.348,18.348,0,0,0-3.032,1.269,6.688,6.688,0,0,1-3.2.707,18.5,18.5,0,0,1-3.72-.778c-2.006-.528-4.284-.875-6.212.11A4.192,4.192,0,0,0,.182,3.38c-.578.639.359,1.58.96.947,1.309-1.38,3.458-1.282,5.183-.9,2.454.551,4.917,1.549,7.439.734a32.34,32.34,0,0,0,3-1.314,4.459,4.459,0,0,1,2.753-.457,6.637,6.637,0,0,1,2.319,1.25A11.673,11.673,0,0,0,24.3,5.159a5.325,5.325,0,0,0,5.037-.9c1.413-.954,2.752-2.293,4.4-2.762a6.122,6.122,0,0,1,3.445.261c1.22.363,2.423.761,3.665,1.049a39.91,39.91,0,0,0,7.575.953,61.317,61.317,0,0,0,7.657-.243,73.307,73.307,0,0,0,7.607-.985c.631-.124,1.256-.248,1.894-.333a.385.385,0,0,0,.271-.47.4.4,0,0,0-.477-.267" transform="translate(0 0)" fill="#8cc63f"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                <!-- <div class="h-[2px] w-[70px] bg-[#78B047] mx-auto rounded-[full]"></div>  -->
+            </div>
             <!-- <a href="#" class="hidden lg:block">
                 <svg width="80.2723982px" height="33px" viewBox="0 0 80.2723982 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -168,8 +192,11 @@
             </button>
         </div>
     </div>
-
+    <div class="bg-white h-[20px]"></div>
 </header>
 
+<div class="container">
+    <h1 class="w-full text-center text-16 leading-18 pb-[2px] font-tanker text-black"><?php the_title();?></h1>
+</div>
 
 <?php include get_template_directory() . '/componenten/hamburger-menu.php'; ?>

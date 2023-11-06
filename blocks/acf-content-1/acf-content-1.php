@@ -22,7 +22,7 @@ $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
 <!-- CONTENT 1 -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
     <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[47.5vw] lg:w-[50vw] overflow-hidden relative order-1 <?php the_field('uitlijning');?>">
+        <div class="h-[250px] md:h-[350px] lg:h-[47.5vw] lg:w-[50vw] overflow-hidden relative order-1 <?php the_field('uitlijning');?>">
             <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center bg-[#2B2828]">
             <?php if (get_field('logo')): ?>  
             <div class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
@@ -30,8 +30,8 @@ $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
             </div>
             <?php endif; ?>
         </div>
-        <div class="lg:aspect-square  h-full w-full lg:h-[47.5vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative <?php the_field('achtergrond');?> order-2">
-            <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[47.5vh] lg:overflow-hidden z-[40] py-[50px] lg:py-[unset]">
+        <div class="h-full w-full lg:h-[47.5vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative overflow-hidden <?php the_field('achtergrond');?> order-2">
+            <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[530px] overflow-hidden z-[40] py-[50px] lg:py-[unset]">
                 <?php if (get_field('subtitel')): ?>   
                 <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen font-normal text-color uppercase mb-[15px] tracking-wider"><?php the_field('subtitel');?></h2>
                 <?php endif; ?>

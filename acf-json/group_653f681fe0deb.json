@@ -85,13 +85,6 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/acf-header-1"
-            }
-        ],
-        [
-            {
-                "param": "block",
-                "operator": "==",
                 "value": "acf\/acf-header-2"
             }
         ],
@@ -112,5 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698821790
+    "modified": 1699298944
 }

@@ -182,3 +182,25 @@
 </script>
 
 
+<<<<<<< HEAD
+=======
+document.addEventListener("DOMContentLoaded", function() {
+    // Functie om de standaard achtergrond in te stellen (background-1)
+function setDefaultMenuBackground() {
+    for (let i = 2; i <= 7; i++) {
+        document.getElementById(`menubackground-${i}`).style.opacity = 0;
+    }
+}
+
+// Functie om een achtergrond te activeren
+function activateMenuBackground(backgroundNumber) {
+    setDefaultMenuBackground(); // Eerst de standaard achtergrond instellen
+    document.getElementById(`menubackground-${backgroundNumber}`).style.opacity = 1; // Daarna de gewenste achtergrond activeren
+}
+});
+    activateMenuBackground(1); // Zorg ervoor dat deze aanroep binnen de event listener staat.
+});
+
+
+</script>
+>>>>>>> f316d3c (wip)
