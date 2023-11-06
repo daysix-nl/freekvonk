@@ -19,7 +19,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
         </div>
         <?php if (get_field('submenu')): ?>   
         <div class="pt-[0px] md:pt-[unset]">
-            <div class="swiper mySwiper-navigatie md:hidden">
+            <div class="swiper mySwiper-navigatie hidden">
                 <div class="swiper-wrapper">
                     <?php
                     if( have_rows('submenu') ):
@@ -47,12 +47,12 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
             </div>
         </div> 
         <?php else: ?>
-            <div class="container mt-[50px]">
+            <div class="container mt-[50px] hidden md:block">
                 <a href="javascript:window.history.back()" class="tet-16 font-karlsen font-normal text-color">Terug</a>
             </div>
         <?php endif; ?>
         <section>
-            <div class="container mt-[30px] md:mt-[50px] lg:mt-[80px] pb-[30px] md:pb-[50px] lg:pb-[80px]">
+            <div class="container mt-[324px] md:mt-[50px] lg:mt-[80px] pb-[30px] md:pb-[50px] lg:pb-[80px]">
                 <div class="max-w-[390px] md:max-w-[426px] lg:max-w-[604px]">
                     <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen text-color font-normal uppercase mb-[15px] tracking-wider"><?php the_field('subtitel');?></h2>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-color"><?php the_field('titel');?></h3>
@@ -79,7 +79,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
                 </div>
             </div>
         </section>
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-[-1]">
+        <div class="absolute top-0 left-0 right-0 bottom-[200px] md:bottom-0 z-[-1]">
             <div class="relative h-full">
                 <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-right-top bg-[#2B2828]">
                 <div class="h-[80px] bg-gradient-to-b from-[#000] to-transparent w-full absolute top-[0px] left-0 right-0"></div>

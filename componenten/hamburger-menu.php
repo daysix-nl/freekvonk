@@ -5,9 +5,9 @@
 <section id="hamburger-menu" class="fixed top-0 left-0 bottom-0 right-0 h-full w-full z-[9999] hidden overflow-hidden">
     <!-- NAVIGATIE -->
     <div class="absolute top-0 left-0 right-0 z-[999]">
-        <div class="mx-[20px] lg:mx-[40px] h-[33px] mt-[10px] md:mt-[15px] flex items-center"><div id="weglot_here"></div></div>
-        <div class="mx-[20px] lg:mx-[40px] h-[30px] md:h-[40px] flex items-end justify-between">
-            <a href="/" class="mb-[1px] md:mb-[4px] z-[999]">
+        <div class="mx-[20px] lg:mx-[40px] h-[27px] mt-[8px] mb-[18px] md:mt-[8px] md:mb-[18px] flex items-center"><div id="weglot_here"></div></div>
+        <div class="mx-[20px] lg:mx-[40px] h-[18px] md:h-[17.67px] flex items-end justify-between">
+            <a href="/" class="mb-[0px] md:mb-[0px] z-[999]">
                 <svg id="Group_293" data-name="Group 293" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.268" height="17.676" viewBox="0 0 145.268 17.676">
                 <defs>
                     <clipPath id="clip-path">
@@ -106,7 +106,6 @@
                         endif;
                         ?>
                     </div>
-                    
                 </div>
                 <div class="absolute left-0 bottom-0 right-0 top-[unset]">
                     <div class="bg-gradient-to-b from-[transparent] via-[#0a1f169b] to-[#0a1f16] h-[50px]"></div>
@@ -138,7 +137,6 @@
                 if (have_rows('menu_items', 'option')) :
                     $count = 0;
                     $first_image_displayed = false; // Om bij te houden of het eerste item is weergegeven
-
                     while (have_rows('menu_items', 'option')) : the_row();
                         $count++;
                         $image = get_sub_field('afbeelding', 'option');
@@ -164,7 +162,6 @@
                     endwhile;
                 endif;
                 ?>
-      
         </div>
     </div>
 </section>

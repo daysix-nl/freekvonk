@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' ); ?>
 
-<main class="pt-[115px]">
+<main class="pt-[91px] lg:pt-[90.67px]">
 
 <?php do_action('woocommerce_before_shop_loop'); ?>
 
@@ -29,7 +29,7 @@ get_header( 'shop' ); ?>
 <div class="max-w-[354px] md:max-w-[725px] lg:max-w-[1168px] xl:max-w-[1326px] mx-auto pb-[85px] xl:pb-[105px]">
 
     <!-- SHOP HEADER -->
-    <div class="w-full aspect-[16/5] bg-black mb-[20px] lg:mb-[60px] overflow-hidden">
+    <div class="w-full aspect-[16/5] bg-black mb-[0px] lg:mb-[30px] overflow-hidden">
         <img src="/wp-content/themes/freekvonk/img/local/banner-kamili.png" alt="" class="min-w-full min-h-full object-cover object-right">
     </div>
 

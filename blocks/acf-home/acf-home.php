@@ -78,22 +78,22 @@ $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
 
 <section class="h-[calc(100dvh-33px)] flex items-center bg-[#0A1F161A]">
     <div class="grid grid-cols-1 lg:grid-cols-3 h-[calc(70dvh-33px)] md:h-[calc(100dvh-200px)] lg:h-[calc(100dvh-33px)] w-full pt-[62px] lg:pt-[unset] min-h-[550px]">
-        <a href="<?php echo $link1_url; ?>" id="home-item-1" class="col-span-1 w-full h-full hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(1)">
+        <a href="<?php echo $link1_url; ?>" id="home-item-1" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(1)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link1_target; ?>"><?php echo $link1_text; ?></h2>
         </a>
-        <a href="<?php echo $link2_url; ?>" id="home-item-2" class="col-span-1 w-full h-full hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(2)">
+        <a href="<?php echo $link2_url; ?>" id="home-item-2" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(2)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link2_target; ?>"><?php echo $link2_text; ?></h2>
         </a>
-        <a href="<?php echo $link3_url; ?>" id="home-item-3" class="col-span-1 w-full h-full hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(3)">
+        <a href="<?php echo $link3_url; ?>" id="home-item-3" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(3)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link3_target; ?>"><?php echo $link3_text; ?></h2>
         </a>
-        <a href="<?php echo $link4_url; ?>" id="home-item-4" class="col-span-1 w-full h-full hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(4)">
+        <a href="<?php echo $link4_url; ?>" id="home-item-4" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(4)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[333px] text-center lg:text-left" target="<?php echo $link4_target; ?>"><?php echo $link4_text; ?></h2>
         </a>
-        <a href="<?php echo $link5_url; ?>" id="home-item-5" class="col-span-1 w-full h-full hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(5)">
+        <a href="<?php echo $link5_url; ?>" id="home-item-5" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(5)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link5_target; ?>"><?php echo $link5_text; ?></h2>
         </a>
-        <a href="<?php echo $link6_url; ?>" id="home-item-6" class="col-span-1 w-full h-full hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(6)">
+        <a href="<?php echo $link6_url; ?>" id="home-item-6" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(6)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link6_target; ?>"><?php echo $link6_text; ?></h2>
         </a>
     </div>

@@ -77,8 +77,8 @@
         </div>
     </div>
     <!-- NAVIGATIE -->
-    <div class="mx-[20px] lg:mx-[40px] h-[40px] md:h-[55px] flex items-end justify-between">
-        <a href="/" class="mb-[1px] md:mb-[4px]">
+    <div class="mx-[20px] lg:mx-[40px] h-[38px] md:h-[37.67px] flex items-end justify-between">
+        <a href="/" class="mb-[0px] md:mb-[0px]">
             <svg id="Group_293" data-name="Group 293" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.268" height="17.676" viewBox="0 0 145.268 17.676">
             <defs>
                 <clipPath id="clip-path">
