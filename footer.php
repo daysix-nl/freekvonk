@@ -12,7 +12,7 @@
 
 <footer class="overflow-hidden">
 <section class="bg-[#8CC63F]">
-    <div class="mx-[auto] lg:mx-[40px] max-w-[390px] md:max-w-[600px] lg:max-w-[unset] pt-[45px] md:pt-[60px] xl:pt-[65px]">
+    <div class="mx-[auto] lg:mx-[40px] max-w-[390px] px-2 md:px-[unset] md:max-w-[600px] lg:max-w-[unset] pt-[45px] md:pt-[60px] xl:pt-[65px]">
         <a href="/" class="">
             <svg id="Group_293" data-name="Group 293" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.268" height="17.676" viewBox="0 0 145.268 17.676">
                 <defs>
