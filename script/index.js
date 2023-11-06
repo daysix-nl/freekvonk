@@ -11,7 +11,7 @@ try {
     },
     slidesPerView: "auto",
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   var swipers = new Swiper(".mySwiper-navigatie", {
@@ -127,7 +127,7 @@ try {
       prevEl: ".swiper-button-prev-over-freek",
     },
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
@@ -137,7 +137,7 @@ try {
     initialSlide: 1,
     spaceBetween: 8,
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   const acc = document.getElementsByClassName("accordion");
@@ -159,7 +159,7 @@ try {
       }
     });
   }
-} catch (error) { }
+} catch (error) {}
 
 try {
   const forEach = (array, callback, scope) => {
@@ -208,7 +208,7 @@ try {
       }
     });
   });
-} catch (error) { }
+} catch (error) {}
 try {
   // Get reference to the Lottie animation element
   const elementLottie = document.querySelectorAll(".lottie-title");
@@ -226,7 +226,7 @@ try {
     // Make sure the animation's progress is at 0
     animation.goToAndStop(0, true);
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   // Get references to all Lottie animation elements
@@ -245,7 +245,7 @@ try {
     // Make sure the animation's progress is at 0
     animation.goToAndStop(0, true);
   });
-} catch (error) { }
+} catch (error) {}
 try {
   document.getElementById("loadMoreBtn").addEventListener("click", function () {
     const items = document.querySelectorAll(".item:not(.visible)");
@@ -264,7 +264,7 @@ try {
       this.innerText = "Laad meer";
     }
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   const filterButtons = document.querySelector(".filter-button-shop");
@@ -286,7 +286,7 @@ try {
     filterModal.classList.toggle("active");
     filterModalOverlay.classList.toggle("active");
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   var swiperShop = new Swiper(".mySwiper-shop", {
@@ -348,4 +348,19 @@ try {
       clickable: true,
     },
   });
-} catch (error) { }
+} catch (error) {}
+
+try {
+  const menuHref = document.querySelectorAll(".menu-hover");
+  const menuBackground = document.querySelectorAll(".menu-background");
+
+  for (let i = 0; i < menuHref.length; i++) {
+    menuHref[i].addEventListener("mouseover", () => {
+      for (let j = 0; j < menuBackground.length; j++) {
+        menuBackground[j].classList.add("hidden");
+      }
+      const img = document.querySelector(`#menubackground-${i}`);
+      img.classList.remove("hidden");
+    });
+  }
+} catch (error) {}

@@ -92,16 +92,17 @@
                         if (have_rows('menu_items', 'option')) :
                             $count = 0;
                             while (have_rows('menu_items', 'option')) : the_row();
-                                $count++;
+                              
                                 $link = get_sub_field('link', 'option');
                                 $link_url = isset($link['url']) ? esc_url($link['url']) : '';
                                 $link_text = isset($link['title']) ? esc_html($link['title']) : '';
                                 $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
                         ?>
-                                <a href="<?php echo $link_url; ?>" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit menu-hover" onmouseover="activateMenuBackground(<?php echo $count; ?>)">
+                                <a  id="menuHref-<?php echo $count; ?>" href="<?php echo $link_url; ?>" class="text-55 leading-48 md:text-60 md:leading-53 lg:text-60 lg:leading-53 xl:text-60 xl:leading-53 font-tanker text-white hover:text-[#FADE6C] duration-300 w-fit menu-hover">
                                     <span><?php echo $link_text; ?></span>
                                 </a>
                         <?php
+                          $count++;
                             endwhile;
                         endif;
                         ?>
@@ -138,27 +139,17 @@
                     $count = 0;
                     $first_image_displayed = false; // Om bij te houden of het eerste item is weergegeven
                     while (have_rows('menu_items', 'option')) : the_row();
-                        $count++;
+                        
                         $image = get_sub_field('afbeelding', 'option');
                         $image_url = isset($image['url']) ? esc_url($image['url']) : '';
                         $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
-
-                        if ($count === 1 && !$first_image_displayed) { 
-                            // Eerste item buiten de lus weergeven
-                            $first_image_displayed = true;
-                            ?>
-                            <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="menubackground-1">
-                                <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-center">
-                            </div>
-                        <?php
-                        } else {
-                            // Items vanaf het tweede item binnen de lus weergeven
                         ?>
-                            <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="menubackground-<?php echo $count; ?>" style="opacity: 0;">
+                            <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1] <?= $count !== 0 ? "hidden" : "" ?> menu-background" id="menubackground-<?php echo $count; ?>">
                                 <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-center">
                             </div>
                         <?php
-                        }
+                
+                        $count++;
                     endwhile;
                 endif;
                 ?>
@@ -190,24 +181,4 @@
   });
 </script>
 
-<script>
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     // Functie om de standaard achtergrond in te stellen (background-1)
-// function setDefaultMenuBackground() {
-//     for (let i = 2; i <= 7; i++) {
-//         document.getElementById(`menubackground-${i}`).style.opacity = 0;
-//     }
-// }
-
-// // Functie om een achtergrond te activeren
-// function activateMenuBackground(backgroundNumber) {
-//     setDefaultMenuBackground(); // Eerst de standaard achtergrond instellen
-//     document.getElementById(`menubackground-${backgroundNumber}`).style.opacity = 1; // Daarna de gewenste achtergrond activeren
-// }
-// });
-//     activateMenuBackground(1); // Zorg ervoor dat deze aanroep binnen de event listener staat.
-// });
-
-
-</script>
