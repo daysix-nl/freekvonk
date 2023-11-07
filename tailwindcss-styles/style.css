@@ -1029,6 +1029,12 @@ video {
 .h-\[360px\] {
   height: 360px;
 }
+.h-\[385x\] {
+  height: 385x;
+}
+.h-\[460px\] {
+  height: 460px;
+}
 .max-h-\[314px\] {
   max-height: 314px;
 }
