@@ -58,19 +58,20 @@ get_header( 'shop' ); ?>
         <!-- PRODUCTEN -->
         <div class="w-full max-w-[354px] md:max-w-[725px] lg:max-w-[898px] xl:max-w-[1028px] grid grid-cols-2 md:grid-cols-3 gap-x-[7px] gap-y-[30px] lg:gap-x-[15px] ld:gap-y-[40px] items-start h-fit">
            <?php
-// Aangepaste query om alle producten op te halen
-$args = array(
-    'post_type' => 'product', // Het posttype van producten
-    'posts_per_page' => -1,   // Toon alle producten
-);
+        // Aangepaste query om alle producten op te halen
+        $args = array(
+            'post_type' => 'product', // Het posttype van producten
+            'posts_per_page' => -1,   // Toon alle producten
+        );
 
-$products_query = new WP_Query($args);
+        $products_query = new WP_Query($args);
 
-if ($products_query->have_posts()) :
-    while ($products_query->have_posts()) : $products_query->the_post();
+        if ($products_query->have_posts()) :
+            while ($products_query->have_posts()) : $products_query->the_post();
 
         // Informatie over het product ophalen
         $product = wc_get_product(get_the_ID());
+        
         ?>
 
         <!-- PRODUCT -->

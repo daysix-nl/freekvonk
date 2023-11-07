@@ -195,8 +195,5 @@
     <div class="bg-white h-[20px]"></div>
 </header>
 
-<div class="container">
-    <h1 class="w-full text-center text-16 leading-18 pb-[2px] font-tanker text-black"><?php the_title();?></h1>
-</div>
 
 <?php include get_template_directory() . '/componenten/hamburger-menu.php'; ?>

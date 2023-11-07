@@ -809,24 +809,15 @@ add_filter('wc_add_to_cart_message', 'custom_add_to_cart_message', 10, 2);
 
 
 
-register_sidebar( array(
-  'name' => __( 'Filter sidebar', 'rmccollin' ),
-  'id' => 'filter-sidebar',
-  'description' => __( 'A widget area located to the left filter sidebar.', 'rmccollin' ),
-  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
-  'after_widget' => '</div></div>',
-  'before_title' => '<p class="large fbody regular fcd">',
-  'after_title' => '</p>',
-) );
- 
-// Disables the block editor from managing widgets in the Gutenberg plugin.
-add_filter( 'gutenberg_use_widgets_block_editor', '__return_false', 100 );
- 
-// Disables the block editor from managing widgets. renamed from wp_use_widgets_block_editor
-add_filter( 'use_widgets_block_editor', '__return_false' );
-
-
-
+/*
+|--------------------------------------------------------------------------
+| FILTER EVERYTHING POP-UP INSTELLING
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
 
 /* Start code to add in the functions.php */
 add_filter( 'wpc_mobile_width', 'my_custom_wpc_mobile_width' );
