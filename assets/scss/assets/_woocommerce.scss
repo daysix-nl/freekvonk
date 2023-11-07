@@ -519,7 +519,11 @@ ins {
 
     * {
         font-family: Karlsen, sans-serif !important;
+
         // color: #2B2828;
+        .font-tanker {
+            font-family: Tanker, sans-serif !important;
+        }
     }
 
     .wc_payment_method input {
@@ -978,14 +982,26 @@ html .wpc-filters-range-inputs .ui-button.ui-state-disabled:hover {
     margin-left: 20px !important;
 }
 
+.woocommerce-checkout .freek-checkout {
+    .freek-afrekenen {
+        display: block !important;
+    }
 
-.woocommerce-checkout.woocommerce-order-received .freek-checkout {
-    display: none !important;
+    .freek-bedankt {
+        display: none !important;
+    }
 }
 
-// .wpc-filters-open-button-container.wpc-open-button-984 {
-//     display: none !important;
-// }
+.woocommerce-checkout.woocommerce-order-received .freek-checkout {
+    .freek-afrekenen {
+        display: none !important;
+    }
+
+    .freek-bedankt {
+        display: block !important;
+    }
+}
+
 
 body .wpc-filters-open-button-container a.wpc-filters-open-widget,
 body .wpc-filters-open-button-container a.wpc-open-close-filters-button {

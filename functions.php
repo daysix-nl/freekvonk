@@ -827,3 +827,40 @@ function my_custom_wpc_mobile_width( $width ) {
     return $width;
 }
 /* End code to add in the functions.php  */
+
+
+/*
+|--------------------------------------------------------------------------
+| VERTALINGEN
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+function custom_frontend_translations($translated_text, $text, $domain) {
+    switch ($text) {
+            case 'Re-Order':
+            $translated_text = 'Volgorde';
+            break;
+             case 'xxx':
+            $translated_text = 'xxx';
+            break;
+       
+    }
+    return $translated_text;
+}
+
+add_filter('gettext', 'custom_frontend_translations', 20, 3);
+
+
+function aangepaste_add_to_cart_tekst($tekst) {
+    if ($tekst == 'Toevoegen aan winkelwagen') {
+        $tekst = 'Plaats in winkelwagen';
+    }
+    return $tekst;
+}
+
+// Voeg de filterfunctie toe aan de gettext-hook
+add_filter('gettext', 'aangepaste_add_to_cart_tekst', 20, 3);

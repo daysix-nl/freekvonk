@@ -4,14 +4,14 @@
 
                 <div class="flex items-center justify-between w-full max-w-[354px] md:max-w-[533px] lg:max-w-[348px] lg:ml-[47px] mx-auto pl-0 md:pl-3 lg:pl-0">
                     <div class="flex items-center">
-                        <svg class="h-[27px] md:h-[27px] w-fit" id="shopping-bag" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 30.791 36.378">
+                        <svg class="h-[27px] md:h-[27px] w-[22.85px]" id="shopping-bag" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 30.791 36.378">
                         <g id="Group_7" data-name="Group 7" transform="translate(0 0)">
                             <g id="ngicon" transform="translate(0 0)">
                             <path id="Path_3" data-name="Path 3" d="M421.632,284.373h-2.357a3.106,3.106,0,0,0-3.1,2.884l-1.521,21.294a3.1,3.1,0,0,0,3.1,3.326h24.581a3.1,3.1,0,0,0,3.1-3.326l-1.521-21.294a3.106,3.106,0,0,0-3.1-2.884h-2.341v-.444a8.429,8.429,0,0,0-8.429-8.429,8.284,8.284,0,0,0-8.429,8.429c.006.147.012.3.017.444Zm16.841,2.662v6.655a1.331,1.331,0,0,1-2.662,0v-6.655H424.277v6.655a1.331,1.331,0,0,1-2.662,0s.115-3.11.077-6.655h-2.418a.443.443,0,0,0-.442.412l-1.522,21.294a.444.444,0,0,0,.443.476h24.581a.444.444,0,0,0,.443-.476l-1.522-21.294a.443.443,0,0,0-.442-.412Zm-2.662-2.662v-.444a5.767,5.767,0,1,0-11.534,0v.444Z" transform="translate(-414.648 -275.5)" fill-rule="evenodd"/>
                             </g>
                         </g>
                         </svg>
-                        <h3 class="font-karlsen text-22 leading-22 text-[#38241B] font-semibold ml-[15px]">Jouw winkelmand</h3>
+                        <h3 class="font-karlsen text-22 leading-22 text-[#38241B] font-semibold ml-[15px]">Jouw winkelwagen</h3>
                     </div>
                 
                     
@@ -120,7 +120,7 @@
                                     <?php
                                 }
                             } else {
-                                echo 'Je winkelmand is leeg.';
+                                echo 'Je winkelwagen is leeg.';
                             }
                             ?>
                             <?php
