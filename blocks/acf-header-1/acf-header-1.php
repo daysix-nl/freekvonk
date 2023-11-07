@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- HEADER 1 -->
-<section class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
+<section class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> hidden md:block">
     <div class="container hidden md:grid pt-[80px]  justify-center">
         <div class="w-fit">
             <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
@@ -15,7 +15,7 @@ else: ?>
     </div>
     <?php if (get_field('submenu')): ?>   
     <div class="pt-[0px] md:pt-[unset]">
-        <div class="swiper mySwiper-navigatie md:hidden">
+        <div class="swiper mySwiper-navigatie hidden">
             <div class="swiper-wrapper">
                 <?php
                 if( have_rows('submenu') ):
@@ -44,7 +44,7 @@ else: ?>
         </div>
     </div> 
     <?php else: ?>
-        <div class="container mt-[50px]">
+        <div class="container mt-[50px] hidden">
             <a href="javascript:window.history.back()" class="tet-16 font-karlsen font-normal text-color">Terug</a>
         </div>
     <?php endif; ?>
