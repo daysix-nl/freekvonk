@@ -29,8 +29,32 @@ get_header( 'shop' ); ?>
 <div class="max-w-[354px] md:max-w-[725px] lg:max-w-[1168px] xl:max-w-[1326px] mx-auto pb-[85px] xl:pb-[105px]">
 
     <!-- SHOP HEADER -->
-    <div class="w-full aspect-[16/5] bg-black mb-[0px] lg:mb-[30px] overflow-hidden">
-        <img src="/wp-content/themes/freekvonk/img/local/banner-kamili.png" alt="" class="min-w-full min-h-full object-cover object-right">
+    <div class="w-full aspect-[16/5] bg-[#F2F2F2] mb-[0px] lg:mb-[30px] overflow-hidden">
+        
+           <div class="mySwiper-shop-header swiper relative z-[40]">
+                <div class="swiper-wrapper w-full aspect-[16/5]">
+                        <?php
+                        if( have_rows('header', 'option') ):
+                            while( have_rows('header', 'option') ) : the_row(); ?>
+                            <?php
+                            $image = get_sub_field('afbeelding', 'option');
+                            $image_url = isset($image['url']) ? esc_url($image['url']) : '';
+                            $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
+                            ?>
+                            <?php
+                            $link = get_sub_field('link', 'option');
+                            $link_url = isset($link['url']) ? esc_url($link['url']) : '';
+                            $link_text = isset($link['title']) ? esc_html($link['title']) : '';
+                            $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
+                            ?>
+                             <a href="<?php echo $link_url; ?>" class="swiper-slide w-fit" target="<?php echo $link_target; ?>"><img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-right"></a>
+                            <?php
+                            endwhile;
+                        else :
+                        endif;
+                        ?>
+                </div>
+            </div>
     </div>
 
     <div class="flex justify-end">
