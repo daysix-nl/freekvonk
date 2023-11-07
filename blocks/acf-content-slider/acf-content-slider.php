@@ -22,7 +22,7 @@ else: ?>
                                 <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center bg-[#2B2828]">
                             </div>
                             <div class="lg:aspect-square h-[500px] w-full lg:h-[46vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center <?php the_sub_field('achtergrond');?> overflow-hidden">
-                                <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] h-[500px] lg:max-h-[500px] z-[40] py-[60px] lg:py-[unset] overflow-hidden">
+                                <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] h-[360px] lg:max-h-[500px] z-[40] py-[60px] lg:py-[unset] overflow-hidden">
                                     <?php if (get_sub_field('titel')): ?>  
                                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-color"><?php the_sub_field('titel');?></h3>
                                     <?php endif; ?>

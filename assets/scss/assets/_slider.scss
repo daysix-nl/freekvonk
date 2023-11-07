@@ -197,6 +197,10 @@
     z-index: 100;
     bottom: 40px;
 
+    @media (max-width: 767px) {
+      bottom: 30px;
+    }
+
     &:after {
       justify-content: flex-start;
       height: auto;

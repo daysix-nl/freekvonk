@@ -1026,6 +1026,9 @@ video {
 .h-4 {
   height: 40px;
 }
+.h-\[360px\] {
+  height: 360px;
+}
 .max-h-\[314px\] {
   max-height: 314px;
 }
