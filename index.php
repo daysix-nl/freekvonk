@@ -6,7 +6,7 @@
  */
 
 
-get_header(); ?>
+get_header('notitle'); ?>
 
 
     <main class="">

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 global $product;
 
 
-get_header( 'shop' ); ?>
+get_header( 'notitle' ); ?>
 
 <?php while ( have_posts() ) : ?>
 <?php the_post(); ?>

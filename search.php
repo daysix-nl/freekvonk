@@ -6,7 +6,7 @@
  */
 
 
-get_header(); ?>
+get_header('notitle'); ?>
 
 <main>
     <div class="container md:pt-10 min-h-[calc(100dvh-80px)] pb-[80px]">
