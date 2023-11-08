@@ -20,7 +20,12 @@ else: ?>
                         <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="object-cover object-center h-full bg-[#2B2828]">
                     </div>
                     <h4 class="text-40 leading-37 lg:text-40 lg:leading-36 font-tanker font-normal text-color pt-2 text-center lg:text-left"><?php the_sub_field('naam');?></h4>
-                    <div class="h-[5px] w-[55%] bg-[#78B047] rounded-[full] my-[15px] mx-auto lg:mx-[unset]"></div>
+                    <div class="h-[5px] w-fit rounded-[full] my-[15px] mx-auto lg:mx-[unset]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="141.051" height="6.777" viewBox="0 0 141.051 6.777">
+                            <path id="Path_624" data-name="Path 624" d="M-1352.292,5968.585s23.374-1.611,45.552-1.611,33.46.744,56.031.991,26.2-.154,34.254,0" transform="translate(1354.958 -5964.475)" fill="none" stroke="#78b047" stroke-linecap="round" stroke-width="5"/>
+                        </svg>
+
+                    </div>
                     <p class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen font-normal text-color uppercase tracking-wider text-center lg:text-left"><?php the_sub_field('functie');?></p>
                 </div>
                 <?php

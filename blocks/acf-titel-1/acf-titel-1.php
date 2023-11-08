@@ -12,7 +12,14 @@ else: ?>
         <?php if (get_field('titel')): ?>   
         <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-color text-center max-w-[1043px] mx-auto"><?php the_field('titel');?></h3>
         <?php endif; ?>
-        <div class="h-[5px] w-[305px] bg-[#78B047] mx-auto rounded-[full] mt-2"></div>  
+        <div class="h-[10px] w-fit mx-auto rounded-[full] mt-2">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="278.074" height="8.401" viewBox="0 0 278.074 8.401">
+            <path id="Path_1106" data-name="Path 1106" d="M-1352.292,5970.209s46.951-3.235,91.5-3.235,67.212,1.494,112.551,1.991,52.619-.311,68.807,0" transform="translate(1354.958 -5964.474)" fill="none" stroke="#78b047" stroke-linecap="round" stroke-width="5"/>
+            </svg>
+
+        </div>  
+        
     </div>
 </section>
 <?php endif; ?>

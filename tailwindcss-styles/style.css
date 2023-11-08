@@ -842,6 +842,12 @@ video {
 .mt-\[8px\] {
   margin-top: 8px;
 }
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-\[-15px\] {
+  margin-top: -15px;
+}
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1037,6 +1043,12 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-\[3\.5px\] {
+  height: 3.5px;
+}
+.h-\[10px\] {
+  height: 10px;
 }
 .max-h-\[314px\] {
   max-height: 314px;
