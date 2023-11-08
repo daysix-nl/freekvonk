@@ -1061,3 +1061,18 @@ body .wpc-filters-open-button-container a.wpc-open-close-filters-button {
 .woocommerce-form-coupon-toggle {
     display: none !important;
 }
+
+.payment_method_mollie_wc_gateway_ideal {
+
+    p {
+        display: none !important;
+    }
+
+    select {
+        border: 1px solid #000 !important;
+        height: 62px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+}
