@@ -657,6 +657,15 @@ video {
 .top-\[unset\] {
   top: unset;
 }
+.bottom-2 {
+  bottom: 20px;
+}
+.left-2 {
+  left: 20px;
+}
+.right-2 {
+  right: 20px;
+}
 .-z-10 {
   z-index: -10;
 }
@@ -701,6 +710,9 @@ video {
 }
 .z-\[999\] {
   z-index: 999;
+}
+.z-\[30x\] {
+  z-index: 30x;
 }
 .order-1 {
   order: 1;
