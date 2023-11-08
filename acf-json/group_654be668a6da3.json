@@ -5,7 +5,7 @@
         {
             "key": "field_654be668e6d3e",
             "label": "",
-            "name": "live-now",
+            "name": "live_now",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -69,7 +69,7 @@
                 {
                     "key": "field_654be6c4e6d41",
                     "label": "Link",
-                    "name": "Link",
+                    "name": "link",
                     "aria-label": "",
                     "type": "url",
                     "instructions": "",
@@ -105,5 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699473187
+    "modified": 1699476571
 }

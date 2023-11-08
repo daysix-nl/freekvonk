@@ -21,35 +21,189 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
-<?php if(!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") { ?>
-    <div class="pop_up fixed top-0 left-0 w-screen flex bg-transparent z-20 justify-center items-center h-screen overflow-scroll py-5">
-        <div class="m-auto flex flex-col bg-[#EFE7DE] w-full mx-2 px-[15px] pt-1 pb-3 md:max-w-[481px] lg:px-1 lg:pb-2 lg:pt-1 lg:max-w-[594px] xl:max-w-[674px] xl:px-[15px] xl:pt-1 xl:pb-3 rounded-[5px] relative">
-            <button class="closePopUp absolute top-3 right-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="19.799" height="19.799" viewBox="0 0 19.799 19.799">
-                <g id="Group_431" data-name="Group 431" transform="translate(-8.485 9.899) rotate(-45)">
-                    <line id="Line_55" data-name="Line 55" y2="26" transform="translate(13 0)" fill="none" stroke="#fff" stroke-width="2"/>
-                    <line id="Line_56" data-name="Line 56" y2="26" transform="translate(26 13) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
-                </g>
-                </svg>
-            </button>
-            <img class="w-full h-auto aspect-video rounded-[3px] pb-[25px] lg:pb-2" src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="">
-            <p class="uppercase text-center font-karlsen font-regular text-[#0A1F16] text-22 leading-22 md:text-24 md:leading-22 pb-3 md:pb-[25px] xl:pb-3 mx-auto">NIEUWS</p>
-            <p class="text-[#0A1F16] font-tanker text-50 leading-47 text-center md:max-w-[404px] lg:max-w-[473px] xl:max-w-[531px] mx-auto pb-[36px] lg:pb-[22px] xl:pb-[33px] font-semibold">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</>
-            <p class="text-[#2B2828] font-karlsen text-16 leading-32 pb-4 md:pb-3 lg:pb-[25px] xl:pb-[53px] mx-auto text-center max-w-[301px] md:max-w-[395px] lg:max-w-[484px] xl:max-w-[544px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-            <a href="#" class="text-25 leading-35 font-karlsen font-semibold text-[#FFFFFF] flex justify-center items-center max-w-[270px] uppercase md:max-w-[202px] bg-[#0A1F16] h-[58px] md:h-[49px] xl:h-[58px] mx-auto w-full">LINK</a>
+<?php if (get_field('zichtbaarheid', 'option') !== "uit"): ?>   
+    <?php if(!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") { ?>
+        <?php
+        $image = get_field('afbeelding_popup', 'option');
+        $image_url = isset($image['url']) ? esc_url($image['url']) : '';
+        $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
+        ?>
+        <?php
+        $link = get_field('link_popup', 'option');
+        $link_url = isset($link['url']) ? esc_url($link['url']) : '';
+        $link_text = isset($link['title']) ? esc_html($link['title']) : '';
+        $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
+        ?>
+        <div class="pop_up fixed top-0 left-0 w-screen flex bg-transparent z-20 justify-center items-center h-screen overflow-scroll py-5">
+            <div class="m-auto flex flex-col bg-[#EFE7DE] w-full mx-2 px-[15px] pt-1 pb-3 md:max-w-[481px] lg:px-1 lg:pb-2 lg:pt-1 lg:max-w-[594px] xl:max-w-[674px] xl:px-[15px] xl:pt-1 xl:pb-3 rounded-[5px] relative">
+                <button class="closePopUp absolute top-3 right-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19.799" height="19.799" viewBox="0 0 19.799 19.799">
+                    <g id="Group_431" data-name="Group 431" transform="translate(-8.485 9.899) rotate(-45)">
+                        <line id="Line_55" data-name="Line 55" y2="26" transform="translate(13 0)" fill="none" stroke="#fff" stroke-width="2"/>
+                        <line id="Line_56" data-name="Line 56" y2="26" transform="translate(26 13) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+                    </g>
+                    </svg>
+                </button>
+                <div class="h-auto aspect-[16/8] rounded-[5px] overflow-hidden mb-[25px] lg:mb-2">
+                    <img class="min-w-full min-h-full object-cover object-center" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+                </div>
+                
+                <p class="uppercase text-center font-karlsen font-normal text-[#0A1F16] text-22 leading-22 md:text-24 md:leading-22 pb-2 md:pb-[20px] xl:pb-2 mx-auto"><?php the_field('subtitel_popup', 'option');?></p>
+                <p class="text-[#0A1F16] font-tanker font-normal text-50 leading-47 text-center md:max-w-[404px] lg:max-w-[473px] xl:max-w-[531px] mx-auto pb-1 md:pb-[10px] xl:pb-1"><?php the_field('titel_popup', 'option');?></>
+                <div class="text-[#2B2828] font-karlsen text-16 leading-32 pb-2 md:pb-2 lg:pb-[20px] xl:pb-[30px] mx-auto text-center max-w-[301px] md:max-w-[395px] lg:max-w-[484px] xl:max-w-[544px] text-editor"><?php the_field('tekst_popup', 'option');?></div>
+                <a href="<?php echo $link_url; ?>" class="text-25 leading-35 font-tanker font-normal text-[#FFFFFF] flex justify-center items-center max-w-[270px] uppercase md:max-w-[202px] bg-[#0A1F16] h-[58px] md:h-[49px] xl:h-[58px] mx-auto w-full target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+            </div>
         </div>
-    </div>
-<?php } ?>
+    <?php } ?>
+<?php endif; ?>
 <header class="fixed z-[10]">
     <!-- LIVE NOW BALK -->
     <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero">
         <div  id="scroll-text" class="flex w-full swiper-wrapper">
-            <!-- LIVE NOW REPEATER / SLIDER -->
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Nieuwe campagne online!</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Albert Heijn</h4>
-            </div>
-            
+            <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+            <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
+             <?php
+            if( have_rows('live_now', 'option') ):
+                while( have_rows('live_now', 'option') ) : the_row(); ?>
+                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                </a>
+                <?php
+                endwhile;
+            else :
+            endif;
+            ?>
         </div>
         <!-- LIVE NOW TITEL -->
         <div class="absolute left-0 top-0 bottom-0 bg-[#8CC63F] w-[110px] flex items-center justify-center z-[2] live-now">
