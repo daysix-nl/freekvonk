@@ -721,14 +721,6 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 |
 */
 
-// function redirect_after_add_to_cart() {
-//     if (isset($_REQUEST['add-to-cart'])) {
-        
-//         wp_redirect(get_permalink(wc_get_page_id('shop')));
-//         exit;
-//     }
-// }
-// add_action('template_redirect', 'redirect_after_add_to_cart');
 
 function redirect_after_add_to_cart() {
     if (isset($_REQUEST['add-to-cart'])) {
@@ -844,8 +836,8 @@ function custom_frontend_translations($translated_text, $text, $domain) {
             case 'Re-Order':
             $translated_text = 'Volgorde';
             break;
-             case 'xxx':
-            $translated_text = 'xxx';
+             case 'Reset all':
+            $translated_text = 'Reset alle filters';
             break;
        
     }
@@ -864,3 +856,32 @@ function aangepaste_add_to_cart_tekst($tekst) {
 
 // Voeg de filterfunctie toe aan de gettext-hook
 add_filter('gettext', 'aangepaste_add_to_cart_tekst', 20, 3);
+
+
+
+/*
+|--------------------------------------------------------------------------
+| SIDE BAR
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+
+register_sidebar( array(
+  'name' => __( 'Filter sidebar', 'rmccollin' ),
+  'id' => 'filter-sidebar',
+  'description' => __( 'A widget area located to the left filter sidebar.', 'rmccollin' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<p class="">',
+  'after_title' => '</p>',
+) );
+ 
+// Disables the block editor from managing widgets in the Gutenberg plugin.
+add_filter( 'gutenberg_use_widgets_block_editor', '__return_false', 100 );
+ 
+// Disables the block editor from managing widgets. renamed from wp_use_widgets_block_editor
+add_filter( 'use_widgets_block_editor', '__return_false' );

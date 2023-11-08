@@ -711,6 +711,9 @@ video {
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .mx-\[20px\] {
   margin-left: 20px;
   margin-right: 20px;
@@ -2125,6 +2128,10 @@ video {
 
   .md\:order-1 {
     order: 1;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .md\:mx-\[unset\] {
