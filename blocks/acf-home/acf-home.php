@@ -171,8 +171,11 @@ $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
  <?php endif; ?>
  <?php if (get_field('default_video')): ?>   
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-x" style="opacity: 1;">
-    <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block lg:hidden" autoplay="" loop="" muted="" playsinline="">
+    <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block md:hidden" autoplay="" loop="" muted="" playsinline="">
         <source src="<?php the_field('default_video_mobiel');?>#t=0.001" type="video/mp4">
+    </video>
+    <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden md:block lg:hidden" autoplay="" loop="" muted="" playsinline="">
+        <source src="<?php the_field('default_video_tablet');?>#t=0.001" type="video/mp4">
     </video>
      <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
         <source src="<?php the_field('default_video');?>#t=0.001" type="video/mp4">

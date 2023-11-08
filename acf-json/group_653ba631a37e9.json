@@ -48,6 +48,26 @@
             "mime_types": "mp4"
         },
         {
+            "key": "field_654bab0d37b02",
+            "label": "Default video (tablet)",
+            "name": "default_video_tablet",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4"
+        },
+        {
             "key": "field_653bb34c6e68e",
             "label": "Default video (mobiel)",
             "name": "default_video_mobiel",
@@ -680,5 +700,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698411494
+    "modified": 1699457823
 }
