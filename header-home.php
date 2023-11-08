@@ -21,7 +21,15 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
-<header class="fixed z-[999]">
+<?php if(!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") { ?>
+    <div class="pop_up fixed top-0 left-0 w-screen h-screen flex bg-black z-20 justify-center items-center">
+        <div class="w-[80vw] h-[300px] max-w-[400px] m-auto bg-white">
+            <button class="closePopUp">Close</button>
+            [Pop up]
+        </div>
+    </div>
+<?php } ?>
+<header class="fixed z-[10]">
     <!-- LIVE NOW BALK -->
     <div class="h-[33px] w-screen bg-[#438645] relative overflow-x-hidden swiper swiperhero">
         <div  id="scroll-text" class="flex w-full swiper-wrapper">
