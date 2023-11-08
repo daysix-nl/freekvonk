@@ -49,45 +49,10 @@
                 <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Nieuwe campagne online!</p>
                 <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Albert Heijn</h4>
             </div>
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Rovers in de rimboe</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Freek Vonk Live</h4>
-            </div>
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Nieuwe campagne online!</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Albert Heijn</h4>
-            </div>
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Rovers in de rimboe</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Freek Vonk Live</h4>
-            </div>
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Nieuwe campagne online!</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Albert Heijn</h4>
-            </div>
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Rovers in de rimboe</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Freek Vonk Live</h4>
-            </div>
-             <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Nieuwe campagne online!</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Albert Heijn</h4>
-            </div>
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Rovers in de rimboe</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Freek Vonk Live</h4>
-            </div>
-             <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Nieuwe campagne online!</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Albert Heijn</h4>
-            </div>
-            <div class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                <p class="text-15 leading-17 font-karlsen text-white uppercase w-max">Rovers in de rimboe</p>
-                <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max">Freek Vonk Live</h4>
-            </div>
+            
         </div>
         <!-- LIVE NOW TITEL -->
-        <div class="absolute left-0 top-0 bottom-0 bg-[#8CC63F] w-[110px] flex items-center justify-center z-[2]">
+        <div class="absolute left-0 top-0 bottom-0 bg-[#8CC63F] w-[110px] flex items-center justify-center z-[2] live-now">
             <h3 class="text-13 leading-15 font-karlsen font-bold text-white flex items-center justify-center uppercase">Live now 
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" class="ml-[15px]">
                     <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="4" cy="3.5" rx="4" ry="3.5" fill="#fff"/>

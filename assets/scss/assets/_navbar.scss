@@ -64,3 +64,19 @@
 .country-selector li {
   color: #fff !important;
 }
+
+@keyframes blink {
+
+  100%,
+  0% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+.live-now svg {
+  animation: blink 1.2s infinite;
+}
