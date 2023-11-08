@@ -22,10 +22,21 @@
 </head>
 <body <?php body_class( 'page-block' ); ?>>
 <?php if(!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") { ?>
-    <div class="pop_up fixed top-0 left-0 w-screen h-screen flex bg-black z-20 justify-center items-center">
-        <div class="w-[80vw] h-[300px] max-w-[400px] m-auto bg-white">
-            <button class="closePopUp">Close</button>
-            [Pop up]
+    <div class="pop_up fixed top-0 left-0 w-screen flex bg-transparent z-20 justify-center items-center h-screen overflow-scroll py-5">
+        <div class="m-auto flex flex-col bg-[#EFE7DE] w-full mx-2 px-[15px] pt-1 pb-3 md:max-w-[481px] lg:px-1 lg:pb-2 lg:pt-1 lg:max-w-[594px] xl:max-w-[674px] xl:px-[15px] xl:pt-1 xl:pb-3 rounded-[5px] relative">
+            <button class="closePopUp absolute top-3 right-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.799" height="19.799" viewBox="0 0 19.799 19.799">
+                <g id="Group_431" data-name="Group 431" transform="translate(-8.485 9.899) rotate(-45)">
+                    <line id="Line_55" data-name="Line 55" y2="26" transform="translate(13 0)" fill="none" stroke="#fff" stroke-width="2"/>
+                    <line id="Line_56" data-name="Line 56" y2="26" transform="translate(26 13) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+                </g>
+                </svg>
+            </button>
+            <img class="w-full h-auto aspect-video rounded-[3px] pb-[25px] lg:pb-2" src="/wp-content/themes/freekvonk/img/local/Freek-gier.png" alt="">
+            <p class="uppercase text-center font-karlsen font-regular text-[#0A1F16] text-22 leading-22 md:text-24 md:leading-22 pb-3 md:pb-[25px] xl:pb-3 mx-auto">NIEUWS</p>
+            <p class="text-[#0A1F16] font-tanker text-50 leading-47 text-center md:max-w-[404px] lg:max-w-[473px] xl:max-w-[531px] mx-auto pb-[36px] lg:pb-[22px] xl:pb-[33px] font-semibold">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</>
+            <p class="text-[#2B2828] font-karlsen text-16 leading-32 pb-4 md:pb-3 lg:pb-[25px] xl:pb-[53px] mx-auto text-center max-w-[301px] md:max-w-[395px] lg:max-w-[484px] xl:max-w-[544px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            <a href="#" class="text-25 leading-35 font-karlsen font-semibold text-[#FFFFFF] flex justify-center items-center max-w-[270px] uppercase md:max-w-[202px] bg-[#0A1F16] h-[58px] md:h-[49px] xl:h-[58px] mx-auto w-full">LINK</a>
         </div>
     </div>
 <?php } ?>
