@@ -1,6 +1,6 @@
 <?php
 if (isset($block['data']['preview_image_help'])): ?>
-    <img src="https://freekvonk.attentionseekers.studio/wp-content/themes/freekvonk/img/preview/gradient.png" style="width:100%; height:auto;">
+    <img src="https://freekvonk.attentionseekers.studio/wp-content/themes/freekvonk/img/preview/gadient.png" style="width:100%; height:auto;">
     <?php
 else: ?>
 <?php
