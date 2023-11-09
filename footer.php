@@ -47,7 +47,7 @@
                             $link_text = isset($link['title']) ? esc_html($link['title']) : '';
                             $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
                     ?>
-                            <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                            <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black hover:text-white duration-300 w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
                     <?php
                         endwhile;
                     endif;
@@ -64,7 +64,7 @@
                             $link_text = isset($link['title']) ? esc_html($link['title']) : '';
                             $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
                     ?>
-                            <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                            <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black hover:text-white duration-300 w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
                     <?php
                         endwhile;
                     endif;
@@ -108,7 +108,7 @@
                                 $link_text = isset($link['title']) ? esc_html($link['title']) : '';
                                 $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
                         ?>
-                                <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                                <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black hover:text-white duration-300 w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
                         <?php
                             endwhile;
                         endif;
@@ -128,7 +128,7 @@
                                 $link_text = isset($link['title']) ? esc_html($link['title']) : '';
                                 $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
                         ?>
-                                <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                                <a href="<?php echo $link_url; ?>" class="text-16 leading-30 font-karlsen text-black hover:text-white duration-300 w-fit" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
                         <?php
                             endwhile;
                         endif;
