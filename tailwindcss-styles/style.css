@@ -1096,6 +1096,9 @@ video {
 .min-h-full {
   min-height: 100%;
 }
+.min-h-\[55\.55px\] {
+  min-height: 55.55px;
+}
 .w-3 {
   width: 30px;
 }

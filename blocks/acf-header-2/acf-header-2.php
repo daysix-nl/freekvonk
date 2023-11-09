@@ -14,7 +14,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
         <div class="container hidden md:grid pt-[80px]">
             <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
             <div class="w-full max-w-[300px] mx-auto mt-[-15px]">
-                <div class="w-full lottie-title text-center"></div>
+                <div class="w-full lottie-title text-center min-h-[55.55px]"></div>
             </div>
         </div>
         <?php if (get_field('submenu')): ?>   
