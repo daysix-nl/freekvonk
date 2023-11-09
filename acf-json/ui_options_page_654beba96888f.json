@@ -6,10 +6,10 @@
     "page_title": "Pop-up",
     "menu_slug": "pop-up",
     "parent_slug": "none",
-    "advanced_configuration": 0,
+    "advanced_configuration": 1,
     "icon_url": "",
     "menu_title": "",
-    "position": "",
+    "position": 80,
     "redirect": 0,
     "description": "",
     "update_button": "Updaten",
@@ -18,5 +18,5 @@
     "data_storage": "options",
     "post_id": "",
     "autoload": 0,
-    "modified": 1699474352
+    "modified": 1699516700
 }

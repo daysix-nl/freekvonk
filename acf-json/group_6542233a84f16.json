@@ -1,6 +1,6 @@
 {
     "key": "group_6542233a84f16",
-    "title": "Menu items",
+    "title": "Hamburger menu",
     "fields": [
         {
             "key": "field_6542233a5a86e",
@@ -26,7 +26,7 @@
             "sub_fields": [
                 {
                     "key": "field_6542235c5a86f",
-                    "label": "Menu item",
+                    "label": "Link",
                     "name": "link",
                     "aria-label": "",
                     "type": "link",
@@ -88,7 +88,7 @@
             "min": 0,
             "max": 0,
             "collapsed": "",
-            "button_label": "Add Row",
+            "button_label": "Nieuwe item",
             "rows_per_page": 20,
             "sub_fields": [
                 {
@@ -129,5 +129,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698835726
+    "modified": 1699515941
 }

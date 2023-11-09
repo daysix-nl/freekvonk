@@ -1,15 +1,15 @@
 {
     "key": "ui_options_page_654be5b86789e",
-    "title": "Footer",
+    "title": "Bedrijfsgegevens",
     "active": true,
     "menu_order": 0,
-    "page_title": "Footer",
-    "menu_slug": "footer",
+    "page_title": "Bedrijfsgegevens",
+    "menu_slug": "bedrijfsgegevens",
     "parent_slug": "none",
-    "advanced_configuration": 0,
+    "advanced_configuration": 1,
     "icon_url": "",
     "menu_title": "",
-    "position": "",
+    "position": 84,
     "redirect": 0,
     "description": "",
     "update_button": "Updaten",
@@ -18,5 +18,5 @@
     "data_storage": "options",
     "post_id": "",
     "autoload": 0,
-    "modified": 1699472842
+    "modified": 1699516806
 }
