@@ -17,8 +17,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
-}
+} ?>
 
+<div class="notice">
+<?php
 do_action( 'woocommerce_before_checkout_form', $checkout );
 
 // If checkout registration is disabled and not logged in, the user cannot checkout.
@@ -28,6 +30,8 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 }
 
 ?>
+
+</div>
 
 <form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 

@@ -1074,6 +1074,16 @@ body .wpc-filters-open-button-container a.wpc-open-close-filters-button {
     display: flex !important;
 }
 
+.notice .woocommerce-notices-wrapper {
+    display: none !important;
+}
+
+.notice .woocommerce-form-coupon {
+    display: none !important;
+}
+
+
+
 .korting {
 
     .woocommerce-error,
