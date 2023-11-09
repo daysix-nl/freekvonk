@@ -1,6 +1,6 @@
 <?php
 if (isset($block['data']['preview_image_help'])): ?>
-    <img src="/wp-content/themes/freekvonk/img/preview/formulier.png" style="width:100%; height:auto;">
+    <img src="https://freekvonk.attentionseekers.studio/wp-content/themes/freekvonk/img/preview/formulier.png" style="width:100%; height:auto;">
     <?php
 else: ?>
 <!-- FORMULIER -->
