@@ -1204,3 +1204,11 @@ body .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a {
     font-size: 16px !important;
     font-family: karlsen, sans-serif !important;
 }
+
+.product-add-single .button,
+.simple .button {
+    &:hover {
+        background: #8cc63f !important;
+        transition-duration: 0.3s !important;
+    }
+}
