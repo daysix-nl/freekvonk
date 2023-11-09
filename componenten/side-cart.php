@@ -168,7 +168,7 @@
 
                 <hr class="border-[#B5BBB8] border-1 mt-[10px] mb-[10px]">
                 <?php $checkout_url = wc_get_checkout_url();?>
-                <a href="<?php echo esc_url($checkout_url);?>" class="h-[45px] bg-[#8CC63F] flex justify-center items-center w-full">
+                <a href="<?php echo esc_url($checkout_url);?>" class="h-[45px] bg-[#8CC63F] hover:bg-black duration-300 flex justify-center items-center w-full">
                     <p class="font-tanker text-25 leading-25 text-white">Afrekenen</p>
                 </a>
                 <p class="font-karlsen text-12 leading-12 md:text-16 md:leading-16 lg:text-16 lg:leading-16 text-[#2B2828] opacity-[0.5] text-center">Bekijk je bezorg opties in de volgende stap</p>

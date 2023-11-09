@@ -167,7 +167,7 @@ get_header( 'shop' ); ?>
                                 </div>
                             </div>
                         <?php } else { ?>
-                            <a href="/shop/?add-to-cart=<?php echo $product->get_id(); ?>" class="product-add add-fast-button hidden absolute left-[8px] right-[8px] bottom-[8px] h-[45px] bg-[#8CC63F] lg:flex justify-center items-center z-[1]">
+                            <a href="/shop/?add-to-cart=<?php echo $product->get_id(); ?>" class="product-add add-fast-button hidden absolute left-[8px] right-[8px] bottom-[8px] h-[45px] bg-[#8CC63F] hover:bg-black duration-300 lg:flex justify-center items-center z-[1]">
                                 <p class="font-tanker text-25 leading-25 text-white">Snel toevoegen</p>
                             </a>
                         <?php } ?>
