@@ -1054,6 +1054,43 @@ body .wpc-filters-open-button-container a.wpc-open-close-filters-button {
     display: none !important;
 }
 
+.korting .woocommerce-form-coupon-toggle {
+    display: flex !important;
+}
+
+.korting {
+
+    .woocommerce-error,
+    .woocommerce-info,
+    .woocommerce-message {
+        padding: 0px !important;
+        margin: 0px !important;
+        position: relative;
+        background-color: #fff !important;
+        color: #2B2828 !important;
+        border-top: 0px solid #7f54b3 !important;
+        list-style: none outside;
+        width: auto;
+        word-wrap: break-word;
+    }
+
+    .woocommerce-error::before,
+    .woocommerce-info::before,
+    .woocommerce-message::before {
+        display: none !important;
+    }
+
+    .woocommerce form.checkout_coupon,
+    .woocommerce form.login,
+    .woocommerce form.register {
+        border: 0px solid #cfc8d8 !important;
+        padding: 0px 0px !important;
+        margin: 0px !important;
+        text-align: left;
+        border-radius: 0px !important;
+    }
+}
+
 .payment_method_mollie_wc_gateway_ideal {
 
     p {

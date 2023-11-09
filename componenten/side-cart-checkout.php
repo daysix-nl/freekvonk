@@ -1,5 +1,5 @@
        
-           <div class="bg-white w-full lg:max-w-[448px] h-fit pt-5 pb-1">
+           <div class="bg-white w-full lg:max-w-[448px] px-1 md:px-[unset]h-fit pt-5 pb-1">
 
 
                 <div class="flex items-center justify-between w-full max-w-[354px] md:max-w-[533px] lg:max-w-[348px] lg:ml-[47px] mx-auto pl-0 md:pl-3 lg:pl-0">
@@ -157,6 +157,31 @@
                                     echo '' . wc_price($total_bedrag);
                                     ?>
                                 </p>
+                            </div>
+                            <hr class="border-[#B5BBB8] border-1 mt-[10px] mb-[10px]">
+                            <div class="korting">
+                                <div class="woocommerce-form-coupon-toggle flex justify-between items-center">
+                                    <?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', esc_html__( '', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . esc_html__( 'Voeg kortings- of giftcard code toe', 'woocommerce' ) . '</a>' ), 'notice' ); ?>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.733" height="8.139" viewBox="0 0 14.733 8.139">
+                                        <g id="Select" transform="translate(0.772 0.773)">
+                                            <g id="Group_370" data-name="Group 370" transform="translate(13.188 -11.708) rotate(90)">
+                                            <line id="Line_36" data-name="Line 36" x2="8.496" y2="0.83" transform="translate(12.294 0) rotate(45)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+                                            <line id="Line_37" data-name="Line 37" y1="0.83" x2="8.496" transform="translate(18.302 7.181) rotate(135)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <form class="checkout_coupon woocommerce-form-coupon grid gap-[15px]" method="post" style="display:none">
+                                    <p class="w-full mt-2">
+                                        <label for="coupon_code" class="screen-reader-text"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label>
+                                        <input class="w-full" type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
+                                    </p>
+                                    <p class="w-full">
+                                        <button type="submit" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Toepassen', 'woocommerce' ); ?></button>
+                                    </p>
+                                    <div class="clear"></div>
+                                </form>
                             </div>
 
                             <hr class="border-[#B5BBB8] border-1 mt-[10px] mb-[10px]">
