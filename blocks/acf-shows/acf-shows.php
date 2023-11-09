@@ -1,6 +1,7 @@
 <?php
-if (isset($block['data']['preview_image_help'])): /* rendering in inserter preview  */
-    echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
+if (isset($block['data']['preview_image_help'])): ?>
+    <img src="/wp-content/themes/freekvonk/img/preview/shows.png" style="width:100%; height:auto;">
+    <?php
 else: ?>
 <!-- SHOWS -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> show-section team-block list-b-none">

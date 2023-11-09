@@ -1,6 +1,6 @@
 <?php
 if (isset($block['data']['preview_image_help'])): ?>
-    <img src="#" style="width:100%; height:auto;">
+    <img src="/wp-content/themes/freekvonk/img/preview/cases.png" style="width:100%; height:auto;">
     <?php
 else: ?>
 <!-- CASES -->
