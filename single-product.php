@@ -24,21 +24,17 @@ if ( post_password_required() ) {
 <main>
     <div id="single-product" class="max-w-[354px] md:max-w-[725px] lg:max-w-[1168px] xl:max-w-[1326px] mx-auto">
 
-    <!-- TITEL -->
     <section class="hidden md:grid pt-[80px]">
         <p class="w-full text-center md:text-80 md:leading-100 font-tanker text-black">Shop</p>        
         <div class="w-full max-w-[300px] mx-auto">
-            <div class="w-full lottie-title text-center"></div>
+            <div class="w-full lottie-title text-center min-h-[55.55px]"></div>
         </div>
     </section>
-     <!-- SUBMENU -->
-    <section class="pt-[0px] md:pt-[30px]">
-        <!-- MOBIEL SUBMENU -->
+    <section class="pt-[10px] md:pt-[30px]">
         <a href="/shop" class="tet-16 font-karlsen text-[#2B2828]">Terug</a>
     </section> 
 
-    <!-- PRODUCT -->
-    <div class="w-full flex flex-col lg:flex-row justify-between mt-[50px]">
+    <div class="w-full flex flex-col lg:flex-row justify-between mt-3 md:mt-[50px]">
         <div class="w-full max-w-[354px] md:max-w-[725px] lg:max-w-[758px] xl:max-w-[872px]">
             <!-- PRODUCT AFBEELDING -->
                 <?php
