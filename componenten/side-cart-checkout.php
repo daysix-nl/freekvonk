@@ -97,7 +97,7 @@
                                                         <div class="flex items-end">
 
                                                             <?php 
-                                                                echo '<select class="custom-quantity-input font-karlsen text-12 leading-12 md:text-16 md:leading-16 lg:text-16 lg:leading-16 text-[#2B2828]" data-cart-item-key="' . esc_attr($cart_item_key) . '">';
+                                                                echo '<select class="custom-quantity-input font-karlsen text-12 leading-12 md:text-16 md:leading-16 lg:text-16 lg:leading-16 text-[#2B2828]" data-cart-item-key="' . esc_attr($cart_item_key) . '" >';
                                                                 for ($i = $product->get_min_purchase_quantity(); $i <= $product->get_max_purchase_quantity(); $i++) {
                                                                     echo '<option value="' . $i . '"' . selected($cart_item['quantity'], $i, false) . '>' . $i . '</option>';
                                                                 }

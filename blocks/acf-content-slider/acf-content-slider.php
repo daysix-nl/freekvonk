@@ -6,7 +6,7 @@ else: ?>
 <!-- CONTENT SLIDER -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
     <div class="relative w-screen overflow-hidden mySwiper-over-freek-section uitgelicht">
-        <div class="swiper mySwiper-over-freek">
+        <div class="swiper mySwiper-over-freek-content">
             <div class="swiper-wrapper">
                 <?php
                 if( have_rows('slider') ):
@@ -42,7 +42,7 @@ else: ?>
         </div>
         <div class="swiper-button-next-over-freek"></div>
         <div class="swiper-button-prev-over-freek"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination-content"></div>
     </div>
 </section>
 <?php endif; ?>

@@ -130,6 +130,20 @@ try {
 } catch (error) {}
 
 try {
+  var swipersOverFreek = new Swiper(".mySwiper-over-freek-content", {
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination-content",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next-over-freek",
+      prevEl: ".swiper-button-prev-over-freek",
+    },
+  });
+} catch (error) {}
+
+try {
   var swipersOverFreek = new Swiper(".mySwiper-over-freek-news", {
     loop: true,
     slidesPerView: 1,
