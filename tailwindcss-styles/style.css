@@ -1087,6 +1087,9 @@ video {
 .min-h-\[460px\] {
   min-height: 460px;
 }
+.min-h-\[55\.55px\] {
+  min-height: 55.55px;
+}
 .min-h-\[550px\] {
   min-height: 550px;
 }
@@ -1095,9 +1098,6 @@ video {
 }
 .min-h-full {
   min-height: 100%;
-}
-.min-h-\[55\.55px\] {
-  min-height: 55.55px;
 }
 .w-3 {
   width: 30px;
@@ -1922,6 +1922,9 @@ video {
 .pt-\[0px\] {
   padding-top: 0px;
 }
+.pt-\[10px\] {
+  padding-top: 10px;
+}
 .pt-\[20px\] {
   padding-top: 20px;
 }
@@ -1951,9 +1954,6 @@ video {
 }
 .pt-\[91px\] {
   padding-top: 91px;
-}
-.pt-\[10px\] {
-  padding-top: 10px;
 }
 .text-left {
   text-align: left;
