@@ -1,12 +1,10 @@
 {
-  "name": "acf-video-sliderx",
+  "name": "acf-video-slider",
   "title": "Video slider",
   "description": "",
   "category": "bibliotheek",
   "icon": "slides",
-  "keywords": [
-    "block"
-  ],
+  "keywords": ["block"],
   "supports": {
     "mode": false,
     "jsx": true

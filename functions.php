@@ -885,3 +885,21 @@ add_filter( 'gutenberg_use_widgets_block_editor', '__return_false', 100 );
  
 // Disables the block editor from managing widgets. renamed from wp_use_widgets_block_editor
 add_filter( 'use_widgets_block_editor', '__return_false' );
+
+
+// Make an own input field for the quantity in the cart because why not!!
+add_action('wp_ajax_update_cart_quantity', 'handle_update_cart_quantity');
+add_action('wp_ajax_nopriv_update_cart_quantity', 'handle_update_cart_quantity');
+
+function handle_update_cart_quantity() {
+    $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
+    $quantity = intval($_POST['quantity']);
+
+    if ($cart_item = WC()->cart->get_cart_item($cart_item_key)) {
+        WC()->cart->set_quantity($cart_item_key, $quantity, true);
+        WC()->cart->calculate_totals();
+        wp_send_json_success();
+    } else {
+        wp_send_json_error('Invalid cart item key');
+    }
+}

@@ -123,8 +123,14 @@
 }
 
 .mySwiper-over-freek-section {
-  .swiper-pagination {
+
+  .swiper-pagination,
+  .swiper-pagination-news {
+    position: absolute;
     bottom: 52px;
+    z-index: 10;
+    text-align: center;
+    transition: .3s opacity;
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;

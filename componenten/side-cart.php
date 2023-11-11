@@ -90,7 +90,13 @@
 
                                         <div class="flex justify-between items-end">
                                             <div class="flex items-end">
-                                                <p class="font-karlsen text-12 leading-12 md:text-16 md:leading-16 lg:text-16 lg:leading-16 text-[#2B2828] mr-2"><?php echo $cart_item['quantity'] . 'x'; ?></p>
+                                                <?php 
+                                                    echo '<select class="custom-quantity-input font-karlsen text-12 leading-12 md:text-16 md:leading-16 lg:text-16 lg:leading-16 text-[#2B2828]" data-cart-item-key="' . esc_attr($cart_item_key) . '">';
+                                                    for ($i = $product->get_min_purchase_quantity(); $i <= $product->get_max_purchase_quantity(); $i++) {
+                                                        echo '<option value="' . $i . '"' . selected($cart_item['quantity'], $i, false) . '>' . $i . '</option>';
+                                                    }
+                                                    echo '</select>';
+                                                ?>
                                                 <?php
                                                 $product = wc_get_product($cart_item['product_id']);
                                                 if ($product->is_type('variable')) {
@@ -100,7 +106,7 @@
                                                 }
                                                 ?>
                                             </div>
-                                            <?php echo '<span class="product-price font-karlsen text-16 leading-16 md:text-24 md:leading-24 lg:text-24 lg:leading-24 text-[#2B2828] font-semibold">' . wc_price($product->get_price() * $cart_item['quantity']) . '</span>';?>
+                                            <!-- <?php echo '<span class="product-price font-karlsen text-16 leading-16 md:text-24 md:leading-24 lg:text-24 lg:leading-24 text-[#2B2828] font-semibold">' . wc_price($product->get_price() * $cart_item['quantity']) . '</span>';?> -->
                                         </div>
                                     </div>
                                 </div>

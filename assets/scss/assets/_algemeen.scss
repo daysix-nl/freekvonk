@@ -488,3 +488,22 @@ html {
     padding-bottom: 100px;
   }
 }
+
+.pop_up {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: pop_up 0.3s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes pop_up {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
