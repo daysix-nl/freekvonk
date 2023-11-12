@@ -4,8 +4,8 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- CONTENT SLIDER -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
-    <div class="relative w-screen overflow-hidden mySwiper-over-freek-section uitgelicht">
+<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> ">
+    <div class="relative w-screen overflow-hidden mySwiper-over-freek-section uitgelicht swiper-container">
         <div class="swiper mySwiper-over-freek-content">
             <div class="swiper-wrapper">
                 <?php
@@ -39,10 +39,11 @@ else: ?>
                 endif;
                 ?>
             </div>
-        </div>
-        <div class="swiper-button-next-over-freek"></div>
+                    <div class="swiper-button-next-over-freek"></div>
         <div class="swiper-button-prev-over-freek"></div>
         <div class="swiper-pagination swiper-pagination-content"></div>
+        </div>
+
     </div>
 </section>
 <?php endif; ?>

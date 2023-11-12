@@ -130,17 +130,34 @@ try {
 } catch (error) {}
 
 try {
-  var swipersOverFreek = new Swiper(".mySwiper-over-freek-content", {
-    loop: true,
-    slidesPerView: 1,
-    pagination: {
-      el: ".swiper-pagination-content",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-over-freek",
-      prevEl: ".swiper-button-prev-over-freek",
-    },
-  });
+  // var swipersOverFreek = new Swiper(".mySwiper-over-freek-content", {
+  //   loop: true,
+  //   slidesPerView: 1,
+  //   pagination: {
+  //     el: ".swiper-pagination-content",
+  //   },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next-over-freek",
+  //     prevEl: ".swiper-button-prev-over-freek",
+  //   },
+  // });
+
+  const buildSwiperSlider = (sliderElm) => {
+    return new Swiper(sliderElm, {
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next-over-freek",
+        prevEl: ".swiper-button-prev-over-freek",
+      },
+      pagination: {
+        el: sliderElm.querySelector(".swiper-pagination-content"),
+      },
+    });
+  };
+
+  const allSliders = document.querySelectorAll(".mySwiper-over-freek-content");
+  allSliders.forEach((slider) => buildSwiperSlider(slider));
 } catch (error) {}
 
 try {
