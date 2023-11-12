@@ -97,7 +97,7 @@ else: ?>
         </div>
         <div class="swiper-button-next-over-freek"></div>
         <div class="swiper-button-prev-over-freek"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-over-freek"></div>
     </div>
 
 </section>

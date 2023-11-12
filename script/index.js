@@ -120,7 +120,7 @@ try {
     loop: true,
     slidesPerView: 1,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination-over-freek",
     },
     navigation: {
       nextEl: ".swiper-button-next-over-freek",
@@ -373,26 +373,26 @@ try {
   console.error(error);
 }
 
-try {
-  var swiperfreekteam = new Swiper(".mySwiper-freekteam", {
-    slidesPerView: 1,
-    breakpointsBase: "window",
-    grabCursor: true,
-    spaceBetween: 10,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 4,
-      },
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-} catch (error) {}
+// try {
+//   var swiperfreekteam = new Swiper(".mySwiper-freekteam", {
+//     slidesPerView: 1,
+//     breakpointsBase: "window",
+//     grabCursor: true,
+//     spaceBetween: 10,
+//     breakpoints: {
+//       768: {
+//         slidesPerView: 2,
+//       },
+//       1200: {
+//         slidesPerView: 4,
+//       },
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
+// } catch (error) {}
 
 try {
   const menuHref = document.querySelectorAll(".menu-hover");
@@ -483,5 +483,36 @@ try {
       sidecart.classList.remove("sidecart-hidden");
       overlayShopCart.classList.add("sidecart-overlay-active");
     }
+  });
+} catch (error) {}
+
+try {
+  document.addEventListener("DOMContentLoaded", function () {
+    const thumbnails = document.querySelectorAll(".swiper-slide .post");
+    const closeButtons = document.querySelectorAll(".iframe-pop-up button");
+
+    function togglePopUp(popUpId, show) {
+      const popUp = document.getElementById(popUpId);
+      if (popUp) {
+        if (show) {
+          popUp.classList.remove("hidden");
+        } else {
+          popUp.classList.add("hidden");
+        }
+      }
+    }
+
+    thumbnails.forEach((thumbnail) => {
+      thumbnail.addEventListener("click", function () {
+        const popUpId = this.getAttribute("data-popup-id");
+        togglePopUp(popUpId, true);
+      });
+    });
+
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        this.closest(".iframe-pop-up").classList.add("hidden");
+      });
+    });
   });
 } catch (error) {}
