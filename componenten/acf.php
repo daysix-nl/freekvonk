@@ -55,3 +55,7 @@
 <div class="drop-shadow-[0px_0px_15px_#8CC63F]"></div>
 
 <div class="pb-[30px] md:pb-[50px] lg:pb-[80px]"></div>
+
+<div class="justify-start"></div>
+<div class="justify-center"></div>
+<div class="justify-end"></div>
