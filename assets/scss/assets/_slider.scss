@@ -176,7 +176,14 @@
     }
 
     .swiper-button-next-over-freek {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      bottom: 40px;
 
+      @media (max-width: 767px) {
+        bottom: 30px;
+      }
 
       &:after {
         content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="39.603" height="35.557" viewBox="0 0 30.702 27.867"><g id="Group_768" data-name="Group 768" transform="translate(1.5 2.317)"><line id="Line_35" data-name="Line 35" x2="25.108" transform="translate(0 11.616)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="14.967" y2="1.461" transform="translate(16.302 0) rotate(45)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.461" x2="14.967" transform="translate(26.885 12.649) rotate(135)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/></g></svg>');
