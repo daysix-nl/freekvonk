@@ -44,7 +44,7 @@ else: ?>
         </div>
     </div> 
     <?php else: ?>
-        <div class="container mt-[50px] hidden">
+        <div class="container mt-[50px] hidden md:block">
             <a href="javascript:window.history.back()" class="tet-16 font-karlsen font-normal text-color">Terug</a>
         </div>
     <?php endif; ?>
