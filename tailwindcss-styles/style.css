@@ -2690,6 +2690,10 @@ video {
     font-size: 80px;
   }
 
+  .md\:text-50 {
+    font-size: 50px;
+  }
+
   .md\:font-normal {
     font-weight: 400;
   }
@@ -2744,6 +2748,10 @@ video {
 
   .md\:leading-66 {
     line-height: 66px;
+  }
+
+  .md\:leading-47 {
+    line-height: 47px;
   }
 }
 @media (min-width: 1200px) {
