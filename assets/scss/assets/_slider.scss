@@ -290,3 +290,14 @@
     }
   }
 }
+
+.testimonial .swiper-pagination {
+
+  bottom: 52px !important;
+
+  @media (max-width: 767px) {
+
+    bottom: 32px !important;
+
+  }
+}

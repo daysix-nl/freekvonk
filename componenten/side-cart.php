@@ -141,9 +141,8 @@
                 <div class="flex justify-between pl-0 md:pl-3 lg:pl-0">
                     <h4 class="font-karlsen text-16 leading-16 md:text-25 md:leading-25 font-semibold text-[#2B2828]">Subtotaal</h4>
                     <p class="font-karlsen text-16 leading-16 md:text-25 md:leading-25 font-semibold text-[#2B2828]">
-                        <?php
-                        $subtotaal = WC()->cart->get_subtotal();
-                        echo '' . wc_price($subtotaal);
+                        <?php $total = WC()->cart->get_cart_total();
+                        echo '' . $total;
                         ?>
                     </p>
                 </div>
