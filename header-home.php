@@ -35,7 +35,7 @@
         $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
         ?>
         <div class="pop_up fixed top-0 left-0 w-screen flex bg-transparent z-20 justify-center items-center h-screen overflow-scroll py-5">
-            <div class="m-auto flex flex-col bg-[#EFE7DE] w-full mx-2 px-[15px] pt-1 pb-3 md:max-w-[481px] lg:px-1 lg:pb-2 lg:pt-1 lg:max-w-[594px] xl:max-w-[674px] xl:px-[15px] xl:pt-1 xl:pb-3 rounded-[5px] relative">
+            <div class="m-auto flex flex-col bg-[#EFE7DE] w-full mx-2 px-[15px] pt-1 pb-3 md:max-w-[481px] lg:px-1 lg:pb-2 lg:pt-1 lg:max-w-[594px] rounded-[5px] relative">
                 <button class="closePopUp absolute top-3 right-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19.799" height="19.799" viewBox="0 0 19.799 19.799">
                     <g id="Group_431" data-name="Group 431" transform="translate(-8.485 9.899) rotate(-45)">
@@ -48,10 +48,10 @@
                     <img class="min-w-full min-h-full object-cover object-center" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
                 </div>
                 
-                <p class="uppercase text-center font-karlsen font-normal text-[#0A1F16] text-22 leading-22 md:text-24 md:leading-22 pb-2 md:pb-[20px] xl:pb-2 mx-auto"><?php the_field('subtitel_popup', 'option');?></p>
-                <p class="text-[#0A1F16] font-tanker font-normal text-50 leading-47 text-center md:max-w-[404px] lg:max-w-[473px] xl:max-w-[531px] mx-auto pb-1 md:pb-[10px] xl:pb-1"><?php the_field('titel_popup', 'option');?></>
-                <div class="text-[#2B2828] font-karlsen text-16 leading-32 pb-2 md:pb-2 lg:pb-[20px] xl:pb-[30px] mx-auto text-center max-w-[301px] md:max-w-[395px] lg:max-w-[484px] xl:max-w-[544px] text-editor"><?php the_field('tekst_popup', 'option');?></div>
-                <a href="<?php echo $link_url; ?>" class="text-25 leading-35 font-tanker font-normal text-[#FFFFFF] flex justify-center items-center max-w-[270px] uppercase md:max-w-[202px] bg-[#0A1F16] h-[58px] md:h-[49px] xl:h-[58px] mx-auto w-full target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                <p class="uppercase text-center font-karlsen font-normal text-[#0A1F16] text-22 leading-22 md:text-24 md:leading-22 pb-2 md:pb-[20px] mx-auto"><?php the_field('subtitel_popup', 'option');?></p>
+                <p class="text-[#0A1F16] font-tanker font-normal text-50 leading-47 text-center md:max-w-[404px] lg:max-w-[473px] xl:max-w-[531px] mx-auto pb-1 md:pb-[10px]"><?php the_field('titel_popup', 'option');?></>
+                <div class="text-[#2B2828] font-karlsen text-16 leading-32 pb-2 md:pb-2 lg:pb-[20px] mx-auto text-center max-w-[301px] md:max-w-[395px] lg:max-w-[484px] text-editor"><?php the_field('tekst_popup', 'option');?></div>
+                <a href="<?php echo $link_url; ?>" class="text-25 leading-35 font-tanker font-normal text-[#FFFFFF] flex justify-center items-center max-w-[270px] uppercase md:max-w-[202px] bg-[#0A1F16] h-[58px] md:h-[49px] mx-auto w-full target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
             </div>
         </div>
     <?php } ?>
