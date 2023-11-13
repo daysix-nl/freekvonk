@@ -35,12 +35,14 @@ else: ?>
                         </div>
                         <!-- CONTENT -->
                         <div class="lg:aspect-square h-[460px] w-full lg:h-[46vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center overflow-hidden bg-[#EFE7DE]">
-                            <div class="lmax-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] h-[385px] lg:max-h-[500px] z-[40] py-[60px] lg:py-[unset] overflow-hidden">
+                            <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] h-[385px] lg:max-h-[500px] z-[40] py-[60px] lg:py-[unset] overflow-hidden relative">
+                                <a href="<?php the_permalink();?>">
                                 <!-- <p class="text-14 leading-26 lg:text-18 lg:leading-[32px] font-karlsen font-normal text-black tracking-wider mb-[15px] hidden md:flex z-[40]"><?php echo get_the_date('j F Y');?></p> -->
                                 <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen font-normal text-black uppercase mb-[25px] tracking-wider z-[40]">Allerlaatste nieuws</h2>
                                 <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-black z-[40]"><?php the_title();?></h3>
                                 <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen font-normal text-black mt-[30px] z-[40] line-clamp-4"><?php the_field('teaser_tekst', $post_id);?></p>
-                                <a href="<?php the_permalink();?>" class="text-16 leading-28 font-karlsen font-semibold text-black mt-[20px] z-[40] block">Lees meer</a>
+                                <p class="text-16 leading-28 font-karlsen font-semibold text-black mt-[20px] z-[40] block">Lees meer</p>
+                                </a>
                             </div>
                             <img src="/wp-content/themes/freekvonk/img/local/patroon-9.png" alt="" class="z-[30] h-full w-full object-cover object-center absolute top-0 left-0 right-0">
                         </div>
