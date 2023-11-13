@@ -69,7 +69,24 @@
                 "bg-lichtoranje": "Licht oranje",
                 "bg-lichtgrijs": "Licht grijs",
                 "bg-grijs": "Grijs",
-                "bg-donkergrijs": "Donker grijs"
+                "bg-donkergrijs": "Donker grijs",
+                "bg-black": "Dark blue",
+                "bg-deepgrey": "Deep grey",
+                "bg-basisgrey": "Basis grey",
+                "bg-lightgrey": "Light grey",
+                "bg-brightgrey": "Bright grey",
+                "bg-deepblue": "Deep blue",
+                "bg-basicblue": "Basic blue",
+                "bg-lightblue": "Light blue",
+                "bg-brightblue": "Bright blue",
+                "bg-darkturquoise": "Dark turquoise",
+                "bg-deepturquoise": "Deep turquoise",
+                "bg-basisturquoise": "Basis turquoise",
+                "bg-lightturquoise": "Light turquoise",
+                "bg-brightturquoise": "Bright turquoise",
+                "bg-basicred": "Basic red",
+                "bg-lightred": "Light red",
+                "bg-brightred": "Bright red"
             },
             "default_value": "bg-wit",
             "return_format": "value",
@@ -173,5 +190,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699299121
+    "modified": 1699888147
 }

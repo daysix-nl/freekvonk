@@ -59,3 +59,21 @@
 <div class="justify-start"></div>
 <div class="justify-center"></div>
 <div class="justify-end"></div>
+
+<div class="bg-black"></div>
+<div class="bg-deepgrey"></div>
+<div class="bg-basisgrey"></div>
+<div class="bg-lightgrey"></div>
+<div class="bg-brightgrey"></div>
+<div class="bg-deepblue"></div>
+<div class="bg-basisblue"></div>
+<div class="bg-lightblue"></div>
+<div class="bg-brightblue"></div>
+<div class="bg-darkturquoise"></div>
+<div class="bg-deepturquoise"></div>
+<div class="bg-basisturquoise"></div>
+<div class="bg-lightturquoise"></div>
+<div class="bg-brightturquoise"></div>
+<div class="bg-basisred"></div>
+<div class="bg-lightred"></div>
+<div class="bg-brightred"></div>
