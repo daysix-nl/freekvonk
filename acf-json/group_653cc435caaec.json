@@ -131,7 +131,7 @@
             "maxlength": "",
             "rows": 2,
             "placeholder": "",
-            "new_lines": ""
+            "new_lines": "br"
         },
         {
             "key": "field_653cca7813271",
@@ -240,5 +240,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698485105
+    "modified": 1699860979
 }

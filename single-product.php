@@ -235,7 +235,7 @@ if ( post_password_required() ) {
                                     $publish_date = $product->get_date_created();
                                     $current_date = new WC_DateTime();
                                     $days_difference = $current_date->diff($publish_date)->days;
-                                    if ($days_difference > 30) {
+                                    if ($days_difference > 19) {
                                     
                                     } else { ?>
                                     <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">
@@ -358,7 +358,7 @@ if ( post_password_required() ) {
                                     $publish_date = $product->get_date_created();
                                     $current_date = new WC_DateTime();
                                     $days_difference = $current_date->diff($publish_date)->days;
-                                    if ($days_difference > 30) {
+                                    if ($days_difference > 19) {
                                     
                                     } else { ?>
                                     <div class="absolute w-[43px] h-[20px] md:w-[76px] md:h-[33px] lg:w-[95px] lg:h-[41px] bg-[#8CC63F] top-0 right-0 flex items-center justify-center">
