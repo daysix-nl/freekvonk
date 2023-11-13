@@ -9,7 +9,7 @@
 get_header('notitle'); ?>
 
 <main>
-    <div class="container md:pt-10 min-h-[calc(100dvh-80px)] pb-[80px]">
+    <div class="container pt-[80px] md:pt-10 min-h-[calc(100dvh-80px)] pb-[80px]">
          <form action="/" method="get">
             <div class="border-b-[1px] border-[#B5BBB8] w-full flex pb-[20px]">
                 <input class="w-[21.74px] mr-[35px]" type="image" alt="Search" src="<?php bloginfo( 'template_url' ); ?>/img/icon/search.svg" />
