@@ -27,15 +27,15 @@ else: ?>
                 <div class="swiper-slide">
                     <div class="grid grid-cols-1 lg:grid-cols-2">
                         <!-- AFBEELDING -->
-                        <div class="lg:aspect-square h-[390px] md:h-[450px] lg:h-[46vw] lg:w-[50vw]  relative">
+                        <div class="h-[242px] md:h-[450px] lg:h-[46vw] lg:w-[50vw] overflow-hidden relative">
                             <!-- <div class="bg-[#ECE1D5] px-1 h-[31px] absolute top-0 left-0 flex justify-center items-center md:hidden">
                                 <p class="text-[#0A1F16] text-14 leading-28 text-center font-karlsen font-normal tracking-wider"><?php echo get_the_date('j F Y');?></p>
                             </div> -->
                             <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center">
                         </div>
                         <!-- CONTENT -->
-                        <div class="lg:aspect-square bg-[#EFE7DE] min-h-[460px] md:min-h-[430px] lg:min-h-[unset] h-full w-full lg:h-[46vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative">
-                            <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[500px] lg:overflow-y-auto z-[40] py-[60px] lg:py-[unset]">
+                        <div class="lg:aspect-square h-[460px] w-full lg:h-[46vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center overflow-hidden bg-[#EFE7DE]">
+                            <div class="lmax-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] h-[385px] lg:max-h-[500px] z-[40] py-[60px] lg:py-[unset] overflow-hidden">
                                 <!-- <p class="text-14 leading-26 lg:text-18 lg:leading-[32px] font-karlsen font-normal text-black tracking-wider mb-[15px] hidden md:flex z-[40]"><?php echo get_the_date('j F Y');?></p> -->
                                 <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen font-normal text-black uppercase mb-[25px] tracking-wider z-[40]">Allerlaatste nieuws</h2>
                                 <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-black z-[40]"><?php the_title();?></h3>
@@ -54,7 +54,7 @@ else: ?>
         </div>
         <div class="swiper-button-next-over-freek"></div>
         <div class="swiper-button-prev-over-freek"></div>
-         <div class="swiper-pagination swiper-pagination-news"></div>
+        <div class="swiper-pagination swiper-pagination-news"></div>
     </div>
 
 </section>

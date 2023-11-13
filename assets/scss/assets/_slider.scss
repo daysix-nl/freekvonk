@@ -179,15 +179,27 @@
 
 
       &:after {
-        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30.702" height="27.867" viewBox="0 0 30.702 27.867"><g id="Group_768" data-name="Group 768" transform="translate(1.5 2.317)"><line id="Line_35" data-name="Line 35" x2="25.108" transform="translate(0 11.616)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="14.967" y2="1.461" transform="translate(16.302 0) rotate(45)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.461" x2="14.967" transform="translate(26.885 12.649) rotate(135)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/></g></svg>');
+        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="39.603" height="35.557" viewBox="0 0 30.702 27.867"><g id="Group_768" data-name="Group 768" transform="translate(1.5 2.317)"><line id="Line_35" data-name="Line 35" x2="25.108" transform="translate(0 11.616)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="14.967" y2="1.461" transform="translate(16.302 0) rotate(45)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.461" x2="14.967" transform="translate(26.885 12.649) rotate(135)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/></g></svg>');
+
+      }
+
+      @media (max-width: 767px) {
+        &:after {
+          content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.68" viewBox="0 0 39.603 35.557"><g id="Group_768" data-name="Pijl wit" transform="translate(1.5 2.317)"><line id="Line_35" data-name="Line 35" x2="33.419" transform="translate(0 15.461)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3" /><line id="Line_36" data-name="Line 36" x2="19.921" y2="1.945" transform="translate(21.699) rotate(45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3" /><line id="Line_37" data-name="Line 37" y1="1.945" x2="19.921" transform="translate(35.785 16.836) rotate(135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3" /></g></svg>');
+        }
       }
     }
 
     .swiper-button-prev-over-freek {
 
-      @media (max-width: 1279px) {
+      &:after {
+        content: \url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="39.603" height="35.557" viewBox="0 0 39.603 35.557"><g id="Group_768" data-name="Group 768" transform="translate(38.103 33.24) rotate(180)"><line id="Line_35" data-name="Line 35" x2="33.419" transform="translate(0 15.461)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="19.921" y2="1.945" transform="translate(21.699) rotate(45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.945" x2="19.921" transform="translate(35.785 16.836) rotate(135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3"/></g></svg>');
+
+      }
+
+      @media (max-width: 767px) {
         &:after {
-          content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30.703" height="27.867" viewBox="0 0 30.703 27.867"><g id="Group_1098" data-name="Group 1098" transform="translate(29.203 25.55) rotate(180)"><line id="Line_35" data-name="Line 35" x2="25.108" transform="translate(0 11.616)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_36" data-name="Line 36" x2="14.967" y2="1.461" transform="translate(16.302 0) rotate(45)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/><line id="Line_37" data-name="Line 37" y1="1.461" x2="14.967" transform="translate(26.885 12.649) rotate(135)" fill="none" stroke="%23000" stroke-linecap="round" stroke-width="3"/></g></svg>');
+          content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.68" viewBox="0 0 39.603 35.557"><g id="Group_768" data-name="Group 768" transform="translate(38.103 33.24) rotate(180)"><line id="Line_35" data-name="Line 35" x2="33.419" transform="translate(0 15.461)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3" /><line id="Line_36" data-name="Line 36" x2="19.921" y2="1.945" transform="translate(21.699) rotate(45)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3" /><line id="Line_37" data-name="Line 37" y1="1.945" x2="19.921" transform="translate(35.785 16.836) rotate(135)" fill="none" stroke="%23fff" stroke-linecap="round" stroke-width="3" /></g></svg>');
         }
       }
     }
