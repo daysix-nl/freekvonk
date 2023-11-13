@@ -87,7 +87,7 @@
             </div>
             <div class="w-[290px]">
                 <div class="grid content-start">
-                    <p class="text-18 leading-30 font-karlsen text-black font-bold w-fit"><?php the_field('titel_abonnementen', 'option');?></p>
+                    <p class="text-16 leading-30 font-karlsen text-black font-bold w-fit"><?php the_field('titel_abonnementen', 'option');?></p>
                     <div class="text-16 leading-30 font-karlsen text-black w-fit"><?php the_field('tekst_abonnementen', 'option');?></div>
                     <p class="text-16 leading-30 font-karlsen text-black font-bold w-fit pt-3"><?php the_field('titel_algemeen', 'option');?></p>
                     <div class="text-16 leading-30 font-karlsen text-black w-fit"><?php the_field('tekst_algemeen', 'option');?></div>
@@ -151,7 +151,7 @@
                 <button class="accordion text-16 leading-32 font-karlsen font-semibold text-black py-[25px] flex">Informatie</button>
                 <div class="panel ">
                     <div class="px-1.5 flex flex-col pb-4">
-                        <p class="text-18 leading-30 font-karlsen text-black font-bold w-fit"><?php the_field('titel_abonnementen', 'option');?></p>
+                        <p class="text-16 leading-30 font-karlsen text-black font-bold w-fit"><?php the_field('titel_abonnementen', 'option');?></p>
                         <div class="text-16 leading-30 font-karlsen text-black w-fit"><?php the_field('tekst_abonnementen', 'option');?></div>
                         <p class="text-16 leading-30 font-karlsen text-black font-bold w-fit pt-3"><?php the_field('titel_algemeen', 'option');?></p>
                         <div class="text-16 leading-30 font-karlsen text-black w-fit"><?php the_field('tekst_algemeen', 'option');?></div>
