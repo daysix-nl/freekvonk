@@ -44,7 +44,7 @@ else: ?>
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-black md:line-clamp-1 px-[10px] md:px-[unset]"><?php the_title();?></h3>
                     <div class="flex items-end justify-between px-[10px] pb-[10px] md:px-[unset] md:pb-[unset]">
                         <div class="w-[calc(100%-30px)]">
-                            <p class="text-14 leading-26 lg:text-18 lg:leading-[32px] font-karlsen font-normal text-black tracking-wider my-[10px] uppercase"><?php echo get_the_date('j F Y');?></p>
+                            <!-- <p class="text-14 leading-26 lg:text-18 lg:leading-[32px] font-karlsen font-normal text-black tracking-wider my-[10px] uppercase"><?php echo get_the_date('j F Y');?></p> -->
                             <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen font-normal text-black md:mt-[15px] lg:mt-[30px] line-clamp-3 md:line-clamp-2"><?php the_field('teaser_tekst', $post_id);?></p>
                         </div>
                         <div class="w-[17.5px] h-[14.68px] md:hidden">
