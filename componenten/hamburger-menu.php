@@ -156,7 +156,7 @@
                 endif;
                 ?>
         </div>
-        <div class="absolute bottom-2 left-2 right-2">
+        <div class="absolute bottom-2 left-2 right-2 z-[60]">
             <div class="flex justify-between">
                 <div class=""></div>
                 <div class="flex space-x-1 md:justify-end">
