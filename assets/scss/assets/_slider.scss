@@ -291,13 +291,41 @@
   }
 }
 
-.testimonial .swiper-pagination {
 
-  bottom: 52px !important;
+
+
+.mySwiper-over-freek-section .swiper-pagination-testi {
+  position: absolute;
+  bottom: 52px;
+  z-index: 10;
+  text-align: center;
+  transition: .3s opacity;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  right: unset;
 
   @media (max-width: 767px) {
 
-    bottom: 32px !important;
+    bottom: 32px;
 
+  }
+
+
+
+  @media (min-width: 1200px) {
+    left: calc(50% + 136px);
+  }
+
+  .swiper-pagination-bullet {
+    background-color: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+    width: 7px;
+    height: 7px;
+
+    &.swiper-pagination-bullet-active {
+      background-color: #fff;
+    }
   }
 }
