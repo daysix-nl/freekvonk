@@ -174,7 +174,7 @@
         </div>
         <!-- LIVE NOW TITEL -->
         <div class="absolute left-0 top-0 bottom-0 bg-[#8CC63F] w-[110px] flex items-center justify-center z-[2] live-now">
-            <h3 class="text-13 leading-15 font-karlsen font-bold text-white flex items-center justify-center uppercase">Live nu
+            <h3 class="text-13 leading-15 font-karlsen font-bold text-white flex items-center justify-center uppercase">Nu live
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" class="ml-[15px]">
                     <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="4" cy="3.5" rx="4" ry="3.5" fill="#fff"/>
                 </svg>
