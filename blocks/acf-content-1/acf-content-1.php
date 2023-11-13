@@ -31,7 +31,7 @@ $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
             <?php endif; ?>
         </div>
         <div class="h-full w-full lg:h-[46vw] lg:w-[50vw] lg:flex lg:items-center lg:justify-center relative overflow-hidden <?php the_field('achtergrond');?> order-2">
-            <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[500px] overflow-hidden z-[40] py-[50px] lg:py-[unset]">
+            <div class="max-w-[390px] px-2 md:px-[unset] md:max-w-[603px] mx-auto lg:w-[506px] lg:max-h-[500px] overflow-hidden z-[40] py-[50px] lg:py-[unset] relative">
                 <?php if (get_field('subtitel')): ?>   
                 <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen font-normal text-color uppercase mb-[15px] tracking-wider"><?php the_field('subtitel');?></h2>
                 <?php endif; ?>
