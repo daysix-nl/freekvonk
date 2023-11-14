@@ -108,7 +108,7 @@
                         ?>
                     </div>
                 </div>
-                <div class="absolute left-0 bottom-0 right-0 top-[unset] hidden lg:block z-[40]">
+                <div class="absolute left-0 bottom-0 right-0 top-[unset] hidden lg:block z-[60]">
                     <div class="bg-gradient-to-b from-[transparent] via-[#0a1f169b] to-[#0a1f16] h-[50px]"></div>
                     <div class="bg-black">
                         <div class="px-4 pb-3 pt-2 flex space-x-[70px]">
@@ -156,7 +156,7 @@
                 endif;
                 ?>
         </div>
-        <div class="absolute bottom-2 left-2 right-2 z-[60]">
+        <div class="absolute bottom-2 left-2 lg:left-[50vw] right-2 z-[60]">
             <div class="flex justify-between">
                 <div class=""></div>
                 <div class="flex space-x-1 md:justify-end">
