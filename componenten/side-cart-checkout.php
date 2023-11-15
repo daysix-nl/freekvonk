@@ -189,7 +189,7 @@
                                         <input class="w-full" type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
                                     </p>
                                     <p class="w-full">
-                                        <button type="submit" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Toepassen', 'woocommerce' ); ?></button>
+                                        <button type="submit" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>" onclick="refreshPage()"><?php esc_html_e( 'Toepassen', 'woocommerce' ); ?></button>
                                     </p>
                                     <div class="clear"></div>
                                 </form>
@@ -263,3 +263,12 @@
 
 
             </div>
+
+<script>
+    function refreshPage() {
+        // Wacht 2000 milliseconden (2 seconden) en vernieuw dan de pagina
+        setTimeout(function () {
+            location.reload();
+        }, 2000);
+    }
+</script>
