@@ -208,6 +208,8 @@
         
     </div>
 </section>
+
+</footer>
 <?php  if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
     <div class="lg:hidden z-[9998] relative">
         <a href="/afrekenen" class="w-[40px] h-[40px] bg-[#8CC63F] right-2 bottom-2 fixed">
@@ -226,7 +228,6 @@
         </a>
     </div>
 <?php } ?>
-</footer>
 
 <?php include get_template_directory() . '/componenten/side-cart.php'; ?>
 
