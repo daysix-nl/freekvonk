@@ -128,6 +128,15 @@
                             ?>
                             <?php
                             if (WC()->cart->get_cart_contents_count() > 0) { ?>
+                             
+                            <?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
+                                <div class="flex justify-between pl-0 md:pl-3 lg:pl-0">
+                                <h4 class="font-karlsen text-16 leading-16 font-normal text-[#2B2828]">Kortings- of giftcard </h4>
+                                <p class="font-karlsen text-16 leading-16 font-normal text-[#2B2828]">
+                                    <?php wc_cart_totals_coupon_html( $coupon ); ?>
+                                </p>
+                            </div>
+                            <?php endforeach; ?>
                             <div class="flex justify-between pl-0 md:pl-3 lg:pl-0">
                                 <h4 class="font-karlsen text-16 leading-16 font-semibold text-[#2B2828]">Subtotaal</h4>
                                 <p class="font-karlsen text-16 leading-16 font-semibold text-[#2B2828]">
