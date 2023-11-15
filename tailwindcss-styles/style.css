@@ -729,6 +729,9 @@ video {
 .z-\[999\] {
   z-index: 999;
 }
+.z-\[9998\] {
+  z-index: 9998;
+}
 .order-1 {
   order: 1;
 }

@@ -209,7 +209,7 @@
     </div>
 </section>
 <?php  if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
-    <div class="lg:hidden z-[9995] relative">
+    <div class="lg:hidden z-[9998] relative">
         <a href="/afrekenen" class="w-[40px] h-[40px] bg-[#8CC63F] right-2 bottom-2 fixed">
             <div class="flex justify-center items-center relative h-full w-full">
                 <svg class="h-[18px] md:h-[17.68px]" width="auto" height="100%" viewBox="0 0 16.2163916 19.1606747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
