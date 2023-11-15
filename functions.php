@@ -546,6 +546,7 @@ function add_custom_admin_bar_styles() {
             #toplevel_page_getwooplugins { display: none !important; }
             #wp-admin-bar-weglot { display: none !important; }
             #toplevel_page_weglot-settings { display: none !important; }
+            #woocommerce_myparcel_dashboard_widget { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
 
