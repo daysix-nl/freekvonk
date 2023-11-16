@@ -75,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body <?php body_class( 'page-block' ); ?>>
 
-<!-- hook content: themify_body_start --><!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <noscript><iframe loading="lazy" data-lazy="1" src="about:blank" class="tf_iframe_lazy" data-tf-src="//www.googletagmanager.com/ns.html?id=GTM-M73FKS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
