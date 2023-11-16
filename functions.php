@@ -547,6 +547,7 @@ function add_custom_admin_bar_styles() {
             #wp-admin-bar-weglot { display: none !important; }
             #toplevel_page_weglot-settings { display: none !important; }
             #woocommerce_myparcel_dashboard_widget { display: none !important; }
+            #dashboard_right_now { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
 
