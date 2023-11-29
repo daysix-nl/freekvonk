@@ -161,6 +161,25 @@ try {
 } catch (error) {}
 
 try {
+  const buildSwiperSliderNew = (sliderElm) => {
+    return new Swiper(sliderElm, {
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: sliderElm.querySelector(".swiper-button-next-over-freek"),
+        prevEl: sliderElm.querySelector(".swiper-button-prev-over-freek"),
+      },
+      pagination: {
+        el: sliderElm.querySelector(".swiper-pagination-news"),
+      },
+    });
+  };
+
+  const allSliders = document.querySelectorAll(".mySwiper-over-freek-news");
+  allSliders.forEach((slider) => buildSwiperSliderNew(slider));
+} catch (error) {}
+
+try {
   var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
     slidesPerView: "auto",
     centeredSlides: true,
