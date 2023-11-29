@@ -50,8 +50,6 @@ else: ?>
                 </div>
                 <?php endwhile; wp_reset_query(); ?>
                 
-                
-                
             </div>
                     <div class="swiper-button-next-over-freek"></div>
         <div class="swiper-button-prev-over-freek"></div>

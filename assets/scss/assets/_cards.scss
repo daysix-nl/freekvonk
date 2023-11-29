@@ -17,29 +17,11 @@
 }
 
 
-
-
-// .item {
-//     display: none;
-// }
-
-// @media (min-width: 1280px) {
-//     .item:nth-child(-n+9) {
-//         display: block;
-//     }
-// }
-
-// @media (max-width: 1280px) {
-//     .item:nth-child(-n+3) {
-//         display: block;
-//     }
-// }
-
 .team-section .team-block.list-b-none .post {
 
 
     @media only screen and (max-width: 768px) {
-        &:nth-of-type(n+4) {
+        &:nth-of-type(n+3) {
             display: none !important;
         }
     }
