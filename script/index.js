@@ -147,8 +147,8 @@ try {
       loop: true,
       slidesPerView: 1,
       navigation: {
-        nextEl: ".swiper-button-next-over-freek",
-        prevEl: ".swiper-button-prev-over-freek",
+        nextEl: sliderElm.querySelector(".swiper-button-next-over-freek"),
+        prevEl: sliderElm.querySelector(".swiper-button-prev-over-freek"),
       },
       pagination: {
         el: sliderElm.querySelector(".swiper-pagination-content"),
@@ -158,20 +158,6 @@ try {
 
   const allSliders = document.querySelectorAll(".mySwiper-over-freek-content");
   allSliders.forEach((slider) => buildSwiperSlider(slider));
-} catch (error) {}
-
-try {
-  var swipersOverFreek = new Swiper(".mySwiper-over-freek-news", {
-    loop: true,
-    slidesPerView: 1,
-    pagination: {
-      el: ".swiper-pagination-news",
-    },
-    // navigation: {
-    //   nextEl: ".swiper-button-next-over-freek",
-    //   prevEl: ".swiper-button-prev-over-freek",
-    // },
-  });
 } catch (error) {}
 
 try {
