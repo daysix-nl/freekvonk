@@ -6,7 +6,7 @@ else: ?>
 <!-- NIEUWS SLIDER 1 -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
     <div class="relative w-screen overflow-hidden mySwiper-over-freek-section uitgelicht black-slider">
-        <div class="swiper mySwiper-over-freek-news">
+        <div class="swiper mySwiper-over-freek-content">
             <div class="swiper-wrapper">
                 <?php
                     $loop = new WP_Query( array(
