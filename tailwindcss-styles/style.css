@@ -885,6 +885,9 @@ video {
 .mt-\[8px\] {
   margin-top: 8px;
 }
+.mb-\[-15px\] {
+  margin-bottom: -15px;
+}
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1092,6 +1095,9 @@ video {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[47px\] {
+  height: 47px;
 }
 .max-h-\[314px\] {
   max-height: 314px;
@@ -2229,6 +2235,10 @@ video {
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .drop-shadow-\[0px_0px_15px_\#8CC63F\] {
   --tw-drop-shadow: drop-shadow(0px 0px 15px #8CC63F);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2346,6 +2356,14 @@ video {
 
   .md\:mt-\[unset\] {
     margin-top: unset;
+  }
+
+  .md\:mb-\[-15pxpx\] {
+    margin-bottom: -15pxpx;
+  }
+
+  .md\:mb-\[-15px\] {
+    margin-bottom: -15px;
   }
 
   .md\:line-clamp-1 {
