@@ -1,0 +1,40 @@
+.stichting-footer .accordion-item {
+    border-bottom: 1px solid #fff;
+
+    .accordion {
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition-delay: .2s;
+        transition-property: background-color, color;
+        transition-duration: .2s;
+
+        &::after {
+            content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15.255" height="9.173" viewBox="0 0 15.255 9.173"><g id="Pijl_rechts_mobiel" data-name="Pijl rechts mobiel" transform="translate(1.545 7.628) rotate(-90)"><g id="Group_472" data-name="Group 472" transform="translate(0)"><line id="Line_36" data-name="Line 36" x2="7.837" y2="0.765" transform="translate(0.541 0) rotate(45)" fill="none" stroke="%230fff" stroke-linecap="round" stroke-width="2"/><line id="Line_37" data-name="Line 37" y1="0.765" x2="7.837" transform="translate(6.082 6.624) rotate(135)" fill="none" stroke="%230fff" stroke-linecap="round" stroke-width="2"/></g></g></svg>');
+            margin-left: auto;
+            transition: .3s;
+            display: block;
+            transform: rotate(180deg);
+            transform-origin: center;
+        }
+
+        &.active {
+            transition-delay: 0s;
+            transition: 0s;
+
+            &::after {
+                transform: rotate(0deg);
+                transform-origin: center;
+            }
+        }
+    }
+
+    .panel {
+        overflow: hidden;
+        height: 0;
+        transition: height .2s ease-out;
+    }
+}

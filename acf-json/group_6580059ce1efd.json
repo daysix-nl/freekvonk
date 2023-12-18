@@ -1,0 +1,122 @@
+{
+    "key": "group_6580059ce1efd",
+    "title": "Footer",
+    "fields": [
+        {
+            "key": "field_65800600b6fed",
+            "label": "Doneer button",
+            "name": "stichting_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_6580064e69a90",
+            "label": "Menu",
+            "name": "stichting_menu",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Nieuwe item",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6580066269a91",
+                    "label": "Link",
+                    "name": "stichting_menu_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_6580064e69a90"
+                }
+            ]
+        },
+        {
+            "key": "field_658006a2e975a",
+            "label": "Doneren tekst",
+            "name": "doneren_tekst",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Wil je een eenmalige donatie doen? Dat kan via Paypal of rekeningnummer NL82 RABO 0306 7216 00",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_658006d1cfc5b",
+            "label": "Nieuwsbrief tekst",
+            "name": "nieuwsbrief_tekst",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Blijf op de hoogte rondom de activiteiten van NWC door je in te schrijven voor de nieuwsbrief!",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "stichting"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1702889188
+}

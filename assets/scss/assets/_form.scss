@@ -59,6 +59,67 @@
     }
 }
 
+.stichting-footer .form-footer {
+    input[type="email"] {
+        background-color: #FFFFFF;
+        border: none;
+        padding: 15px;
+        width: 331px !important;
+        height: 50px !important;
+        font-family: 'Tanker';
+        margin-right: 20px !important;
+    }
+
+    input[type="submit"] {
+        background-color: #8CC63F;
+        border: none;
+        min-width: 100px !important;
+        margin: 0 !important;
+        font-size: 21px;
+        color: #fff;
+        cursor: pointer;
+        height: 50px !important;
+        font-family: 'Tanker';
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #8CC63F;
+            color: #fff;
+            transition: 0.3s;
+        }
+    }
+
+    label {
+        display: none !important;
+    }
+
+    form {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .gform_footer {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    // media queries
+    @media (max-width: 1199px) {
+        form {
+            flex-direction: column;
+        }
+
+        input[type="email"] {
+            width: 100% !important;
+            margin-bottom: 10px !important;
+        }
+
+        input[type="submit"] {
+            width: 100% !important;
+        }
+    }
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -11,7 +11,7 @@ try {
     },
     slidesPerView: "auto",
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swipers = new Swiper(".mySwiper-navigatie", {
@@ -116,6 +116,35 @@ try {
 }
 
 try {
+  var swipersFoto = new Swiper(".mySwiper-fototwo", {
+    slidesPerView: 1.3,
+    centeredSlides: true,
+    spaceBetween: 8,
+    initialSlide: 1,
+    breakpoints: {
+      768: {
+        spaceBetween: 15,
+        slidesPerView: "auto",
+      },
+      1280: {
+        spaceBetween: 15,
+        slidesPerView: "auto",
+      },
+      1440: {
+        spaceBetween: 15,
+        slidesPerView: "auto",
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next-fototwo",
+      prevEl: ".swiper-button-prev-fototwo",
+    },
+  });
+} catch (error) {
+  console.error(error);
+}
+
+try {
   var swipersOverFreek = new Swiper(".mySwiper-over-freek", {
     loop: true,
     slidesPerView: 1,
@@ -127,7 +156,7 @@ try {
       prevEl: ".swiper-button-prev-over-freek",
     },
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   // var swipersOverFreek = new Swiper(".mySwiper-over-freek-content", {
@@ -158,7 +187,7 @@ try {
 
   const allSliders = document.querySelectorAll(".mySwiper-over-freek-content");
   allSliders.forEach((slider) => buildSwiperSlider(slider));
-} catch (error) {}
+} catch (error) { }
 try {
   var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
     slidesPerView: "auto",
@@ -167,7 +196,7 @@ try {
     initialSlide: 1,
     spaceBetween: 8,
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swiperShopHeader = new Swiper(".mySwiper-shop-header", {
@@ -205,7 +234,7 @@ try {
       }
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   const forEach = (array, callback, scope) => {
@@ -254,7 +283,7 @@ try {
       }
     });
   });
-} catch (error) {}
+} catch (error) { }
 try {
   // Get reference to the Lottie animation element
   const elementLottie = document.querySelectorAll(".lottie-title");
@@ -272,7 +301,7 @@ try {
     // Make sure the animation's progress is at 0
     animation.goToAndStop(0, true);
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   // Get references to all Lottie animation elements
@@ -291,7 +320,7 @@ try {
     // Make sure the animation's progress is at 0
     animation.goToAndStop(0, true);
   });
-} catch (error) {}
+} catch (error) { }
 try {
   document.getElementById("loadMoreBtn").addEventListener("click", function () {
     const items = document.querySelectorAll(".item:not(.visible)");
@@ -310,7 +339,7 @@ try {
       this.innerText = "Laad meer";
     }
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   const filterButtons = document.querySelector(".filter-button-shop");
@@ -332,7 +361,7 @@ try {
     filterModal.classList.toggle("active");
     filterModalOverlay.classList.toggle("active");
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swiperShop = new Swiper(".mySwiper-shop", {
@@ -409,7 +438,7 @@ try {
       img.classList.remove("hidden");
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   const buttonClosePopUp = document.querySelector(".closePopUp");
@@ -424,7 +453,7 @@ try {
 
   buttonClosePopUp.addEventListener("click", closePopupAndSetCookie);
   popUp.addEventListener("click", closePopupAndSetCookie);
-} catch (error) {}
+} catch (error) { }
 
 try {
   document.addEventListener("DOMContentLoaded", () => {
@@ -472,7 +501,7 @@ try {
       console.error("Error:", error);
     }
   };
-} catch (error) {}
+} catch (error) { }
 
 try {
   window.addEventListener("load", () => {
@@ -486,7 +515,7 @@ try {
       overlayShopCart.classList.add("sidecart-overlay-active");
     }
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   document.addEventListener("DOMContentLoaded", function () {
@@ -517,4 +546,4 @@ try {
       });
     });
   });
-} catch (error) {}
+} catch (error) { }
