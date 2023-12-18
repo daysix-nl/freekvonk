@@ -905,3 +905,39 @@ function handle_update_cart_quantity() {
         wp_send_json_error('Invalid cart item key');
     }
 }
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| VOORRAAD 0 NAAR CONCEPT
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+// Voeg de volgende code toe aan het functions.php bestand van je thema
+
+function voorraad_nul_naar_concept( $ID, $post ) {
+    // Controleer of het product een WooCommerce-product is
+    if ( 'product' === $post->post_type ) {
+        // Krijg de voorraadstatus van het product
+        $voorraad = get_post_meta( $ID, '_stock', true );
+
+        // Als voorraad 0 is, stel de status in op concept
+        if ( 0 === intval( $voorraad ) ) {
+            // Stel de status in op concept
+            $post_data = array(
+                'ID'          => $ID,
+                'post_status' => 'draft',
+            );
+            wp_update_post( $post_data );
+        }
+    }
+}
+
+// Haak de functie in op het save_post-evenement
+add_action( 'save_post', 'voorraad_nul_naar_concept', 10, 2 );
