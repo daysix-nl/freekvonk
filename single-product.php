@@ -272,7 +272,7 @@ if ( post_password_required() ) {
                                 global $product;
 
                                 if ($product->is_type('variable')) { ?>
-                                    <div class="product-add absolute left-[0px] bottom-[0px] right-[0px] lg:left-[8px] lg:right-[8px] lg:bottom-[8px] bg-[#fff] z-[2]">
+                                    <div class="product-add absolute left-[0px] bottom-[0px] right-[0px] lg:left-[8px] lg:right-[8px] lg:bottom-[8px] bg-[#fff] z-[2] hidden lg:block">
                                     <div class="relative w-full h-full overflow-hidden p-[8px]">
                                         <?php
                                        global $product;
@@ -394,7 +394,7 @@ if ( post_password_required() ) {
                                 global $product;
 
                                 if ($product->is_type('variable')) { ?>
-                                    <div class="product-add absolute left-[0px] bottom-[0px] right-[0px] lg:left-[8px] lg:right-[8px] lg:bottom-[8px] bg-[#fff] z-[2]">
+                                    <div class="product-add absolute left-[0px] bottom-[0px] right-[0px] lg:left-[8px] lg:right-[8px] lg:bottom-[8px] bg-[#fff] z-[2] hidden lg:block">
                                     <div class="relative w-full h-full overflow-hidden p-[8px]">
                                         <?php
                                        global $product;
