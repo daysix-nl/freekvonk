@@ -25,7 +25,7 @@ $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 
 
 ?>
 <div class="input-quantity flex justify-between pb-2">
-	<p class="text-16 leading-32 font-karlsen font-normal text-[#2B2828]">Slecteer het aantal</p>
+	<p class="text-16 leading-32 font-karlsen font-normal text-[#2B2828]">Selecteer het aantal</p>
 	<div class="quantity flex">
 		<?php
 		/**

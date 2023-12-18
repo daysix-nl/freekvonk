@@ -27,7 +27,7 @@
             <svg class="mt-[2px] w-[13.697px]" xmlns="http://www.w3.org/2000/svg" width="13.697" height="9.781" viewBox="0 0 13.697 9.781">
                 <path id="Path_202" data-name="Path 202" d="M8331.749,406.758l-7.468,7.367-3.4-3.4" transform="translate(-8319.466 -405.343)" fill="none" stroke="#8cc63f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
             </svg>
-             <p class="text-[#B5BBB8] text-16 leading-16 font-karlsen w-full ml-2">Voor 22:00 besteld = vandaag verzonden</p>
+             <p class="text-[#B5BBB8] text-16 leading-16 font-karlsen w-full ml-2">Voor 12:00 besteld = vandaag verzonden</p>
         </div>
         <hr class="border-[#B5BBB8] border-1 mt-2">
         <div class="h-full">
