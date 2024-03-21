@@ -6,18 +6,36 @@ else: ?>
 <!-- CASES -->
 <section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> case-section team-block list-b-none">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[10px]">
-        <?php
-            $loop = new WP_Query( array(
-                'post_type' => 'case',
-                'posts_per_page' => -1,
-                'orderby' => 'date',
-                'order' => 'DESC'
-            )
-            );
-            $post_count = $loop->post_count; // Aantal berichten in de queryloop
-            $show_load_more_button = $post_count > 4;
-        ?>
-        <?php while ( $loop->have_posts() ) : $loop->the_post();  $post_id = get_the_ID(); ?>
+   <?php
+$categorie = get_field('categorie'); // Ophalen van de categorieën via het ACF-veld
+
+// Controleren of de categorieën zijn ingesteld
+if ($categorie) {
+    // Loop door elke categorie in de array
+    foreach ($categorie as $cat) {
+        $term_id = $cat['term_id']; // Haal de term-ID op
+        $taxonomy = 'category'; // Controleer of dit de juiste naam is van je taxonomie
+
+        // WP_Query met tax_query voor elke categorie
+        $loop = new WP_Query( array(
+            'post_type' => 'case',
+            'posts_per_page' => -1,
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => $taxonomy,
+                    'field' => 'term_id',
+                    'terms' => $categorie[0],
+                ),
+            ),
+        ));
+
+        // Controleer of er berichten zijn gevonden
+        if ( $loop->have_posts() ) {
+            // Loop door de berichten
+            while ( $loop->have_posts() ) : $loop->the_post();
+                $post_id = get_the_ID(); ?>
             <?php
             $thumbnail_id = get_post_thumbnail_id(get_the_ID());
             $thumbnail_info = wp_get_attachment_image_src($thumbnail_id, 'full');
@@ -62,7 +80,17 @@ else: ?>
                     </div>              
                 </div>
             </a>
-        <?php endwhile; wp_reset_query(); ?>
+       <?php endwhile;
+            // Reset postdata
+            wp_reset_postdata();
+        } else {
+            echo 'Geen berichten gevonden voor deze categorie';
+        }
+    }
+} else {
+    echo 'Geen categorieën gevonden.';
+}
+?>
     </div>
     <?php if ($show_load_more_button) : ?>
         <div class="flex justify-center pt-4">
