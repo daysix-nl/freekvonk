@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- FOTO SLIDER 1 -->
-<section class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> relative overflow-hidden z-[2]">
+<section class="<?php echo get_field('achtergrond');?> <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?> relative overflow-hidden z-[2]">
 <div class="swiper mySwiper-fototwo overflow-visible relative">
       <div class="swiper-wrapper overflow-visible items-end pb-6 md:pb-8">
          <?php

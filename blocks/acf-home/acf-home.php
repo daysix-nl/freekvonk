@@ -103,40 +103,40 @@ $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-1">
     <img src="<?php echo $image1_url; ?>" alt="<?php echo $image2_alt; ?>" class="w-full h-full object-cover object-center">
     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block lg:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_mobiel_blok_1');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_mobiel_blok_1');?>#t=0.001" type="video/mp4">
     </video>
      <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_blok_1');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_blok_1');?>#t=0.001" type="video/mp4">
     </video>
 </div>
 
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-2" style="opacity: 0;">
     <img src="<?php echo $image2_url; ?>" alt="<?php echo $image2_alt; ?>" class="w-full h-full object-cover object-center">
     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block lg:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_mobiel_blok_2');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_mobiel_blok_2');?>#t=0.001" type="video/mp4">
     </video>
      <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_blok_2');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_blok_2');?>#t=0.001" type="video/mp4">
     </video>
 </div>
 
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1] flex items-center justify-center" id="background-3" style="opacity: 0;">
     <img src="<?php echo $image3_url; ?>" alt="<?php echo $image3_alt; ?>" class="w-full h-full object-cover object-center">
     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block lg:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_mobiel_blok_3');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_mobiel_blok_3');?>#t=0.001" type="video/mp4">
     </video>
      <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_blok_3');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_blok_3');?>#t=0.001" type="video/mp4">
     </video>
 </div>
 
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-4" style="opacity: 0;">
     <img src="<?php echo $image4_url; ?>" alt="<?php echo $image4_alt; ?>" class="w-full h-full object-cover object-center">
     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block lg:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_mobiel_blok_4');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_mobiel_blok_4');?>#t=0.001" type="video/mp4">
     </video>
      <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_blok_4');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_blok_4');?>#t=0.001" type="video/mp4">
     </video>
 </div>
 
@@ -144,10 +144,10 @@ $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-5" style="opacity: 0;">
     <img src="<?php echo $image5_url; ?>" alt="<?php echo $image5_alt; ?>" class="w-full h-full object-cover object-center">
     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block lg:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_mobiel_blok_5');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_mobiel_blok_5');?>#t=0.001" type="video/mp4">
     </video>
      <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_blok_5');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_blok_5');?>#t=0.001" type="video/mp4">
     </video>
 </div>
 
@@ -155,30 +155,30 @@ $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-6" style="opacity: 0;">
     <img src="<?php echo $image6_url; ?>" alt="<?php echo $image6_alt; ?>" class="w-full h-full object-cover object-center">
     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block lg:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_mobiel_blok_6');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_mobiel_blok_6');?>#t=0.001" type="video/mp4">
     </video>
      <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('video_blok_6');?>#t=0.001" type="video/mp4">
+        <source src="<?php echo get_field('video_blok_6');?>#t=0.001" type="video/mp4">
     </video>
 </div>
 
 
 <!-- DEFAULT -->
 <?php if (get_field('default_afbeelding')): ?>   
-<div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-x" style="opacity: 1;">
+<div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-2]" id="background-x" style="opacity: 1;">
     <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-full object-cover object-center">
 </div>
  <?php endif; ?>
  <?php if (get_field('default_video')): ?>   
 <div class="bg-black absolute w-full h-full bg-cover top-0 left-0 right-0 bottom-0 z-[-1]" id="background-x" style="opacity: 1;">
-    <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 block md:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('default_video_mobiel');?>#t=0.001" type="video/mp4">
+    <video id="myVideo" class="w-full h-full object-cover absolute top-0 right-0 -z-10 block md:hidden" autoplay loop muted playsinline preload="auto">
+        <source src="<?php echo get_field('default_video_mobiel');?>#t=0.001" type="video/mp4">
     </video>
-    <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden md:block lg:hidden" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('default_video_tablet');?>#t=0.001" type="video/mp4">
+    <video id="myVideo" class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden md:block lg:hidden" autoplay loop muted playsinline preload="auto">
+        <source src="<?php echo get_field('default_video_tablet');?>#t=0.001" type="video/mp4">
     </video>
-     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay="" loop="" muted="" playsinline="">
-        <source src="<?php the_field('default_video');?>#t=0.001" type="video/mp4">
+     <video id="myVideo" class="w-full h-full object-cover absolute top-0 right-0 -z-10 hidden lg:block" autoplay loop muted playsinline preload="auto">
+        <source src="<?php echo get_field('default_video');?>#t=0.001" type="video/mp4">
     </video>
 </div>
 <?php endif; ?>
@@ -196,5 +196,8 @@ function activateBackground(backgroundNumber) {
     setDefaultBackground(); // Eerst de standaard achtergrond instellen
     document.getElementById(`background-${backgroundNumber}`).style.opacity = 1; // Daarna de gewenste achtergrond activeren
 }
+</script>
+<script>
+  document.getElementById('myVideo').play();
 </script>
 <?php endif; ?>

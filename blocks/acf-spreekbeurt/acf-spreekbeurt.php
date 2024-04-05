@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- SPREEKBEURT -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
+<section id="<?php echo get_field('section_id');?>" class="<?php echo get_field('achtergrond');?> <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?>">
     <div class="container grid grid-cols-1 lg:grid-cols-2 gap-[40px] lg:gap-[10px]">
         <?php
         if( have_rows('spreekbeurt') ):
@@ -20,10 +20,10 @@ else: ?>
                 </div>
                 <div class="flex flex-col md:flex-row justify-between items-center pl-[10px] pr-[10px] pb-[20px] md:pl-[30px] md:pr-[30px] md:pb-[30px]">
                     <div class="w-full">
-                        <h3 class="text-16 md:text-24 font-karlsen font-normal text-[#2B2828]"><?php the_sub_field('titel');?></h3>
-                        <p class="text-12 md:text-18 font-karlsen font-normal text-[#2B2828] opacity-[0.5]"><?php the_sub_field('subtitel');?></p>
+                        <h3 class="text-16 md:text-24 font-karlsen font-normal text-[#2B2828]"><?php echo get_sub_field('titel');?></h3>
+                        <p class="text-12 md:text-18 font-karlsen font-normal text-[#2B2828] opacity-[0.5]"><?php echo get_sub_field('subtitel');?></p>
                     </div>
-                    <a href="<?php the_sub_field('bestand');?>" class="w-full bg-[#8CC63F] hover:bg-black duration-300 h-[45px] lg:h-[51px] flex items-center justify-between pl-[25px] pr-[15px] font-tanker md:text-19 lg:text-22 text-white font-normal mt-[15px] md:mt-[unset md:ml-[15px]" target="_blank">Download 
+                    <a href="<?php echo get_sub_field('bestand');?>" class="w-full bg-[#8CC63F] hover:bg-black duration-300 h-[45px] lg:h-[51px] flex items-center justify-between pl-[25px] pr-[15px] font-tanker md:text-19 lg:text-22 text-white font-normal mt-[15px] md:mt-[unset md:ml-[15px]" target="_blank">Download 
                         <svg width="auto" height="100%" viewBox="0 0 14.961 19.596" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-[16.03px] w-[12.56px] md:h-[19.1px] md:w-[14.96px]">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
                                 <g id="Group" stroke="#FFFFFF" stroke-width="2">

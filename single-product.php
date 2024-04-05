@@ -169,10 +169,10 @@ if ( post_password_required() ) {
             if( have_rows('informatie') ):
                 while( have_rows('informatie') ) : the_row(); ?>
                 <div class="accordion-item"> 
-                    <button class="accordion text-16 leading-32 font-karlsen font-normal text-black py-[25px] flex"><?php the_sub_field('titel');?></button>
+                    <button class="accordion text-16 leading-32 font-karlsen font-normal text-black py-[25px] flex"><?php echo get_sub_field('titel');?></button>
                     <div class="panel">
                         <div class="px-1.5 flex flex-col pb-4">
-                            <div class="text-16 leading-30 font-karlsen text-black w-fit text-editor"><?php the_sub_field('tekst');?></div>
+                            <div class="text-16 leading-30 font-karlsen text-black w-fit text-editor"><?php echo get_sub_field('tekst');?></div>
                         </div>
                     </div>
                 </div>

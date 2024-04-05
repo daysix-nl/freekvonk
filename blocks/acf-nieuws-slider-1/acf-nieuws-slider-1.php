@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- NIEUWS SLIDER 1 -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
+<section id="<?php echo get_field('section_id');?>" class="<?php echo get_field('achtergrond');?> <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?>">
     <div class="relative w-screen overflow-hidden mySwiper-over-freek-section uitgelicht black-slider">
         <div class="swiper mySwiper-over-freek-content">
             <div class="swiper-wrapper">
@@ -40,7 +40,7 @@ else: ?>
                                 <!-- <p class="text-14 leading-26 lg:text-18 lg:leading-[32px] font-karlsen font-normal text-black tracking-wider mb-[15px] hidden md:flex z-[40]"><?php echo get_the_date('j F Y');?></p> -->
                                 <h2 class="text-18 leading-18 lg:text-24 lg:leading-22 font-karlsen font-normal text-black uppercase mb-[25px] tracking-wider z-[40]">Allerlaatste nieuws</h2>
                                 <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-black z-[40]"><?php the_title();?></h3>
-                                <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen font-normal text-black mt-[30px] z-[40] line-clamp-4"><?php the_field('teaser_tekst', $post_id);?></p>
+                                <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen font-normal text-black mt-[30px] z-[40] line-clamp-4"><?php echo get_field('teaser_tekst', $post_id);?></p>
                                 <p class="text-16 leading-28 font-karlsen font-semibold text-black mt-[20px] z-[40] block">Lees meer</p>
                                 </a>
                             </div>

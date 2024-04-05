@@ -30,7 +30,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
     <!-- BEDANKPAGINA -->
     <div class="w-full bg-[#FFFFFF] pb-[50px] xl:pb-[80px] freek-bedankt relative">
         <div class="container mt-[45px] relative z-[40]">
-            <h1 class="w-full text-center font-tanker text-black text-40 leading-37 md:text-70 md:leading-58 lg:text-80 lg:leading-67 max-w-[600px] lg:max-w-[unset] mb-[15px]"><?php the_field('titel', 'option');?></h1>
+            <h1 class="w-full text-center font-tanker text-black text-40 leading-37 md:text-70 md:leading-58 lg:text-80 lg:leading-67 max-w-[600px] lg:max-w-[unset] mb-[15px]"><?php echo get_field('titel', 'option');?></h1>
             <div class="w-[172px] md:w-[409.815px] h-[11.98px] md:h-[28.388px] md:max-w-[unset] mx-auto">
                 <svg width="100%" height="auto" viewBox="0 0 409.815 28.388" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
@@ -52,7 +52,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
                 </svg>
             </div>
             <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full md:w-[360px] lg:w-[380px] xl:w-[450px] mx-auto mt-[20px] md:mt-[50px] mb-[20px] md:mb-[30px]">
-            <div class="w-full md:w-[360px] lg:w-[380px] xl:w-[450px] mx-auto text-center text-16 leading-32 font-karsen font-normal text-editor"><?php the_field('tekst', 'option');?></div>
+            <div class="w-full md:w-[360px] lg:w-[380px] xl:w-[450px] mx-auto text-center text-16 leading-32 font-karsen font-normal text-editor"><?php echo get_field('tekst', 'option');?></div>
         </div>
         <img src="/wp-content/themes/freekvonk/img/local/patroon-bedankt.png" alt="" class="z-[30] h-full w-full object-cover object-top absolute top-0 opacity-[0.04]">
     </div>

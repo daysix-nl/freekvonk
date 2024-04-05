@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- VERHALEN -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> verhalen-section team-block list-b-none">
+<section id="<?php echo get_field('section_id');?>" class="<?php echo get_field('achtergrond');?> <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?> verhalen-section team-block list-b-none">
     <div class="container grid grid-cols-1 lg:grid-cols-3  lg:gap-[15px] gap-2 z-10 relative">
         <?php
             $loop = new WP_Query( array(
@@ -27,7 +27,7 @@ else: ?>
         <a href="<?php the_permalink();?>" class="w-full col-span-1 relative overflow-hidden max-h-[314px] h-full md:max-h-[371px] lg:max-h-[auto] xl:max-h-[auto] aspect-square post">
             <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="h-full w-full object-cover object-center hover-blur duration-200">
             <div class="absolute left-[25px] hover-content duration-200 overflow-hidden w-[90%]">
-                <h4 class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-white uppercase tracking-wider pb-1"><?php the_field('subtitel', $post_id);?></h4>
+                <h4 class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-white uppercase tracking-wider pb-1"><?php echo get_field('subtitel', $post_id);?></h4>
                 <div class="flex space-x-3">
                     <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker text-white w-full"><?php the_title();?></h3>
                     <div class="w-[40px] flex items-end justify-end pr-2 pb-[3px] ml-auto">

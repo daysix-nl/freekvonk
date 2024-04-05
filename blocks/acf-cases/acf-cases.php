@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- CASES -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> case-section team-block list-b-none">
+<section id="<?php echo get_field('section_id');?>" class="<?php echo get_field('achtergrond');?> <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?> case-section team-block list-b-none">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[10px]">
    <?php
 $categorie = get_field('categorie'); // Ophalen van de categorieën via het ACF-veld
@@ -47,7 +47,7 @@ if ($categorie) {
                 <div class="hidden lg:block absolute hover:bg-gradient-to-b hover:from-[transparent] hover:to-[#8CC63F] top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden">
                     <div class="relative h-full w-full">
                             <div class="absolute left-[25px] hover-content duration-200">
-                            <h4 class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-white font-normal uppercase tracking-wider pb-1"><?php the_field('subtitel', $post_id);?></h4>
+                            <h4 class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen text-white font-normal uppercase tracking-wider pb-1"><?php echo get_field('subtitel', $post_id);?></h4>
                             <div class="flex space-x-3">
                                 <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-white w-[200px] lg:w-[462px]"><?php the_title();?></h3>
                                 <div class="w-[40px] flex items-end justify-end pr-2 pb-[3px]">

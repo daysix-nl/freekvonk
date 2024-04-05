@@ -19,7 +19,7 @@ $image3_url = isset($image3['url']) ? esc_url($image3['url']) : '';
 $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
 ?>
 <!-- FOTO SLIDER 3 -->
-<section class="<?php the_field('achtergrond');?> relative overflow-hidden <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> z-[2]">
+<section class="<?php echo get_field('achtergrond');?> relative overflow-hidden <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?> z-[2]">
    <div class="container grid-cols-3 gap-[11px] relative z-[40] hidden md:grid">
       <img src="<?php echo $image1_url; ?>" alt="<?php echo $image1_alt; ?>" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center bg-[#2B2828]">
       <img src="<?php echo $image2_url; ?>" alt="<?php echo $image2_alt; ?>" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center bg-[#2B2828]">

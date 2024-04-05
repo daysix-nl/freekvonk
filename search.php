@@ -159,7 +159,7 @@ get_header('notitle'); ?>
                             <div class="flex items-end justify-between px-[10px] pb-[10px] md:px-[unset] md:pb-[unset]">
                                 <div class="w-[calc(100%-30px)]">
                                     <!-- <p class="text-14 leading-26 lg:text-18 lg:leading-[32px] font-karlsen font-normal text-black tracking-wider my-[10px] uppercase"><?php echo get_the_date('j F Y');?></p> -->
-                                    <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen font-normal text-black md:mt-[15px] lg:mt-[30px] line-clamp-3 md:line-clamp-2"><?php the_field('teaser_tekst', $post_id);?></p>
+                                    <p class="text-14 leading-26 lg:text-16 lg:leading-[32px] font-karlsen font-normal text-black md:mt-[15px] lg:mt-[30px] line-clamp-3 md:line-clamp-2"><?php echo get_field('teaser_tekst', $post_id);?></p>
                                 </div>
                                 <div class="w-[17.5px] h-[14.68px] md:hidden">
                                     <svg width="100%" height="auto" viewBox="0 0 35.7842742 30.9232742" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

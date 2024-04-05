@@ -46,9 +46,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -58,9 +58,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -70,9 +70,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -82,9 +82,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -94,9 +94,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -106,9 +106,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -118,9 +118,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -130,9 +130,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -142,9 +142,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -154,9 +154,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -166,9 +166,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;
@@ -178,9 +178,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <?php
             if( have_rows('live_now', 'option') ):
                 while( have_rows('live_now', 'option') ) : the_row(); ?>
-                 <a href="<?php the_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
-                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php the_sub_field('subtitel', 'option');?></p>
-                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php the_sub_field('titel', 'option');?></h4>
+                 <a href="<?php echo get_sub_field('link', 'option');?>" class="h-[33px] flex items-center space-x-[15px] w-max pr-5 swiper-slide">
+                    <p class="text-15 leading-17 font-karlsen text-white uppercase w-max"><?php echo get_sub_field('subtitel', 'option');?></p>
+                    <h4 class="text-15 leading-17 font-karlsen font-bold text-white uppercase w-max"><?php echo get_sub_field('titel', 'option');?></h4>
                 </a>
                 <?php
                 endwhile;

@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- VIDEO SLIDER -->
-<section id="<?php the_field('section_id');?>" class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
+<section id="<?php echo get_field('section_id');?>" class="<?php echo get_field('achtergrond');?> <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?>">
     <div class="relative">
         <div class="swiper mySwiper-video overflow-visible">
             <div class="swiper-wrapper overflow-visible">
@@ -22,9 +22,9 @@ else: ?>
                                 <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] duration-200 overflow-hidden text-left hidden lg:block">
                                     <div class="relative h-full w-full">
                                         <div class="absolute left-[25px] hover-content duration-200">
-                                            <h4 class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen font-normal text-white uppercase tracking-wider pb-1"><?php the_sub_field('subtitle'); ?></h4>
+                                            <h4 class="text-18 leading-18 lg:text-22 lg:leading-22 font-karlsen font-normal text-white uppercase tracking-wider pb-1"><?php echo get_sub_field('subtitle'); ?></h4>
                                             <div class="flex">
-                                                <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-white"><?php the_sub_field('title'); ?></h3>
+                                                <h3 class="text-40 leading-37 lg:text-50 lg:leading-46 font-tanker font-normal text-white"><?php echo get_sub_field('title'); ?></h3>
                                             </div>
                                         </div>
                                     </div>
@@ -58,7 +58,7 @@ else: ?>
                     </svg>
                 </button>
                 <div class="iframe-video">
-                    <?php the_sub_field('video'); ?>
+                    <?php echo get_sub_field('video'); ?>
                 </div>
             </div>
         </div>

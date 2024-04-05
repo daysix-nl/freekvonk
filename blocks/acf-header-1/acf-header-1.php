@@ -4,7 +4,7 @@ if (isset($block['data']['preview_image_help'])): ?>
     <?php
 else: ?>
 <!-- HEADER 1 -->
-<section class="<?php the_field('achtergrond');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> hidden md:block">
+<section class="<?php echo get_field('achtergrond');?> <?php echo get_field('padding_top');?> <?php echo get_field('padding_bottom');?> hidden md:block">
     <div class="container hidden md:grid pt-[80px]  justify-center">
         <div class="w-fit">
             <h1 class="w-full text-center md:text-80 md:leading-100 font-tanker font-normal text-color"><?php the_title();?></h1>        
@@ -20,7 +20,7 @@ else: ?>
                 <?php
                 if( have_rows('submenu') ):
                     while( have_rows('submenu') ) : the_row(); ?>
-                    <div class="swiper-slide flex justify-center items-center"><a href="#<?php the_sub_field('id_submenu');?>" class="md:text-25 md:leading-26 font-tanker text-color underline-effect"><?php the_sub_field('titel_submenu');?></a></div>
+                    <div class="swiper-slide flex justify-center items-center"><a href="#<?php echo get_sub_field('id_submenu');?>" class="md:text-25 md:leading-26 font-tanker text-color underline-effect"><?php echo get_sub_field('titel_submenu');?></a></div>
                     <?php
                     endwhile;
                 else :
@@ -35,7 +35,7 @@ else: ?>
             <?php
             if( have_rows('submenu') ):
                 while( have_rows('submenu') ) : the_row(); ?>
-                <a href="#<?php the_sub_field('id_submenu');?>" class=" md:text-25 md:leading-26 font-tanker text-color underline-effect"><?php the_sub_field('titel_submenu');?></a>
+                <a href="#<?php echo get_sub_field('id_submenu');?>" class=" md:text-25 md:leading-26 font-tanker text-color underline-effect"><?php echo get_sub_field('titel_submenu');?></a>
                 <?php
                 endwhile;
             else : 

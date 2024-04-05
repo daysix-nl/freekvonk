@@ -124,6 +124,37 @@ get_header( 'shop' ); ?>
                         <?php
                     }
                     ?>
+                    <!-- UITVERKOCHT -->
+            
+
+
+                    <?php 
+                    global $product;
+
+                    // Controleer of het product een variant is
+                    if ( $product->is_type( 'variable' ) ) {
+                        // HTML voor varianten
+                        ?>
+                 
+                        <?php
+                    } else {
+                        // Het product is geen variant
+                        // Controleer voorraad
+                        $stock_quantity = $product->get_stock_quantity();
+                        
+                        // Controleer of de voorraad minder dan één is
+                        if ($stock_quantity < 1) {
+                        ?>
+                        <div class="absolute w-[65px] h-[20px] md:w-[105px] md:h-[33px] lg:w-[140px] lg:h-[41px] bg-[#523524] top-0 right-0 flex items-center justify-center">
+                            <p class="font-tanker text-12 leading-12 md:text-19 md:leading-19 lg:text-24 lg:leading-24 text-white">Uitverkocht</p>
+                        </div>
+                        <?php
+                        }
+                    }
+                    ?>
+
+
+
                     <!-- SALE -->
                     <?php
                     if ( $product->is_on_sale() ) { ?>
