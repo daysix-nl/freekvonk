@@ -942,3 +942,58 @@ function handle_update_cart_quantity() {
 
 // // Haak de functie in op het save_post-evenement
 // add_action( 'save_post', 'voorraad_nul_naar_concept', 10, 2 );
+
+
+// Voeg aangepaste labels toe aan producten in WooCommerce
+function custom_product_labels_init() {
+    // Registreer het nieuwe taxonomietype voor labels
+    register_taxonomy(
+        'product_label',
+        'product',
+        array(
+            'label' => __( 'Labels', 'text_domain' ),
+            'rewrite' => array( 'slug' => 'product-label' ),
+            'hierarchical' => true,
+        )
+    );
+}
+add_action( 'init', 'custom_product_labels_init' );
+
+// Voeg labels toe aan producten op de productpagina in de backend
+function custom_product_labels_meta_box() {
+    add_meta_box(
+        'product_labels',
+        __( 'Labels', 'text_domain' ),
+        'custom_product_labels_meta_box_content',
+        'product',
+        'side',
+        'default'
+    );
+}
+add_action( 'add_meta_boxes', 'custom_product_labels_meta_box' );
+
+function custom_product_labels_meta_box_content( $post ) {
+    // Haal alle labels op
+    $labels = get_terms( 'product_label', array( 'hide_empty' => false ) );
+
+    // Haal de geselecteerde labels op voor dit product
+    $selected_labels = wp_get_post_terms( $post->ID, 'product_label', array( 'fields' => 'ids' ) );
+
+    // Toon de lijst van labels
+    if ( $labels && ! is_wp_error( $labels ) ) {
+        echo '<div>';
+        foreach ( $labels as $label ) {
+            echo '<label><input type="checkbox" name="product_labels[]" value="' . esc_attr( $label->term_id ) . '" ' . checked( in_array( $label->term_id, $selected_labels ), true, false ) . ' />' . esc_html( $label->name ) . '</label><br />';
+        }
+        echo '</div>';
+    }
+}
+
+// Bewaar de geselecteerde labels wanneer het product wordt opgeslagen
+function custom_save_product_labels( $post_id ) {
+    if ( isset( $_POST['product_labels'] ) ) {
+        $labels = array_map( 'intval', $_POST['product_labels'] );
+        wp_set_object_terms( $post_id, $labels, 'product_label', false );
+    }
+}
+add_action( 'save_post_product', 'custom_save_product_labels' );
