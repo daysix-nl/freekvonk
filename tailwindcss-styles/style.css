@@ -1468,6 +1468,11 @@ video {
   margin-right: calc(4px * var(--tw-space-x-reverse));
   margin-left: calc(4px * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-x-\[180px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(180px * var(--tw-space-x-reverse));
+  margin-left: calc(180px * calc(1 - var(--tw-space-x-reverse)));
+}
 .overflow-hidden {
   overflow: hidden;
 }

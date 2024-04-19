@@ -111,15 +111,16 @@ get_header( 'shop' ); ?>
                   <?php
                     // Toon de labels van het product
                     $product_labels = get_the_terms( get_the_ID(), 'product_label' );
-                    if ( $product_labels && ! is_wp_error( $product_labels ) ) {
-                        echo '<ul class="absolute bottom-[4px] left-[4px] right-[4px] md:bottom-[6px] md:left-[6px] md:right-[6px] lg:bottom-[8px] lg:left-[8px] lg:right-[8px] h-[25px] md:h-[35px] lg:h-[45px] overflow-hidden flex space-x-[4px] md:space-x-[6px] lg:space-x-[8px] z-[1]">';
+                    if ( $product_labels && ! is_wp_error( $product_labels ) ) { ?>
+                       <ul class="absolute bottom-[4px] left-[4px] right-[4px] md:bottom-[6px] md:left-[6px] md:right-[6px] lg:bottom-[8px] lg:left-[8px] lg:right-[8px] h-[25px] md:h-[35px] lg:h-[45px] overflow-hidden flex space-x-[4px] md:space-x-[6px] lg:space-x-[8px] z-[1]">
+                            <?php
                         foreach ( $product_labels as $product_label ) {
                             $image = get_field('afbeelding', 'product_label_' . $product_label->term_id);
                             $image_url = isset($image['url']) ? esc_url($image['url']) : '';
                             $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
-                            if ($image_url) {
-                                echo '<li class="w-[25px] h-[25px] md:w-[35px] md:h-[35px] lg:w-[45px] lg:h-[45px] bg-[#8CC63F] rounded-full flex items-center justify-center overflow-hidden"><img src="' . $image_url . '" alt="' . $image_alt . '" class="min-h-full min-w-full object-cover"></li>';
-                            }
+                            if ($image_url) { ?>
+                                <li class="w-[25px] h-[25px] md:w-[35px] md:h-[35px] lg:w-[45px] lg:h-[45px] bg-[#8CC63F] rounded-full flex items-center justify-center overflow-hidden"><img src="' . $image_url . '" alt="' . $image_alt . '" class="min-h-full min-w-full object-cover"></li>
+                           <?php }
                         }
                         echo '</ul>';
                     }
