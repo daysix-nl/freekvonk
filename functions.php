@@ -991,9 +991,15 @@ function custom_product_labels_meta_box_content( $post ) {
 
 // Bewaar de geselecteerde labels wanneer het product wordt opgeslagen
 function custom_save_product_labels( $post_id ) {
+    // Controleer of de labels zijn geselecteerd
     if ( isset( $_POST['product_labels'] ) ) {
         $labels = array_map( 'intval', $_POST['product_labels'] );
         wp_set_object_terms( $post_id, $labels, 'product_label', false );
+    } else {
+        // Verwijder de labels als er geen labels zijn geselecteerd
+        wp_set_object_terms( $post_id, array(), 'product_label' );
     }
 }
 add_action( 'save_post_product', 'custom_save_product_labels' );
+
+
