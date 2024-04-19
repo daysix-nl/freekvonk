@@ -105,7 +105,7 @@ get_header( 'shop' ); ?>
 
         <!-- PRODUCT -->
         <div class="product-item h-fit relative">
-            <div class="w-full aspect-[16/13] bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center overflow-hidden lg:relative">
+            <div class="w-full aspect-[16/13] bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] flex justify-center overflow-hidden relative">
                 <a class="w-full flex justify-center" href="<?php the_permalink(); ?>">
                     <img src="<?php echo get_the_post_thumbnail_url($product->get_id()); ?>" alt="" class="h-full w-auto mix-blend-multiply">
                     <?php
