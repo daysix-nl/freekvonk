@@ -1016,9 +1016,28 @@ function custom_save_product_labels( $post_id, $post ) {
             $nginx_purger->purge_all();
         }
     }
+
+    // Controleer of het bewerken van een individuele productpagina wordt uitgevoerd
+    if ( isset( $_POST['action'] ) && $_POST['action'] == 'editpost' ) {
+        // Controleer of de labels zijn geselecteerd
+        if ( isset( $_POST['product_labels'] ) ) {
+            $labels = array_map( 'intval', $_POST['product_labels'] );
+            wp_set_object_terms( $post_id, $labels, 'product_label', false );
+        } else {
+            // Verwijder de labels als er geen labels zijn geselecteerd
+            wp_set_object_terms( $post_id, array(), 'product_label' );
+        }
+
+        // Voer cache-opruiming uit na het opslaan van het product
+        global $nginx_purger;
+        if ( isset( $nginx_purger ) ) {
+            $nginx_purger->purge_all();
+        }
+    }
 }
 // Hook to save_post to handle regular saves
 add_action( 'save_post', 'custom_save_product_labels', 10, 2 );
+
 
 
 
