@@ -1011,9 +1011,8 @@ function custom_save_product_labels( $post_id, $post ) {
         }
 
         // Voer cache-opruiming uit na het opslaan van het product
-        global $nginx_purger;
-        if ( isset( $nginx_purger ) ) {
-            $nginx_purger->purge_all();
+        if ( function_exists( 'custom_purge_cache' ) ) {
+            custom_purge_cache();
         }
     }
 
@@ -1029,14 +1028,24 @@ function custom_save_product_labels( $post_id, $post ) {
         }
 
         // Voer cache-opruiming uit na het opslaan van het product
-        global $nginx_purger;
-        if ( isset( $nginx_purger ) ) {
-            $nginx_purger->purge_all();
+        if ( function_exists( 'custom_purge_cache' ) ) {
+            custom_purge_cache();
         }
     }
 }
 // Hook to save_post to handle regular saves
 add_action( 'save_post', 'custom_save_product_labels', 10, 2 );
+
+// Functie voor het wissen van de cache
+function custom_purge_cache() {
+    // Controleer of de $nginx_purger-variabele is gedefinieerd
+    global $nginx_purger;
+    if ( isset( $nginx_purger ) ) {
+        // Voer cache-opruiming uit met behulp van de $nginx_purger-variabele
+        $nginx_purger->purge_all();
+    }
+}
+
 
 
 
