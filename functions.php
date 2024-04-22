@@ -23,12 +23,19 @@
 |
 */
 function add_theme_scripts() {
-    // wp_enqueue_style( 'swiper',  'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
-    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), '1.2', 'all');
-    // wp_enqueue_script( 'swiper', get_template_directory_uri() . '/script/swiper.js', array(), 1.1, true);
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/script/index.js', array(), '1.2', true);
-  }
-  add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+    // Lees de versie uit het bestand
+    $version = file_exists(get_template_directory() . '/version.txt') ? file_get_contents(get_template_directory() . '/version.txt') : '1.0';
+
+    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', array(), $version, 'all');
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/script/index.js', array(), $version, true);
+    
+    // Voeg CSS-bestanden toe aan de queue met een versienummer
+    wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/css/swiper.css', array(), $version);
+    wp_enqueue_style('tailwind', get_template_directory_uri() . '/tailwindcss-styles/style.css', array(), $version);
+    wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/main.css', array(), $version);
+    
+}
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 /*
 |--------------------------------------------------------------------------
 | Back-end styles en scripts
@@ -990,23 +997,28 @@ function custom_product_labels_meta_box_content( $post ) {
     }
 }
 
-// Bewaar de geselecteerde labels wanneer het product wordt opgeslagen
-function custom_save_product_labels( $post_id ) {
-    // Controleer of de labels zijn geselecteerd
-    if ( isset( $_POST['product_labels'] ) ) {
-        $labels = array_map( 'intval', $_POST['product_labels'] );
-        wp_set_object_terms( $post_id, $labels, 'product_label', false );
-    } else {
-        // Verwijder de labels als er geen labels zijn geselecteerd
-        wp_set_object_terms( $post_id, array(), 'product_label' );
-    }
+// Bewaar de geselecteerde labels wanneer het product wordt opgeslagen of bijgewerkt
+function custom_save_product_labels( $post_id, $post ) {
+    // Controleer of het snel bewerken wordt uitgevoerd
+    if ( isset( $_GET['action'] ) && $_GET['action'] == 'edit' && wp_verify_nonce( $_GET['_wpnonce'], 'bulk-posts' ) ) {
+        // Controleer of de labels zijn geselecteerd
+        if ( isset( $_POST['product_labels'] ) ) {
+            $labels = array_map( 'intval', $_POST['product_labels'] );
+            wp_set_object_terms( $post_id, $labels, 'product_label', false );
+        } else {
+            // Verwijder de labels als er geen labels zijn geselecteerd
+            wp_set_object_terms( $post_id, array(), 'product_label' );
+        }
 
-    // Voer cache-opruiming uit na het opslaan van het product
-    global $nginx_purger;
-    if (isset($nginx_purger)) {
-        $nginx_purger->purge_all();
+        // Voer cache-opruiming uit na het opslaan van het product
+        global $nginx_purger;
+        if ( isset( $nginx_purger ) ) {
+            $nginx_purger->purge_all();
+        }
     }
-    
 }
-add_action( 'save_post_product', 'custom_save_product_labels' );
+// Hook to save_post to handle regular saves
+add_action( 'save_post', 'custom_save_product_labels', 10, 2 );
+
+
 
