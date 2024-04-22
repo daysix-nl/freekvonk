@@ -1000,7 +1000,18 @@ function custom_save_product_labels( $post_id ) {
         // Verwijder de labels als er geen labels zijn geselecteerd
         wp_set_object_terms( $post_id, array(), 'product_label' );
     }
+    
 }
 add_action( 'save_post_product', 'custom_save_product_labels' );
 
 
+//* Nginx Helper Enhancement
+function nhpcau_upgrader_process_complete() {
+
+  global $nginx_purger;
+
+  if(isset($nginx_purger))
+  {
+    $nginx_purger->purge_all();
+  }
+}
