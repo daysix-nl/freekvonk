@@ -795,6 +795,10 @@ video {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+.my-\[30px\] {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .mb-1 {
   margin-bottom: 10px;
 }
@@ -1119,6 +1123,9 @@ video {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[800px\] {
+  height: 800px;
 }
 .max-h-\[314px\] {
   max-height: 314px;

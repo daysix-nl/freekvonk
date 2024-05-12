@@ -187,3 +187,163 @@ input[type=number] {
         margin-bottom: 0px !important;
     }
 }
+
+
+
+
+.doneer {
+    * {
+        font-family: Karlsen, sans-serif !important;
+    }
+
+    .gfield {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        max-width: 685px !important;
+
+        &#field_3_22 {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            max-width: unset !important;
+        }
+
+        &#field_3_27 {
+            display: flex !important;
+            padding-left: 22px !important;
+            padding-right: 8px !important;
+
+            .gfield {
+                padding-left: 8px !important;
+                padding-right: 8px !important;
+            }
+
+            #field_3_15 {
+                width: 100% !important;
+            }
+        }
+
+
+    }
+
+
+    fieldset {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .gfield_label {
+        font-family: Karlsen, sans-serif !important;
+        font-size: 16px !important;
+        line-height: 16px !important;
+        color: #2b2828 !important;
+        line-height: 2 !important;
+        font-weight: 400 !important;
+        margin-bottom: 0px !important;
+    }
+
+    .gfield_required:after {
+        content: '*';
+        color: #2b2828 !important;
+        display: inline-block !important;
+        font-size: 16px !important;
+        line-height: 16px !important;
+        padding-left: .125em !important;
+
+
+
+    }
+
+    .gfield_required_text {
+        display: none !important;
+    }
+
+    input,
+    select {
+        border: 1px solid #000 !important;
+        height: 62px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .gchoice {
+        input {
+            height: unset !important;
+        }
+    }
+
+    .gform_validation_errors {
+        display: none !important;
+    }
+
+    .gform_footer {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        max-width: 685px !important;
+    }
+
+    input.gform_button {
+        width: 100% !important;
+        background: #8cc63f !important;
+        z-index: 1 !important;
+        font-family: Tanker, sans-serif !important;
+        font-size: 25px !important;
+        line-height: 25px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        border-radius: 0px !important;
+        font-weight: 400 !important;
+        color: #fff !important;
+
+        border: 0px solid #fff !important;
+
+        &:hover {
+            background: #0a1f16 !important;
+            transition-duration: .3s !important;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        appearance: none !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        height: 12px !important;
+        width: 12px !important;
+        border-radius: 2px !important;
+        border: 1px solid #8CC63F !important;
+        background: #8CC63F !important;
+        transition-duration: 0.3s !important;
+        position: relative !important;
+
+        &::before {
+            content: '\2713';
+            display: block;
+            color: #fff !important;
+            position: absolute;
+            left: 1px !important;
+            top: -2px !important;
+            font-size: 10px !important;
+        }
+
+
+    }
+
+    input[type=radio]:checked {
+        appearance: none !important;
+        background-color: #8CC63F !important;
+        box-shadow: inset 0 0 0 2px #fff !important;
+        margin: 0 !important;
+        color: #8CC63F !important;
+        width: 13px !important;
+        height: 13px !important;
+        border: 1px solid #8CC63F !important;
+        border-radius: 50% !important;
+        transform: translateY(-0.075em) !important;
+        margin-right: 0px !important;
+        margin-top: 2px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
