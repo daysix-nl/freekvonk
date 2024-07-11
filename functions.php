@@ -556,6 +556,7 @@ function add_custom_admin_bar_styles() {
             #woocommerce_myparcel_dashboard_widget { display: none !important; }
             #dashboard_right_now { display: none !important; }
 			.acf-admin-notice { display: none !important; }
+            .notice-error { display: none !important; }
             .woocommerce-message { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
