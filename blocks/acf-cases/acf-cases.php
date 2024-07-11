@@ -30,6 +30,8 @@ if ($categorie) {
                 ),
             ),
         ));
+             $post_count = $loop->post_count; // Aantal berichten in de queryloop
+            $show_load_more_button = $post_count > 4;
 
         // Controleer of er berichten zijn gevonden
         if ( $loop->have_posts() ) {
