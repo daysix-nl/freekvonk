@@ -96,7 +96,7 @@ if ($categorie) {
     </div>
     <?php if ($show_load_more_button) : ?>
         <div class="flex justify-center pt-4">
-            <button class="w-[163px] h-[45px] lg:w-[240px] lg:h-[58.5px] bg-black hover:bg-[#8CC63F] duration-300 flex justify-center items-center text-19 leading-19 lg:text-25 lg:leading-25 font-tanker font-normal text-white button-posts">Laad meer</button>
+            <button class="w-[163px] h-[45px] lg:w-[240px] lg:h-[58.5px] bg-[#8CC63F] hover:bg-black duration-300 flex justify-center items-center text-19 leading-19 lg:text-25 lg:leading-25 font-tanker font-normal text-white button-posts">Laad meer</button>
         </div>
     <?php endif; ?>  
 </section>
