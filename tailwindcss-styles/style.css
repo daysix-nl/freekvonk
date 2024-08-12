@@ -1392,6 +1392,9 @@ video {
 .gap-3 {
   gap: 30px;
 }
+.gap-\[10px\] {
+  gap: 10px;
+}
 .gap-\[11px\] {
   gap: 11px;
 }

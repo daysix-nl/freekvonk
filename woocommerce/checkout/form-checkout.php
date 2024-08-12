@@ -131,7 +131,7 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 											</p>
 											<p class="form-row validate-required" id="<?= $fieldNamePrefix ?>birthdate">
 												<label for="<?= $fieldNamePrefix ?>birthdate">Geboortedatum <abbr class="required" title="verplicht">*</abbr></label>
-											<div class="woocommerce-input-wrapper checkout-birthdate">
+											<div class="woocommerce-input-wrapper checkout-birthdate grid grid-cols-3 gap-[10px]">
 												<div class="checkout-birthdate__select">
 													<select name="<?= $fieldName ?>[birthdate_day]" id="<?= $fieldNamePrefix ?>birthdate_day" aria-required="true">
 														<option value="">Dag</option>
@@ -161,7 +161,7 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 
 											
 										</div>
-										<div class="checkout-subscription__image hidden">
+										<div class="checkout-subscription__image">
 											<div class="bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] aspect-square">
 											<?php
 											$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $cartProduct->get_image(), $cart_item, $cart_item_key );
