@@ -1221,3 +1221,12 @@ body .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a {
 .woocommerce-remove-coupon {
     display: none !important;
 }
+
+.checkout-subscription {
+    select {
+        border: 1px solid #000 !important;
+        height: 62px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
