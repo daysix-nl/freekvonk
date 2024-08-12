@@ -93,20 +93,14 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
                                             display: flex;
                                             flex-wrap: wrap;
                                         }
-                                        .checkout-subscription__form {
-                                            padding-right: 5%;
-                                            width: 65%;
-                                        }
-                                        .checkout-subscription__image {
-                                            width: 30%;
-                                        }
+                                     
 										.checkout-subscription__image img {
 											object-fit: contain;
 											object-position: top;
 										}
 									</style>
 									<div class="checkout-subscription__columns">
-										<div class="checkout-subscription__form">
+										<div class="checkout-subscription__form w-[100%] md:w-[65%] md:pr-[5%] order-2 md:order-1">
 											<p class="form-row validate-required" id="<?= $fieldNamePrefix ?>first_name">
 												<label for="<?= $fieldNamePrefix ?>first_name">Voornaam <abbr class="required" title="verplicht">*</abbr></label>
 												<span class="woocommerce-input-wrapper">
@@ -161,8 +155,8 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 
 											
 										</div>
-										<div class="checkout-subscription__image">
-											<div class="bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] aspect-square">
+										<div class="checkout-subscription__image w-[190px] md:w-[30%] my-[10px] md:my-[unset] order-1 md:order-2">
+											
 											<?php
 											$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $cartProduct->get_image(), $cart_item, $cart_item_key );
 
@@ -172,7 +166,7 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 												printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
 											}
 											?>
-											</div>
+											
 										</div>
 									</div>
 								</div>
