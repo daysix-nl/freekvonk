@@ -70,7 +70,7 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
             <?php
 				// If we have subscripts: show information per item
 				if ( $checkoutHasSubscriptions ):?>
-					<div class="bg-white px-3 py-3 mt-2 woocommerce-subscriptions">
+					<div class="bg-white py-[50px] px-3 woocommerce-subscriptions">
 						<h3 class="text-22 leading-22 lg:text-32 lg:leading-22 font-semibold mb-2">2. Personalisering abonnement</h3>
 						<p>Het abonnement wordt op naam van het kind gezet.</p>
 
@@ -94,11 +94,11 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
                                             flex-wrap: wrap;
                                         }
                                         .checkout-subscription__form {
-                                            padding-right: 5%;
-                                            width: 65%;
+                                            padding-right: 0px;
+                                            width: 100%;
                                         }
                                         .checkout-subscription__image {
-                                            width: 30%;
+                                            width: 0;
                                         }
 										.checkout-subscription__image img {
 											object-fit: contain;
@@ -161,7 +161,7 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 
 											
 										</div>
-										<div class="checkout-subscription__image">
+										<div class="checkout-subscription__image hidden">
 											<div class="bg-gradient-to-b from-[#FAFAFA] to-[#F2F2F2] aspect-square">
 											<?php
 											$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $cartProduct->get_image(), $cart_item, $cart_item_key );
