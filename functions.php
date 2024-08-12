@@ -1051,3 +1051,197 @@ function custom_purge_cache() {
 
 
 
+/*
+|--------------------------------------------------------------------------
+| Toevoegingen voor checkout from (abonnementen)
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+add_action( 'woocommerce_checkout_create_order_line_item', 'addSubscriptionDataToOrderItemSave', 10, 4 );
+/**
+ * Save subscription data on hook saving an order item
+ *
+ * @param  $item
+ * @param  $cart_item_key
+ * @param  $values
+ * @param  $order
+ *
+ * @return void
+ */
+function addSubscriptionDataToOrderItemSave( $item, $cart_item_key, $values, WC_Order $order ) {
+	$logger = wc_get_logger();
+// 	$logger->info(wc_print_r( $cart_item_key, true ), array( 'source' => 'fv-local-postorder-cart_item_key' ) );
+// 	$logger->info(wc_print_r( $values, true ), array( 'source' => 'fv-local-postorder-value' ) );
+//  $logger->info(wc_print_r($item, true ), array( 'source' => 'fv-local-postorder-item-data' ) );
+	if ( ! empty( $_POST['subscription'][ $cart_item_key ] ) ) {
+		
+		$postData = $_POST['subscription'][ $cart_item_key ];
+
+		$birthDate = sprintf( "%02d", $postData['birthdate_day'] ) . '/' . sprintf( "%02d", $postData['birthdate_month'] ) . '/' . $postData['birthdate_year'];
+
+		// add meta data
+		$item->add_meta_data( 'Voornaam kind', cleanUpFormTextInput( $postData['first_name'] ) );
+		$item->add_meta_data( 'Achternaam kind', cleanUpFormTextInput( $postData['last_name'] ) );
+		$item->add_meta_data( 'Geslacht kind', cleanUpFormTextInput( $postData['gender'] ) );
+		$item->add_meta_data( 'Geboortedatum kind', cleanUpFormTextInput( $birthDate ) );
+
+		$logger->info(wc_print_r($postData, true ), array( 'source' => 'fv-local-postorder-data' ) );
+
+		// Other addres: use data given else load data from order
+		if ( $postData['other_address'] === '1' ) {
+			$street  = $postData['street'];
+			$houseNo = $postData['houseno'];
+			if ( ! empty( $postData['houseno_ext'] ) ) {
+				$houseNoExt = $postData['houseno_ext'];
+			}
+			$postcode = $postData['postcode'];
+			$city     = $postData['city'];
+			$country  = $postData['country'];
+		} else {
+			// get billing info from post
+			$street  = $_POST['billing_street'];
+			$houseNo = $_POST['billing_houseno'];
+			if ( ! empty( $_POST['billing_houseno_ext'] ) ) {
+				$houseNoExt = cleanUpFormTextInput( $_POST['billing_houseno_ext'] );
+			}
+
+			$postcode = $order->get_billing_postcode();
+			$city     = $order->get_billing_city();
+			$country  = $order->get_billing_country();
+		}
+
+		$item->add_meta_data( 'Straat', cleanUpFormTextInput( $street ) ?? null );
+		$item->add_meta_data( 'Huisnummer', $houseNo ?? null );
+		if ( ! empty( $houseNoExt ) ) {
+			$item->add_meta_data( 'Huisnummer toevoeging', $houseNoExt ?? null );
+		}
+		$item->add_meta_data( 'Postcode', cleanUpFormTextInput( $postcode ) ?? null );
+		$item->add_meta_data( 'Plaats', $city ?? null );
+		// convert country to full name
+		$item->add_meta_data( 'Land', WC()->countries->countries[ $country ] ?? null );
+		$logger->info(wc_print_r($item, true ), array( 'source' => 'fv-local-postorder-item-data' ) );
+	}
+}
+
+/**
+ * Custom checkout validation
+ */
+
+ function showSubscriptionForm($productid){
+    if ( empty( get_post_meta( $productid, '_woocommerce_mediacompetence_continuous_subscription', true ) ) ) {
+        return false;
+    }else{
+        return true;
+    }
+}
+
+add_action( 'woocommerce_after_checkout_validation', 'woocommerce_after_checkout_validation_alter', 10, 2 );
+function woocommerce_after_checkout_validation_alter( $data, $errors ) {
+	// don't validate payment type and terms on step 1
+	if ( $_POST['checkout-current-step'] === "1" ) {
+		$errors->remove( 'payment' );
+		$errors->remove( 'terms' );
+
+		// add error for step 1 so we don't go to the next step
+		$errors->add( 'step_1_error', '__STEP_1_ERROR__' );
+	}
+
+	// add validation for subscriptions if required
+	foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+		if ( showSubscriptionForm( $cart_item['product_id'] ) ) {
+			if ( ! empty( $_POST['subscription'][ $cart_item_key ] ) ) {
+				// product
+				$cartProduct = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+
+				// validate subscription
+				validateSubscriptionData( $_POST['subscription'][ $cart_item_key ], $cartProduct, $errors, $cart_item_key );
+			}
+		}
+	}
+
+	if ( $_POST['checkout-current-step'] === "1" ) {
+		return false;
+	}
+
+	return $data;
+}
+
+add_action( 'woocommerce_checkout_process', 'fixMissingBillingAddress' );
+
+function fixMissingBillingAddress() {
+	$_POST['billing_address_1'] = trim( filter_input( INPUT_POST, 'billing_street' ) . ' ' . filter_input( INPUT_POST, 'billing_houseno' ) . ' ' . filter_input( INPUT_POST, 'billing_houseno_ext' ) );
+	if ( ! empty( filter_input( INPUT_POST, 'shipping_street' ) ) ) {
+		$_POST['shipping_address_1'] = trim( filter_input( INPUT_POST, 'shipping_street' ) . ' ' . filter_input( INPUT_POST, 'shipping_houseno' ) . ' ' . filter_input( INPUT_POST, 'shipping_houseno_ext' ) );
+	}
+}
+
+/**
+ * Validate a single subscription
+ *
+ * @param $subscriptionData
+ * @param $cartProduct
+ * @param $errors
+ *
+ * @return void
+ */
+function validateSubscriptionData( $subscriptionData, $cartProduct, $errors, $cart_item_key ) {
+	// fields
+	$fields = [
+		'first_name'      => [ 'name' => 'Kind voornaam', 'required' => true ],
+		'last_name'       => [ 'name' => 'Kind achternaam', 'required' => true ],
+		'birthdate_day'   => [ 'name' => 'Kind geboortedag', 'required' => true ],
+		'birthdate_month' => [ 'name' => 'Kind geboortemaand', 'required' => true ],
+		'birthdate_year'  => [ 'name' => 'Kind geboortejaar', 'required' => true ],
+	];
+
+	// check extra address data
+	$extraFieldsRequired = false;
+	if ( $subscriptionData['other_address'] === '1' ) {
+		$extraFieldsRequired = true;
+	}
+	$fields['postcode']    = [ 'name' => 'Kind postcode', 'required' => $extraFieldsRequired ];
+	$fields['street']      = [ 'name' => 'Kind straat', 'required' => $extraFieldsRequired ];
+	$fields['houseno']     = [ 'name' => 'Kind huisnummer', 'required' => $extraFieldsRequired ];
+	$fields['houseno_ext'] = [ 'name' => 'Kind huisnummer toevoeging', 'required' => false ];
+	$fields['street']      = [ 'name' => 'Kind straat', 'required' => $extraFieldsRequired ];
+	$fields['city']        = [ 'name' => 'Kind plaats', 'required' => $extraFieldsRequired ];
+	$fields['country']     = [ 'name' => 'Kind land', 'required' => $extraFieldsRequired ];
+
+	//set field prefix
+	$fieldPrefix = str_replace( ' ', '_', $cartProduct->get_title() ) . '_';
+
+	// sanitize data
+	foreach ( $fields as $fieldName => $field ) {
+		if ( isset( $subscriptionData[ $fieldName ] ) ) {
+			$subscriptionData[ $fieldName ] = cleanUpFormTextInput( $subscriptionData[ $fieldName ] );
+		}
+
+		// check required fields
+		if ( empty( $subscriptionData[ $fieldName ] ) && $field['required'] === true ) {
+			// add error if empty
+			$errors->add( $fieldPrefix . $fieldName, __( '<strong>' . $cartProduct->get_title() . ' - ' . $field['name'] . '</strong> is verplicht' ) );
+		}
+
+		// save data in session as subscription_data_[cart_item_key]
+		WC()->session->set( 'subscription_data_' . $cart_item_key, $subscriptionData );
+	}
+
+	// check date
+	if ( ! empty( $subscriptionData['birthdate_month'] ) && ! empty( $subscriptionData['birthdate_day'] ) && ! empty( $subscriptionData['birthdate_year'] ) && ! checkdate( $subscriptionData['birthdate_month'], $subscriptionData['birthdate_day'], $subscriptionData['birthdate_year'] ) ) {
+		$errors->add( $fieldPrefix . $fieldName, __( '<strong>' . $cartProduct->get_title() . ' - Geboortedatum</strong> is ongeldig' ) );
+	}
+
+}
+/**
+ * @param string $input
+ *
+ * @return string
+ */
+function cleanUpFormTextInput( string $input ): string {
+	// Trim, Sanitize & remove emojis
+	return trim( sanitize_text_field( $input ) );
+}
+
