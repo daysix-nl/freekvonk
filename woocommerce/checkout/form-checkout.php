@@ -86,8 +86,8 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 								$prefilledData = WC()->session->get( 'subscription_data_' . $cart_item_key );
 							
 								?>
-								<div class="checkout-subscription">
-									<h3 class="font-bold mt-[20px]"><?= $cartProduct->get_title() ?></h3>
+								<div class="checkout-subscription border-[1px] border-[#b5bbb8] p-[15px] mt-[20px]">
+									<h3 class="font-bold"><?= $cartProduct->get_title() ?></h3>
 									<style>
 									    .checkout-subscription__columns {
                                             display: flex;
@@ -155,7 +155,7 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 
 											
 										</div>
-										<div class="checkout-subscription__image w-[190px] md:w-[30%] my-[10px] md:my-[unset] order-1 md:order-2">
+										<div class="checkout-subscription__image w-[190px] md:w-[30%] order-1 md:order-2">
 											
 											<?php
 											$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $cartProduct->get_image(), $cart_item, $cart_item_key );

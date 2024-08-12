@@ -1522,6 +1522,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(181 187 184 / var(--tw-border-opacity));
 }
+.border-\[\#b5bbb8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(181 187 184 / var(--tw-border-opacity));
+}
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -2412,11 +2416,6 @@ video {
   .md\:mx-\[unset\] {
     margin-left: unset;
     margin-right: unset;
-  }
-
-  .md\:my-\[unset\] {
-    margin-top: unset;
-    margin-bottom: unset;
   }
 
   .md\:mb-\[-15px\] {

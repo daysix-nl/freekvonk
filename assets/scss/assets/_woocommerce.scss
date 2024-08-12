@@ -1231,3 +1231,11 @@ body .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a {
         width: 100% !important;
     }
 }
+
+.woocommerce form .form-row {
+    padding: 0px !important;
+}
+
+.optional {
+    display: none !important;
+}
