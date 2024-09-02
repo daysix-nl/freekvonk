@@ -91,8 +91,11 @@ $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[333px] text-center lg:text-left" target="<?php echo $link4_target; ?>"><?php echo $link4_text; ?></h2>
         </a>
         <a href="<?php echo $link5_url; ?>" id="home-item-5" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(5)">
-            <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link5_target; ?>"><?php echo $link5_text; ?></h2>
+            <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[330px] text-center lg:text-left" target="<?php echo $link5_target; ?>"><?php echo $link5_text; ?></h2>
         </a>
+         <!-- <a href="<?php echo $link5_url; ?>" id="home-item-5" class="col-span-1 w-full h-full bg-[#00ade6]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(5)">
+            <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[360px] text-center lg:text-left" target="<?php echo $link5_target; ?>"><?php echo $link5_text; ?></h2>
+        </a> -->
         <a href="<?php echo $link6_url; ?>" id="home-item-6" class="col-span-1 w-full h-full lg:hover:bg-[#78B893]/60 flex items-center justify-center lg:block lg:relative" onmouseover="activateBackground(6)">
             <h2 class="text-55 leading-48 md:text-80 md:leading-66 lg:text-80 lg:leading-78 xl:text-80 xl:leading-78 font-tanker font-normal text-white lg:absolute lg:bottom-[65px] lg:left-[40px] xl:bottom-[40px] xl:left-[40px] lg:max-w-[300px] text-center lg:text-left" target="<?php echo $link6_target; ?>"><?php echo $link6_text; ?></h2>
         </a>

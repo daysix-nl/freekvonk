@@ -347,3 +347,77 @@ input[type=number] {
         padding-right: 0px !important;
     }
 }
+
+
+.formulier-ah {
+    .gform_body {
+        margin-bottom: 30px !important;
+    }
+
+    .gfield_checkbox {
+        input {
+            min-height: unset !important;
+        }
+
+        .gform-field-label {
+            color: #fff !important;
+            font-family: Karlsen, sans-serif !important;
+            font-size: 16px !important;
+            line-height: 25px !important;
+        }
+    }
+
+    .gform_wrapper.gravity-theme .gfield-choice-input {
+        display: inline-block;
+        margin-top: 0;
+        top: 3px !important;
+        margin-right: 10px !important;
+        vertical-align: top !important;
+        position: relative !important;
+
+    }
+
+    input[type=checkbox]:checked {
+        appearance: none !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        height: 18px !important;
+        width: 18px !important;
+        border-radius: 2px !important;
+        border: 0px solid #815321 !important;
+        background: #815321 !important;
+        position: relative !important;
+
+        &:after {
+            content: "✓";
+            display: block;
+            color: #fff !important;
+            position: absolute;
+            left: 2px !important;
+            top: -2px !important;
+            font-size: 17px !important;
+        }
+    }
+
+    input[type="checkbox" i] {
+        background-color: #fff !important;
+        cursor: pointer !important;
+        appearance: none !important;
+        box-sizing: border-box;
+        height: 18px !important;
+        width: 18px !important;
+        border-radius: 2px !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        border: 0px solid #fff !important;
+    }
+
+    .gfield_checkbox div {
+        display: flex !important;
+    }
+
+    .gform_button {
+        padding-left: 0px !important;
+    }
+
+}
