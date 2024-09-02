@@ -1139,6 +1139,9 @@ video {
 .min-h-\[550px\] {
   min-height: 550px;
 }
+.min-h-\[56px\] {
+  min-height: 56px;
+}
 .min-h-\[calc\(100dvh-80px\)\] {
   min-height: calc(100dvh - 80px);
 }
@@ -1595,6 +1598,10 @@ video {
 .bg-\[\#FFFFFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#f1f3f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 243 244 / var(--tw-bg-opacity));
 }
 .bg-\[\#fff\] {
   --tw-bg-opacity: 1;
