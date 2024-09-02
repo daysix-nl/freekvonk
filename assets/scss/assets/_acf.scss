@@ -17,4 +17,15 @@
     #product_labeldiv {
         display: none !important;
     }
+
+    .gform-body {
+        input {
+            width: 100% !important;
+        }
+
+        .gfield--type-honeypot {
+            display: none !important;
+        }
+    }
+
 }
