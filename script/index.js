@@ -188,15 +188,18 @@ try {
   const allSliders = document.querySelectorAll(".mySwiper-over-freek-content");
   allSliders.forEach((slider) => buildSwiperSlider(slider));
 } catch (error) { }
+
+
 try {
   var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
     slidesPerView: "auto",
     centeredSlides: true,
     lazy: false,
-    initialSlide: 1,
+    initialSlide: 0,
     spaceBetween: 8,
   });
 } catch (error) { }
+
 
 try {
   var swiperShopHeader = new Swiper(".mySwiper-shop-header", {
