@@ -25,7 +25,7 @@ $image3_alt = isset($image3['alt']) ? esc_attr($image3['alt']) : '';
       <img src="<?php echo $image2_url; ?>" alt="<?php echo $image2_alt; ?>" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center bg-[#2B2828]">
       <img src="<?php echo $image3_url; ?>" alt="<?php echo $image3_alt; ?>" class="aspect-square lg:aspect-[4/3] overflow-hidden object-cover object-center bg-[#2B2828]">
    </div>
-   <div class="mySwiper-over-freek-image swiper md:hidden relative z-[40]">
+   <div class="mySwiper-over-freek-image swiper md:hidden relative z-[40] pr-[16px]">
       <div class="swiper-wrapper ml-[8px]">
             <div class="swiper-slide w-fit"><img src="<?php echo $image1_url; ?>" alt="<?php echo $image1_alt; ?>" class="aspect-square lg:aspect-[4/3] object-cover object-center overflow-hidden w-full max-w-[235px] bg-[#2B2828]"></div>
             <div class="swiper-slide w-fit"><img src="<?php echo $image2_url; ?>" alt="<?php echo $image2_alt; ?>" class="aspect-square lg:aspect-[4/3] object-cover object-center overflow-hidden w-full max-w-[235px] bg-[#2B2828]"></div>
