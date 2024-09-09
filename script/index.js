@@ -193,7 +193,7 @@ try {
 try {
   var swiperFreekImage = new Swiper(".mySwiper-over-freek-image", {
     slidesPerView: "auto",
-    centeredSlides: true,
+    centeredSlides: false,
     lazy: false,
     initialSlide: 0,
     spaceBetween: 8,
