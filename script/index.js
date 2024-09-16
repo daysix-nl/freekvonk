@@ -550,3 +550,44 @@ try {
     });
   });
 } catch (error) { }
+
+
+try {
+  function formatPostcode(inputField) {
+    inputField.addEventListener('input', function (e) {
+      let input = e.target.value;
+
+      // Verwijder alle niet-cijfer karakters voor de eerste vier tekens
+      let numbers = input.replace(/[^0-9]/g, '').substring(0, 4);
+
+      // Verwijder alle niet-letter karakters en converteer naar hoofdletters voor de laatste twee tekens
+      let letters = input.substring(4).replace(/[^a-zA-Z]/g, '').toUpperCase().substring(0, 2);
+
+      // Combineer de twee delen met een spatie ertussen als er genoeg tekens zijn
+      if (numbers.length === 4 && letters.length > 0) {
+        input = numbers + ' ' + letters;
+      } else {
+        input = numbers + (letters.length > 0 ? ' ' + letters : '');
+      }
+
+      // Update het invoerveld
+      e.target.value = input;
+    });
+  }
+
+  // Voeg de formatter toe aan zowel billing als shipping postcode velden
+  document.addEventListener('DOMContentLoaded', function () {
+    const billingPostcode = document.getElementById('billing_postcode');
+    const shippingPostcode = document.getElementById('shipping_postcode');
+
+    if (billingPostcode) {
+      formatPostcode(billingPostcode);
+    }
+
+    if (shippingPostcode) {
+      formatPostcode(shippingPostcode);
+    }
+  });
+
+
+} catch (error) { }

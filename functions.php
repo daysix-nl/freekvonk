@@ -1247,3 +1247,5 @@ function cleanUpFormTextInput( string $input ): string {
 	return trim( sanitize_text_field( $input ) );
 }
 
+
+
