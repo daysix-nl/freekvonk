@@ -18,15 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <title><?php bloginfo( 'name' ); ?> | <?php if (is_shop()) { ?><?php woocommerce_page_title(); ?><?php } else { the_title(); } ?></title>
     <?php wp_head(); ?>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRDQM5PGJ1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZRDQM5PGJ1');
-    </script>
 </head>
 <body <?php body_class( 'page-block' ); ?>>
 
