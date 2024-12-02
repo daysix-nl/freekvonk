@@ -994,3 +994,30 @@ function cleanUpFormTextInput( string $input ): string {
 
 
 
+// add_filter('woocommerce_get_terms_page_checkbox_text', 'custom_terms_checkbox_text');
+// function custom_terms_checkbox_text($text) {
+//     $terms_page_id = wc_get_page_id('terms');
+//     if ($terms_page_id > 0) {
+//         $terms_link = get_permalink($terms_page_id);
+//         $text = sprintf(
+//             'Ik ga akkoord met de <a href="/" target="_blank">algemene voorwaarden</a>',
+//             esc_url($terms_link)
+//         );
+//     }
+//     return $text;
+// }
+
+// add_filter('woocommerce_checkout_show_terms', '__return_false');
+
+add_filter('woocommerce_get_terms_and_conditions_checkbox_text', 'custom_terms_checkbox_text');
+function custom_terms_checkbox_text($text) {
+    $terms_page_id = wc_get_page_id('terms'); // Haal de voorwaarden pagina-ID op.
+    if ($terms_page_id > 0) {
+        $terms_link = get_permalink($terms_page_id); // Genereer de URL naar de voorwaardenpagina.
+        $text = sprintf(
+            'Ik ga akkoord met de <a href="https://freekvonk.nl/wp-content/uploads/2024/10/Algemene-Voorwaarden_Studio-Freek-Merchandise_okt-2024.pdf" target="_blank">algemene voorwaarden</a>',
+            esc_url($terms_link)
+        );
+    }
+    return $text;
+}

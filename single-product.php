@@ -3,6 +3,7 @@
  * The single post template file
  * 
  * @package Day Six theme
+ * @version 1.6.4
  */
 
 defined( 'ABSPATH' ) || exit;

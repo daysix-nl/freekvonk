@@ -981,7 +981,6 @@ html .wpc-filters-range-inputs .ui-button.ui-state-disabled:hover {
 }
 
 .wpc-filters-range-inputs .ui-slider .ui-slider-handle {
-    -ms-touch-action: none;
     width: 26px !important;
     height: 26px !important;
 }
@@ -1238,4 +1237,17 @@ body .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a {
 
 .optional {
     display: none !important;
+}
+
+
+// .woocommerce-terms-and-conditions-wrapper {
+//     display: none !important;
+// }
+
+.woocommerce-terms-and-conditions {
+    display: none !important;
+}
+
+.woocommerce-terms-and-conditions-wrapper .form-row.validate-required {
+    margin-top: 30px !important;
 }
